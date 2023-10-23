@@ -1131,14 +1131,14 @@ input[type="number"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 8.3rem; }
+    margin-right: 13.7rem; }
     .header__lists-left li {
       font-family: 'Inter';
       font-size: 2.4rem;
       font-style: normal;
       font-weight: 400;
       line-height: 125%;
-      margin-right: 5rem;
+      margin-right: 3.2rem;
       -webkit-transition: 0.2s;
       transition: 0.2s; }
       .header__lists-left li:hover {
@@ -1157,23 +1157,49 @@ input[type="number"] {
       font-style: normal;
       font-weight: 400;
       line-height: 125%;
-      margin-right: 4.6rem; }
+      margin-right: 3.2rem; }
+  .header__wrapper-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -1.65rem; }
   .header__search {
     width: 3rem;
     height: 3rem;
-    margin-right: 2.4rem; }
+    margin-right: 0.8rem; }
   .header__user {
     width: 3rem;
     height: 3rem;
-    margin-right: 2.4rem; }
+    margin-right: 0.8rem; }
   .header__basket {
     width: 3rem;
     height: 3rem; }
+  .header__search, .header__user, .header__basket {
+    width: 6.6rem;
+    height: 6.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    border-radius: 3.3rem;
+    background-position-x: -5rem; }
+    .header__search svg, .header__user svg, .header__basket svg {
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer; }
+      .header__search svg:hover, .header__user svg:hover, .header__basket svg:hover {
+        stroke: #840D06; }
   .header__logo {
     width: 13.7rem;
     height: 17rem;
     display: block;
-    margin-right: 8.9rem;
+    margin-right: 5.3rem;
     margin-top: -9rem; }
 
 .focal {
@@ -1238,6 +1264,12 @@ input[type="number"] {
       -webkit-transition: 0.5s;
       transition: 0.5s;
       opacity: 1; }
+    .focal__box:nth-child(3), .focal__box:nth-child(4) {
+      border-radius: 5rem 0rem 5rem 0rem; }
+      .focal__box:nth-child(3) img, .focal__box:nth-child(4) img {
+        border-radius: 0; }
+      .focal__box:nth-child(3) .focal__box-hover, .focal__box:nth-child(4) .focal__box-hover {
+        border-radius: 0; }
   .focal__box:nth-child(3) {
     margin-right: 0; }
   .focal__box:nth-child(6) {
@@ -1490,7 +1522,13 @@ input[type="number"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  cursor: pointer; }
+  .popular-box:hover {
+    border-radius: 0rem 6rem;
+    background: #DEDAD6;
+    -webkit-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15); }
   .popular-box__image {
     width: 47.6rem;
     height: 41vh;
@@ -1541,11 +1579,14 @@ input[type="number"] {
     position: absolute;
     background: #FFF;
     top: 2rem;
-    right: 3.2rem; }
+    right: 3.2rem;
+    cursor: pointer; }
     .popular-box__like svg {
       width: 3rem;
       height: 3rem;
       fill: #1a1a1a; }
+      .popular-box__like svg:hover {
+        stroke: #840D06; }
   .popular-box__like.active {
     background: #840D06; }
     .popular-box__like.active svg {
@@ -1620,10 +1661,13 @@ input[type="number"] {
             align-items: center;
     margin-left: auto;
     position: relative;
-    right: 2rem; }
+    right: 2rem;
+    cursor: pointer; }
     .popular-box__basket svg {
       width: 3rem;
       height: 3rem; }
+      .popular-box__basket svg:hover {
+        stroke: #840D06; }
   .popular-box__basket.active {
     background: #840D06; }
     .popular-box__basket.active svg {
@@ -1720,7 +1764,8 @@ input[type="number"] {
   background: #DEDAD6;
   padding: 1.2rem;
   width: 129.5rem;
-  height: 60vh; }
+  height: 60vh;
+  cursor: pointer; }
   .news-box__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1910,7 +1955,8 @@ input[type="number"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  cursor: pointer; }
   .education-box__image {
     width: 100%;
     height: 36.2vh;
@@ -2033,7 +2079,7 @@ input[type="number"] {
   padding-top: 5rem; }
 
 .literature__pagination {
-  top: 50%;
+  top: 51rem;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%); }
 
@@ -2361,6 +2407,8 @@ input[type="number"] {
       height: 3rem; }
   .partners__wrapper {
     position: relative; }
+  .partners__pagination {
+    top: 23rem; }
 
 .partners-box {
   width: 76.5rem;
@@ -2433,8 +2481,8 @@ input[type="number"] {
 .projects {
   background-image: url(../img/projects/bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 150%; }
+  background-size: 100% 140rem;
+  background-position: 100% 225%; }
   .projects .container {
     position: relative;
     padding-top: 5rem; }
@@ -2593,6 +2641,7 @@ input[type="number"] {
   background-image: url(../img/invitation/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2654,6 +2703,11 @@ input[type="number"] {
               transform: translate(-50%, -50%); }
   .invitation__phone:last-child {
     margin-bottom: 0; }
+  .invitation__form .checkbox .checkmark:after {
+    width: 3rem;
+    height: 3rem;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
   .invitation__form-inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3738,8 +3792,7 @@ input[type="number"] {
       width: 48.7%;
       height: 19.2rem;
       margin-right: 0;
-      margin-right: 2rem;
-      border-radius: 6rem 0px; }
+      margin-right: 2rem; }
     .focal__box:nth-child(4) {
       margin-right: 2rem; }
     .focal__box:nth-child(5) {

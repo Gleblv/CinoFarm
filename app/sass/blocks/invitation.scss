@@ -3,6 +3,7 @@
     background-image: url(../img/invitation/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: 35rem;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -67,6 +68,14 @@
 
     &__phone:last-child {
         margin-bottom: 0;
+    }
+
+    &__form {
+        .checkbox .checkmark:after {
+            width: 3rem;
+            height: 3rem;
+            transform: translate(0, -50%);
+        }
     }
 
     &__form-inner {
