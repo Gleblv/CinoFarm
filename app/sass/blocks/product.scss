@@ -1,0 +1,207 @@
+.product {
+    padding-top: 22.4rem;
+    margin-bottom: 20rem;
+   
+    .container {
+        min-height: auto;
+    }
+    &__wrapper {
+        display: flex;
+        margin-bottom: 10rem;
+    }
+
+    &__image {
+        width: 36.8rem;
+        height: 52.3rem;
+        margin-right: 9rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        margin-bottom: 1.6rem;
+        max-width: 71.4rem;
+    }
+
+    &__name {
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        margin-bottom: 4rem;
+    }
+
+    &__text {
+        max-width: 89.7rem;
+        font-size: 2.6rem;
+        line-height: 130%;
+        margin-bottom: 4rem;
+    }
+
+    &__inner {
+        margin-bottom: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+       
+        grid-gap: 2.4rem;
+        display: grid;
+    }
+
+    &__info {
+        display: flex;
+
+        strong {
+            display: block;
+            font-size: 2.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            margin-right: 1.2rem;
+        }
+
+        span {
+            display: block;
+            font-size: 2.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    }
+
+    &__block {
+        display: flex;
+    }
+
+    &__price {
+        position: relative;
+        color:  #840D06;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-right: 1rem;
+        display: block;
+        height: fit-content;
+        margin-right: 9rem;
+        &::before {
+            position: absolute;
+            content:'₽';
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color:  #242424;
+            right: 0;
+            bottom: 1rem;
+        }
+    }
+
+    .like {
+        margin-right: 1.6rem;
+    }
+
+    .all-btn {
+        span {
+            margin-right: 0;
+        }
+        &__arrow {
+            margin-left: 10.3rem;
+            svg {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+
+    &__tab {
+        display: flex;
+    }
+
+    &__tab-item {
+        display: flex;
+        padding: 1.4rem 4rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6rem 0px;
+        background:  #DEDAD6;
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; 
+        cursor: pointer;
+        margin-right: 3rem;
+    }
+
+    &__tab-item:last-child {
+        margin-right: 0;
+    }
+
+    &__tab-item.active {
+        background:  #840D06;
+        color: #fff;
+    }
+
+    &__tab-block {
+        display: none;
+        padding-top: 6rem;
+        strong {
+            display: block;
+            font-size: 2.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; 
+            color:#1A1A1A;
+            margin-bottom: 4rem;
+        }
+        p {
+            font-size: 2.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            margin-bottom: 2.4rem;
+            max-width: 89.7rem;
+        }
+
+        li {
+            color: #1A1A1A;
+            font-size: 2.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            padding-left: 3rem;
+            margin-bottom: 1.6rem;
+            position: relative;
+            &::before {
+                position: absolute;
+                content:'';
+                width: 1.4rem;
+                height: 1.4rem;
+                background-image: url(../img/star.svg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                left: 0;
+                top: 50%;
+                transform: translate(0,-50%);
+            }
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        li:first-child {
+            color:#840D06;
+        }
+    }
+
+    &__tab-block.active {
+        display: block;
+    }
+}

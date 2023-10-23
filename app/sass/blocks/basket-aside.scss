@@ -1,0 +1,88 @@
+.basket-aside {
+    display: flex;
+    width: 50rem;
+    padding: 3.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+    border-radius: 0px 6rem;
+    background:  #DEDAD6;
+    margin-top: 5rem;
+    .all-btn {
+        &__arrow {
+            margin-left: 1.7rem;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__title-m {
+        color:  #6D6D6D;
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &__price {
+        font-size: 2.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        color:#1A1A1A;
+        position: relative;
+        padding-right: 1.4rem;
+        &::before {
+            position: absolute;
+            content:'₽';
+            font-size: 2.2rem;
+            font-weight: 400;
+            line-height: 130%;
+            right: 0;
+            bottom: 0.2rem;
+        }
+    }
+
+    &__result {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.4rem 0;
+        border-top: 0.1rem solid rgba(109, 109, 109, 0.5);
+        border-bottom: 0.1rem solid rgba(109, 109, 109, 0.5);
+        width: 100%;
+    }
+
+    &__result-title {
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; 
+    }
+
+    &__result-price {
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; 
+        position: relative;
+        padding-right: 1.3rem;
+        &::before {
+            position: absolute;
+            content:'₽';
+            font-size: 2rem;
+            right: 0;
+            bottom: -0.2rem;
+        }
+    }
+}

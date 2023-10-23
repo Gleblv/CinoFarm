@@ -1,0 +1,19 @@
+.basket {
+    padding-top: 25.1rem;
+    height: auto;
+    margin-bottom: 20rem;
+    .container {
+        min-height: auto;
+        padding-top: 0;
+    }
+    .title {
+        margin-bottom: 6rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}

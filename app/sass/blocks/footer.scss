@@ -1,0 +1,125 @@
+.footer {
+
+  
+    &__top {
+        width: 156rem;
+        border-top: 0.1rem solid rgba(109, 109, 109, 1);
+        padding-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+    }
+
+    .container {
+        min-height: auto;
+    }
+
+    &__top-inner-mob {
+        display: none;
+    }
+
+    &__bottom {
+        width: 156rem;
+        border-top: 0.1rem solid rgba(109, 109, 109, 1);
+        padding-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        position: relative;
+    }
+
+    &__scroll {
+        width: 7.4rem;
+        height: 7.4rem;
+       
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        background: rgba(222, 218, 214, 0.50);
+        backdrop-filter: blur(3px);
+        border-radius: 50%;
+        left: 50%;
+        z-index: 3;
+        top: -4rem;
+        &:hover {
+            .footer__scroll-wrap {
+                background: #fff;
+                transition: 0.5s;
+            }
+                
+           
+        }
+        svg {
+            width: 1.6rem;
+            height: 3rem;
+            animation: arrow-top 2s infinite;
+            animation-delay: -0.2s;
+            transition: 0.2s;
+        }
+
+    
+
+       
+     
+    }
+
+    &__scroll-wrap {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+
+    &__policy {
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; 
+    }
+
+    &__re {
+        width: 19.2rem;
+        height: 6.38rem;
+    }
+
+    &__logo {
+        width: 13.9rem;
+        height: 17rem;
+        
+    }
+
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        ul {
+            display: block;
+        }
+        li {
+            color:  #1A1A1A;
+            font-family: 'Inter';
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+            margin-bottom: 2rem; 
+            max-width: 20.7rem;
+            transition: 0.2s;
+            &:hover {
+                transition: 0.2s;
+                color:#840D06;
+            }
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.footer-full {
+    scroll-snap-align: start;
+}

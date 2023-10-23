@@ -1,0 +1,98 @@
+.popular {
+   
+   .container {
+    position: relative;
+    padding-top: 4rem;
+   }
+    &__wrapper {
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin-bottom: 5rem;
+        strong {
+            display: block;
+            font-family: 'PP Neue Montreal';
+            font-size: 6vh;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+            margin-bottom: 1.5rem;
+           
+            text-align: center;
+        }
+
+        span {
+            display: block;
+            font-family: 'PP Neue Montreal';
+            font-size: 2.6vh;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; 
+        }
+    }
+
+    &__scroll {
+        border-radius: 6rem;
+        background: rgba(222, 218, 214, 0.50);
+
+       
+        width: 16.6rem;
+        height: 8.6vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6rem;
+        margin-top: 2vh;
+        
+    }
+
+    &__scroll-bottom {
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 7.4vh;
+        height: 7.4vh;
+        background: none;
+        &:hover {
+           
+            background: #fff;
+            transition: 0.5s;
+        
+    }
+    svg {
+        width: 1.6rem;
+        height: 3rem;
+       
+      
+    }
+    }
+
+    &__scroll-top {
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 7.4vh;
+        height: 7.4vh;
+        transition: 0.5s;
+        background: none;
+        &:hover {
+           
+                background: #fff;
+                transition: 0.5s;
+            
+        }
+        svg {
+            width: 1.6rem;
+            height: 3rem;
+           
+          
+        }
+    }
+}
