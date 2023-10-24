@@ -4,7 +4,6 @@
     padding: 1.2rem;
     width: 129.5rem;
     height: 60vh;
-    cursor: pointer;
 
     &__wrapper {
         display: flex;
@@ -73,6 +72,7 @@
         position: relative;
         width: 54rem;
         height: 57.6vh;
+        cursor: pointer;
 
         img {
             width: 100%;

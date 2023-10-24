@@ -11,18 +11,21 @@
         
     }
 
+    &__wrapper {
+        position: relative;
+    }
+
 
     &__pagination {
-        top: 51rem;
-        transform: translate(0%, -50%);
-       }
+        top: 50%;
+    }
 
 
-       &__scroll {
+    &__scroll {
         border-radius: 6rem;
         background: rgba(222, 218, 214, 0.50);
 
-       
+        
         width: 16.6rem;
         height: 8.6vh;
         margin: 0 auto;

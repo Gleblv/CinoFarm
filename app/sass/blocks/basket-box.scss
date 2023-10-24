@@ -73,16 +73,20 @@
     &__image {
         width: 100%;
         height: 100%;
+        border-radius: inherit;
+
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            border-radius: inherit;
+            object-fit: cover;
         }
     }
 
     &__inner {
         display: flex;
         flex-direction: column;
+        padding: 3.2rem 0;
     }
 
     &__title {

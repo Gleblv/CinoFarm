@@ -89,11 +89,12 @@
     &__licenses {
         display: flex;
         padding-right: 6.8rem;
+        height: 100%;
     }
 
     &__license {
         width: 15.3rem;
-        height: 22rem;
+        height: 100%;
         margin-right: 3rem;
         img {
             width: 100%;
