@@ -1,84 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=`, initial-scale=1.0" />
+      <link rel="stylesheet" href="./build/css/style.min.css" />
+      <!-- <meta http-equiv="refresh" content="1;URL=./app/pages.html" /> -->
+      <title>UX/UI</title>
+   </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=`, initial-scale=1.0">
-  <link rel="stylesheet" href="./build/css/style.min.css">
-  <!-- <meta http-equiv="refresh" content="1;URL=./app/pages.html" /> -->
-  <title>UX/UI</title>
-</head>
+   <style>
+      a,
+      h1,
+      textarea {
+         width: 100%;
+         font-family: "Exo 2", sans-serif;
+         font-style: normal;
+         font-weight: 800;
+         font-size: 2rem;
+         line-height: 2rem;
+         height: auto;
+      }
 
-<style>
-  a,
-  h1,
-  textarea {
-    width: 100%;
-    font-family: 'Exo 2', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2rem;
-    line-height: 2rem;
-    height: auto;
-  }
+      h1 {
+         color: blue;
+         text-transform: uppercase;
+         font-size: 4rem;
+         margin-top: 2rem;
+         width: 100%;
+         text-align: right;
+      }
 
-  h1 {
-    color: blue;
-    text-transform: uppercase;
-    font-size: 4rem;
-    margin-top: 2rem;
-    width: 100%;
-    text-align: right;
-  }
+      main {
+         width: calc(100% - 25rem);
+      }
 
-  main {
-    width: calc(100% - 25rem);
-  }
+      a {
+         text-align: right;
+         padding: 0.5rem;
+         display: block;
+         transition: 0.3s;
+      }
 
-  a {
-    text-align: right;
-    padding: 0.5rem;
-    display: block;
-    transition: 0.3s;
-  }
+      a:hover {
+         color: red;
+      }
 
-  a:hover {
-    color: red;
-  }
+      .pages {
+         position: fixed;
+         width: 23rem;
+         top: 0;
+         right: 15rem;
+         text-align: right;
+         padding: 10rem 0;
+      }
 
-  .pages {
-    position: fixed;
-    width: 23rem;
-    top: 0;
-    right: 15rem;
-    text-align: right;
-    padding: 10rem 0;
-  }
+      h1,
+      textarea,
+      .ui-block {
+         margin-bottom: 2rem;
+      }
+      textarea {
+         width: 50%;
+         margin-left: auto;
+      }
+      .ui-block {
+         margin-bottom: 10rem;
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row-reverse;
+         justify-content: space-between;
+         align-items: center;
+      }
+   </style>
 
-  h1,
-  textarea,
-  .ui-block {
-    margin-bottom: 2rem;
-    
-  }
-  textarea {
-    width: 50%;
-    margin-left: auto;
-  }
-  .ui-block {
-    margin-bottom: 10rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-</style>
-
-<body style="min-height: 200vh;">
-  <div class="container text" style="display: flex; position: relative; padding: 10rem 0;">
-    <main>
+   <body style="min-height: 200vh">
+      <div class="container text" style="display: flex; position: relative; padding: 10rem 0">
+         <!-- <main>
 
 
       <div class="ui-block">
@@ -211,13 +209,11 @@
           </div>
         </div>
 
-    </main>
-    <div class="pages">
-      <h1>Главная</h1>
-      <a href="./build/index.html">Главня</a>
-
-    </div>
-  </div>
-</body>
-
+    </main> -->
+         <div class="pages">
+            <h1>Страницы</h1>
+            <a href="./build/testing.html">Главня</a>
+         </div>
+      </div>
+   </body>
 </html>
