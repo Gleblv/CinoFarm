@@ -1,0 +1,64 @@
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(27, 27, 27, 0.60);
+    backdrop-filter: blur(2px);
+    z-index: 10;
+
+    &.active {
+        display: block;
+    }
+
+    &-invitation {
+        &__content {
+            backdrop-filter: none;
+            position: relative;
+            top: calc(50% - 31.75rem);
+            width: 129.5rem;
+            height: 63.5rem;
+            margin: 0 auto;
+            padding-top: 16.6rem;
+            border-radius: 10rem 0rem;
+            background: url('../../img/modal/background.png') top left/cover no-repeat #DEDAD6;
+            background-blend-mode: darken;
+        }
+
+        &__close {
+            position: absolute;
+            right: 3rem;
+            top: 3rem;
+            width: 1.9rem;
+            height: 1.9rem;
+        }
+
+        &__body {
+            margin: 0 auto;
+            text-align: center;
+            width: 63.7rem;
+
+            .all-btn {
+                margin: 0 auto;
+            }
+        }
+
+        &__title {
+            font-family: 'PP Neue Montreal';
+            font-size: 6rem;
+            font-weight: 500;
+            line-height: 110%;
+            margin-bottom: 3rem;
+        }
+
+        &__subtitle {
+            font-family: 'PP Neue Montreal';
+            font-size: 2.6rem;
+            line-height: 130%; /* 3.38rem */
+            margin-bottom: 4rem;
+        }
+    }
+}
+

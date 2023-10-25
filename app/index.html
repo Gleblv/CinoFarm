@@ -120,6 +120,30 @@
 			@@include('./template/partners.html')
 			@@include('./template/projects.html')
 			@@include('./template/invitation.html')
+
+			<div class="modal-invitation modal" id="invitationModal">
+				<div class="modal-invitation__content">
+					<div class="modal-invitation__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+							<path d="M1 1L10.5 10.5M10.5 10.5L1 20M10.5 10.5L20 1M10.5 10.5L20 20" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+					<div class="modal-invitation__body">
+						<div class="modal-invitation__title">Ваша заявка успешно доставлена!</div>
+						<div class="modal-invitation__subtitle">В ближайшее время наш менеджер свяжется с вами.</div>
+						<a href="./index.html">
+							<button class="all-btn">
+								<span>На главную</span>
+								<div class="all-btn__arrow">
+									<svg  viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543" stroke="#840D06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer footer-full" >
 				<div class="container">

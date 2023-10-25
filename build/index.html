@@ -1484,68 +1484,97 @@
     </div>
 </section>
 			<section class="invitation section" id="invitation">
-    <div class="container">
-        <div class="invitation__wrapper">
-            <div class="invitation__left">
-                <div class="invitation__title">
-                    Приглашаем к сотрудничеству 
-                </div>
-                <div class="invitation__text">
-                    Компания «СИНОФАРМ» на протяжении 9 лет успешно занимается развитием и продвижением ТКМ на российский рынок.
-                </div>
-
-                <div class="invitation__phone">
-                    <span>Москва</span>
-                    <a href="#">8(499)938-99-50</a>
-                </div>
-                <div class="invitation__phone">
-                    <span>Санк-Петербург</span>
-                    <a href="#">8(812)467-39-93</a>
-                </div>
-                <div class="invitation__phone">
-                    <span>Регионы</span>
-                    <a href="#">8(800)333-95-53</a>
-                </div>
+   <div class="container">
+      <div class="invitation__wrapper">
+         <div class="invitation__left">
+            <div class="invitation__title">Приглашаем к сотрудничеству</div>
+            <div class="invitation__text">
+               Компания «СИНОФАРМ» на протяжении 9 лет успешно занимается развитием и продвижением ТКМ на
+               российский рынок.
             </div>
-            <div class="invitation__right">
-                <form action="" class="invitation__form">
-                    <div class="invitation__form-inner">
-                        <label for="">Имя</label>
-                        <input type="text" placeholder="">
-                    </div>
-                    <div class="invitation__form-inner">
-                        <label for="">Телефон</label>
-                        <input type="text" placeholder="">
-                    </div>
-                    <div class="invitation__form-inner">
-                        <label for="">E-mail</label>
-                        <input type="text" placeholder="">
-                    </div>
-                    <div class="invitation__form-inner">
-                        <label for="">Комментарий</label>
-                        <input type="text" placeholder="">
-                    </div>
 
-                    <label class="checkbox ">Нажимая кнопку, вы даёте согласие на обработку персональных данных
-                        <input type="checkbox"  >
-                        <span class="checkmark"></span>
-                    </label>
-
-                    <button class="all-btn">
-                        <span>Отправить</span>
-                        <div class="all-btn__arrow">
-                            <svg  viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543" stroke="#840D06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                        </div>
-                    </button>
-                </form>
+            <div class="invitation__phone">
+               <span>Москва</span>
+               <a href="#">8(499)938-99-50</a>
             </div>
-        </div>
-    </div>
+            <div class="invitation__phone">
+               <span>Санк-Петербург</span>
+               <a href="#">8(812)467-39-93</a>
+            </div>
+            <div class="invitation__phone">
+               <span>Регионы</span>
+               <a href="#">8(800)333-95-53</a>
+            </div>
+         </div>
+         <div class="invitation__right">
+            <form action="" class="invitation__form">
+               <div class="invitation__form-inner">
+                  <label for="">Имя</label>
+                  <input type="text" placeholder="" />
+               </div>
+               <div class="invitation__form-inner">
+                  <label for="">Телефон</label>
+                  <input type="text" placeholder="" />
+               </div>
+               <div class="invitation__form-inner">
+                  <label for="">E-mail</label>
+                  <input type="text" placeholder="" />
+               </div>
+               <div class="invitation__form-inner">
+                  <label for="">Комментарий</label>
+                  <input type="text" placeholder="" />
+               </div>
+
+               <label class="checkbox"
+                  >Нажимая кнопку, вы даёте согласие на обработку персональных данных
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+               </label>
+
+               <button class="all-btn" id="openInvitationModal">
+                  <span>Отправить</span>
+                  <div class="all-btn__arrow">
+                     <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543"
+                           stroke="#840D06"
+                           stroke-width="2"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+                  </div>
+               </button>
+            </form>
+         </div>
+      </div>
+   </div>
 </section>
 
 
+			<div class="modal-invitation modal" id="invitationModal">
+				<div class="modal-invitation__content">
+					<div class="modal-invitation__close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+							<path d="M1 1L10.5 10.5M10.5 10.5L1 20M10.5 10.5L20 1M10.5 10.5L20 20" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
+					<div class="modal-invitation__body">
+						<div class="modal-invitation__title">Ваша заявка успешно доставлена!</div>
+						<div class="modal-invitation__subtitle">В ближайшее время наш менеджер свяжется с вами.</div>
+						<a href="./index.html">
+							<button class="all-btn">
+								<span>На главную</span>
+								<div class="all-btn__arrow">
+									<svg  viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543" stroke="#840D06" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer footer-full" >
 				<div class="container">
