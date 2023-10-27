@@ -8,6 +8,13 @@
     border-radius: 0px 6rem;
     background:  #DEDAD6;
     margin-top: 5rem;
+
+    &.sticky {
+        position: fixed;
+        top: 0rem;
+        right: 16.5rem;
+    }
+
     .all-btn {
         &__arrow {
             margin-left: 1.7rem;

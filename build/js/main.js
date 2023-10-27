@@ -123,6 +123,21 @@ if (document.querySelector("#invitationModal")) {
    });
 }
 
+// Закреп блока "Ваш заказ" в корзине при скроле
+
+if (document.querySelector(".basket-aside") && window.screen.width >= 768) {
+   const orderBlock = document.querySelector(".basket-aside");
+   let orderBlockOffset = offset(orderBlock).top;
+
+   window.addEventListener("scroll", () => {
+      if (window.scrollY >= orderBlockOffset) {
+         orderBlock.classList.add("sticky");
+      } else {
+         orderBlock.classList.remove("sticky");
+      }
+   });
+}
+
 ymaps.ready(function () {
    var myMap = new ymaps.Map(
          "map",

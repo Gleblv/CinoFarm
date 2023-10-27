@@ -38,10 +38,12 @@
         font-style: normal;
         font-weight: 500;
         line-height: 130%; 
+        margin-bottom: 2rem;
+        min-height: 15.6rem;
     }
 
     &__author {
-        margin-top: auto;
+        // margin-top: auto;
         display: flex;
         flex-direction: column;
         max-width: 24.7rem;
@@ -70,7 +72,7 @@
 
 
     &__publishing {
-        margin-top: auto;
+        // margin-top: auto;
         display: flex;
         flex-direction: column;
         max-width: 24.7rem;
@@ -98,6 +100,7 @@
     }
 
     &__inner {
+        margin-top: auto;
         display: flex;
         align-items:center;
     }
@@ -121,6 +124,7 @@
             line-height: normal;
             right: 0;
             bottom: 1rem;
+            color: #840D06;
         }
     }
 

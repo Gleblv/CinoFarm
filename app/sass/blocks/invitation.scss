@@ -72,9 +72,9 @@
 
     &__form {
         .checkbox .checkmark:after {
-            width: 3rem;
-            height: 3rem;
-            transform: translate(0, -50%);
+            width: 2.5rem;
+            height: 2.5rem;
+            transform: translate(-0.2rem, -50%);
         }
     }
 

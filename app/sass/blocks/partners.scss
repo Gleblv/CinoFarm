@@ -3,7 +3,6 @@
     background-image: url(../img/partners/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -87rem 0rem;
   
     .container {
         position: relative;
@@ -62,8 +61,8 @@
         
     }
     svg {
-        width: 1.6rem;
-        height: 3rem;
+        width: 3rem;
+        height: 1.6rem;
        
       
     }
@@ -85,8 +84,8 @@
             
         }
         svg {
-            width: 1.6rem;
-            height: 3rem;
+            width: 3rem;
+            height: 1.6rem;
            
           
         }
@@ -98,5 +97,12 @@
 
     &__pagination {
         top: 50%;
+    }
+
+    &__swiper {
+        overflow-x: clip;
+        overflow-y: visible;
+        margin: 0 -2rem;
+        padding: 0 2rem;
     }
 }

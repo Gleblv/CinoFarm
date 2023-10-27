@@ -9,49 +9,56 @@
     
     &__smooth {
         display: inline-block;
+        margin-right: 1.6rem;
      
         input {
             background: none;
             border: none;
-            width: fit-content;
             display: flex;
             justify-content: center;
             text-align: center;
             font-size: 2.2rem;
             font-style: normal;
             font-weight: 500;
-        }
-      
-    }
-
-    .number {
-        display: flex;
-        .minus {
-            width: 6.6rem;
-            height: 6.6rem;
-            background: #FFF;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            font-size: 2.2rem;
-            font-weight: 500;
-            cursor: pointer;
-           
+            width: 0.8rem;
+            margin-right: 2.4rem;
         }
 
-        .plus {
-            width: 6.6rem;
-            height: 6.6rem;
-            background: #FFF;
-            border-radius: 50%;
+        .number {
             display: flex;
-            justify-content: center;
-            align-items:center;
-            font-size: 2.2rem;
-            font-weight: 500;
-            cursor: pointer;
-            
+
+            .minus {
+                width: 6.6rem;
+                height: 6.6rem;
+                background: #FFF;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                margin-right: 2.4rem;
+                cursor: pointer;
+
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+    
+            .plus {
+                width: 6.6rem;
+                height: 6.6rem;
+                background: #FFF;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                cursor: pointer;
+
+                svg {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
         }
     }
 
@@ -160,7 +167,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            color:  #242424;
+            color:  #840D06;
             right: 0;
             bottom: 1rem;
         }

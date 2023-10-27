@@ -82,6 +82,61 @@
         display: flex;
     }
 
+    &__smooth {
+        display: inline-block;
+        margin-right: 1.6rem;
+     
+        input {
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 2.2rem;
+            font-style: normal;
+            font-weight: 500;
+            width: 0.8rem;
+            margin-right: 2.4rem;
+        }
+
+        .number {
+            display: flex;
+
+            .minus {
+                width: 6.6rem;
+                height: 6.6rem;
+                background: #FFF;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                margin-right: 2.4rem;
+                cursor: pointer;
+
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+    
+            .plus {
+                width: 6.6rem;
+                height: 6.6rem;
+                background: #FFF;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                cursor: pointer;
+
+                svg {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+
     &__price {
         position: relative;
         color:  #840D06;
@@ -107,11 +162,9 @@
         }
     }
 
-    .like {
-        margin-right: 1.6rem;
-    }
-
     .all-btn {
+        margin-right: 1.6rem;
+
         span {
             margin-right: 0;
         }
@@ -157,7 +210,7 @@
         padding-top: 6rem;
         strong {
             display: block;
-            font-size: 2.2rem;
+            font-size: 3rem;
             font-style: normal;
             font-weight: 500;
             line-height: 130%; 

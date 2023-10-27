@@ -21,39 +21,60 @@
 		align-items:center;
 		background: rgba(249, 249, 248, 1);
 		cursor: pointer;
+
+		&:hover {
+			svg {
+				stroke: #840D06;
+
+				path {
+					stroke: #840D06;
+				}
+			}
+		}
+
 		svg {
 			width: 1.6rem;
-			height: 3vh;
+			height: 3rem;
 		}
 	}
 
-	&__next {
-		&:hover {
-			> svg {
-			  transform: translateX(0.4rem);
-			}
-		  }
-		svg {
-			transition: transform .5s ease;
-		}
-	}
+	// &__next {
+	// 	&:hover {
+	// 		> svg {
+	// 			path {
+	// 				stroke: #840D06;
+	// 			}
+	// 		}
+	// 	  }
+	// 	svg {
+	// 		transition: color .5s ease;
+	// 	}
+	// }
 
-	&__prev {
-		&:hover {
-			> svg {
-			  transform: translateX(-0.4rem);
-			}
-		  }
-		svg {
-			transition: transform .5s ease;
-		}
-	}
+	// &__prev {
+	// 	&:hover {
+	// 		> svg {
+	// 			path {
+	// 				stroke: #840D06;
+	// 			}
+	// 		}
+	// 	  }
+	// 	svg {
+	// 		transition: transform .5s ease;
+	// 	}
+	// }
 }
 
 .main-home {
 	background-image: url(../img/focal/bg1.png);
     background-size: contain;
     background-repeat: no-repeat;
+
+	& + .footer {
+		.footer__top {
+			border-top: 0.1rem solid #6D6D6D;
+		}
+	}
 }
 
 .title {
@@ -321,9 +342,11 @@
 			line-height: 110%;
 			margin-right: 3.2rem;
 			transition: 0.2s;
-			&:hover {
-				transition: 0.2s;
-				color:#840D06;
+			color: #6D6D6D;
+
+			&:active {
+				color: #840D06;
+				text-decoration: underline;
 			}
 		}
 
