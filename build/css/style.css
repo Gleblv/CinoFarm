@@ -1188,6 +1188,10 @@ input[type="number"] {
       font-weight: 400;
       line-height: 125%;
       margin-right: 3.2rem; }
+      .header__lists-right li:hover {
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        color: #840D06; }
   .header__wrapper-block {
     display: -webkit-box;
     display: -ms-flexbox;
