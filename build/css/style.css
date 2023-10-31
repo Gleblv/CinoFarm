@@ -990,9 +990,38 @@ input[type="number"] {
 .fp-watermark {
   display: none; }
 
+.button {
+  padding: 1.4rem 4rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 110%;
+  /* 2.42rem */
+  border-radius: 6rem 0rem;
+  background-color: #DEDAD6;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer; }
+  .button.red {
+    background-color: #AC1E20; }
+  @media (max-width: 48em) {
+    .button {
+      padding: 2rem 6.4rem;
+      font-size: 3.6rem;
+      font-weight: 500;
+      line-height: 130%;
+      /* 4.68rem */
+      border-radius: 20rem 0rem; } }
+
 .header {
   padding-top: 2.4rem;
-  margin-bottom: 5.4rem;
   position: absolute;
   width: 100%;
   z-index: 5; }
@@ -3877,6 +3906,126 @@ input[type="number"] {
     line-height: 130%;
     /* 3.38rem */
     margin-bottom: 4rem; }
+
+.buy-info {
+  padding-top: 20.4rem;
+  margin-bottom: 20rem;
+  background-image: url(../../img/where-to-buy/buy-info-background.png);
+  background-size: 192.1rem 111.1rem;
+  background-position: 0 0; }
+  .buy-info__title {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 110%;
+    /* 6.6rem */
+    margin-bottom: 6rem; }
+  .buy-info__subtitle {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 130%;
+    /* 2.86rem */
+    margin-bottom: 3.2rem;
+    width: 63.3rem; }
+  .buy-info__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 0.8rem; }
+    .buy-info__list-title {
+      color: #6D6D6D;
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 130%;
+      /* 2.86rem */ }
+    .buy-info__list-item {
+      font-size: 2.2rem;
+      line-height: 130%;
+      /* 2.86rem */
+      padding-left: 3rem;
+      background-image: url(../../img/list-icon.svg);
+      background-position: left center;
+      background-size: 1.4rem 1.4rem;
+      background-repeat: no-repeat; }
+
+.buy-map__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  margin-bottom: 6rem; }
+
+.buy-map__tab-btn.active {
+  color: #fff;
+  background: #840D06; }
+
+.buy-map__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.buy-map__contacts {
+  width: 50rem; }
+  .buy-map__contacts-title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 130%;
+    /* 2.86rem */
+    margin-bottom: 3.2rem; }
+  .buy-map__contacts-subtitle {
+    color: #6D6D6D;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 130%;
+    /* 2.86rem */
+    margin-bottom: 0.8rem; }
+  .buy-map__contacts-text {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 130%;
+    /* 2.86rem */
+    margin-bottom: 3.2rem; }
+    .buy-map__contacts-text.phone {
+      display: block;
+      color: #840D06; }
+      .buy-map__contacts-text.phone:not(:nth-child(8)) {
+        margin-bottom: 0; }
+  .buy-map__contacts-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 0.8rem;
+       -moz-column-gap: 0.8rem;
+            column-gap: 0.8rem; }
+    .buy-map__contacts-email .buy-map__contacts-text {
+      color: #840D06; }
+
+.buy-map__map {
+  width: 103rem;
+  height: 61.7rem;
+  padding: 1.2rem 1.4rem;
+  border-radius: 0rem 6rem;
+  background: #DEDAD6;
+  overflow: hidden; }
+  .buy-map__map-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 0rem 6rem;
+    overflow: inherit; }
 
 .footer__top {
   width: 156rem;

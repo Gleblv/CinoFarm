@@ -1,0 +1,45 @@
+.buy-info {
+    padding-top: 20.4rem;
+    margin-bottom: 20rem;
+    background-image: url(../../img/where-to-buy/buy-info-background.png);
+    background-size: 192.1rem 111.1rem;
+    background-position: 0 0;
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 110%; /* 6.6rem */
+        margin-bottom: 6rem;
+    }
+
+    &__subtitle {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 130%; /* 2.86rem */
+        margin-bottom: 3.2rem;
+        width: 63.3rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.8rem;
+
+        &-title {
+            color: #6D6D6D;
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 130%; /* 2.86rem */
+        }
+
+        &-item {
+            font-size: 2.2rem;
+            line-height: 130%; /* 2.86rem */
+            padding-left: 3rem;
+            background-image: url(../../img/list-icon.svg);
+            background-position: left center;
+            background-size: 1.4rem 1.4rem;
+            background-repeat: no-repeat;
+        }
+    }
+}

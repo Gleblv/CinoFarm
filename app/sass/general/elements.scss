@@ -573,3 +573,29 @@
 .fp-watermark {
 	display: none;
 }
+
+.button {
+	padding: 1.4rem 4rem;
+	font-size: 2.2rem;
+	font-weight: 500;
+	line-height: 110%; /* 2.42rem */
+	border-radius: 6rem 0rem;
+	background-color: #DEDAD6;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	cursor: pointer;
+
+	&.red {
+		background-color: #AC1E20;
+	}
+
+	@media (max-width: 48em) {
+		padding: 2rem 6.4rem;
+		font-size: 3.6rem;
+		font-weight: 500;
+		line-height: 130%; /* 4.68rem */
+		border-radius: 20rem 0rem;
+	}
+}

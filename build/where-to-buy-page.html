@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+      <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Главная</title>
+   </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-	<link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
-	<link href="https://myfonts.ru/myfonts?fonts=proun" rel="stylesheet" type="text/css" />
-
-	<link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Главная</title>
-</head>
-
-<body>
-	<header class="header">
+   <body>
+      <header class="header">
    <div class="header__container">
       <div class="header__inner">
          <div class="header__inner-block">
@@ -142,22 +139,60 @@
    </div>
 </header>
 
-	
-	
-	<main>
-        <section class="catalog">
-            <div class="container">
-                <div class="title">
-                    <h2>Каталог</h2>
-                </div>
-                <div class="catalog__wrapper">
-
-                </div>
+      <main>
+         <section class="buy-info">
+            <div class="buy-info__container container">
+               <nav class="category">
+                  <ul class="category__lists">
+                     <li><a href="#">Главная</a></li>
+                     <li><a href="#">Где купить</a></li>
+                  </ul>
+               </nav>
+               <div class="buy-info__title">Где купить</div>
+               <div class="buy-info__subtitle">
+                  Специализированный магазин препаратов традиционной китайской медицины
+               </div>
+               <ul class="buy-info__list">
+                  <div class="buy-info__list-title">В нашем магазине можно приобрести:</div>
+                  <li class="buy-info__list-item">Китайские препараты</li>
+                  <li class="buy-info__list-item">Элитный чай</li>
+                  <li class="buy-info__list-item">Инструменты для иглотерапии и Су Джок терапии</li>
+                  <li class="buy-info__list-item">Акупунктурные иглы</li>
+               </ul>
             </div>
-        </section>
-		
-	</main>
-	<footer class="footer">
+         </section>
+         <section class="buy-map">
+            <div class="buy-map__container container">
+               <ul class="buy-map__tabs">
+                  <li class="buy-map__tab-btn button">Москва</li>
+                  <li class="buy-map__tab-btn button">Санкт-Петербург</li>
+                  <li class="buy-map__tab-btn button">Оренбург</li>
+               </ul>
+               <div class="buy-map__main">
+                  <div class="buy-map__contacts">
+                     <div class="buy-map__contacts-title">«СИНОФАРМ СПБ»</div>
+                     <div class="buy-map__contacts-subtitle">Адрес:</div>
+                     <div class="buy-map__contacts-text">
+                        Санкт-Петербург, Набережная Обводного канала, д. 92 (вход с Заозерной улицы)
+                     </div>
+                     <div class="buy-map__contacts-subtitle">Время работы:</div>
+                     <div class="buy-map__contacts-text">с 9:30 до 20:30 ежедневно</div>
+                     <div class="buy-map__contacts-subtitle">Телефон:</div>
+                     <a href="#" class="buy-map__contacts-text phone">+7 (812) 467-39-93,</a>
+                     <a href="#" class="buy-map__contacts-text phone">+7 (921) 870-27-19</a>
+                     <div class="buy-map__contacts-email">
+                        <div class="buy-map__contacts-subtitle">E-mail:</div>
+                        <a href="" class="buy-map__contacts-text">spb@cinofarm.ru</a>
+                     </div>
+                  </div>
+                  <div class="buy-map__map">
+                     <div class="buy-map__map-wrapper" id="buy-map"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
    <div class="container">
       <div class="footer__top">
          <a href="#" class="footer__logo">
@@ -296,7 +331,5 @@
 <script src="./js/Jq-script.js"></script>
 <script src="./js/map.js"></script>
 
-	
-</body>
-
+   </body>
 </html>
