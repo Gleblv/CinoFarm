@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+      <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Главная</title>
+   </head>
+
+   <body>
+      @@include('./template/header.html')
+      <main>
+         <section class="page-404">
+            <div class="page-404__container container">
+               <div class="page-404__box">
+                  <div class="page-404__title">404</div>
+                  <div class="page-404__subtitle">Страница не найдена</div>
+                  <div class="page-404__text">
+                     Кажется что-то пошло не так! Страница, которую вы запрашиваете, не существует. Возможно
+                     она была удалена, или был введен неверный адрес в адресной строке.
+                  </div>
+                  <button class="all-btn">
+                     <span>На главную</span>
+                     <div class="all-btn__arrow">
+                        <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543"
+                              stroke="#840D06"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           />
+                        </svg>
+                     </div>
+                  </button>
+               </div>
+            </div>
+            <picture class="page-404__background">
+               <source media="(min-width: 48em)" srcset="./img/page-404/background.png" />
+               <source media="(max-width: 48em)" srcset="./img/page-404/background-mobile.png" />
+               <img src="./img/page-404/background.png" alt="" />
+            </picture>
+         </section>
+      </main>
+      @@include('./template/footer.html')
+   </body>
+</html>
