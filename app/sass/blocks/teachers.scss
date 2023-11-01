@@ -1,0 +1,93 @@
+.teachers {
+    padding-top: 22.4rem;
+    margin-bottom: 20rem;
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 110%; /* 6.6rem */
+        margin-bottom: 6rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    &__item {
+        min-height: 42.3rem;
+        padding: 3.2rem 0;
+        border-top: 1px solid rgba(109, 109, 109, 0.50);
+        display: flex;
+        justify-content: space-between;
+
+        &:last-child {
+            border-bottom: 1px solid rgba(109, 109, 109, 0.50);
+        }
+
+        &-img {
+            width: 50.2rem;
+            height: 35.9rem;
+            border-radius: 0rem 6rem;
+            overflow: hidden;
+
+            img {
+                width: 50.2rem;
+                height: 35.9rem;
+            }
+        }
+
+        &-box {
+            width: 96.8rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-name {
+            color: #840D06;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 130%; /* 3.9rem */
+            margin-bottom: 0.8rem;
+            width: 41rem;
+        }
+
+        &-position {
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 130%; /* 3.9rem */
+            width: 70.2rem;
+        }
+
+        &-row {
+            margin-top: auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        &-description {
+            font-size: 2.2rem;
+            line-height: 130%; /* 2.86rem */
+            width: 70.2rem;
+        }
+
+        &-btn {
+            padding: 0.8rem 3.5rem;
+            border-radius: 5rem;
+            background: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 110%; /* 2.2rem */
+            cursor: pointer;
+        }
+    }
+
+    .all-btn {
+        margin: 0 auto;
+    }
+}
