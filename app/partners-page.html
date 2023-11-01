@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+      <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Главная</title>
+   </head>
+
+   <body>
+      @@include('./template/header.html')
+      <main>
+         <section class="partners-page">
+            <div class="partners-page__container container">
+               <nav class="category">
+                  <ul class="category__lists">
+                     <li><a href="#">Главная</a></li>
+                     <li><a href="#">Партнёры</a></li>
+                  </ul>
+               </nav>
+               <div class="partners-page__main">
+                  <div class="partners-page__main-left">
+                     <div class="partners-page__main-title">
+                        Профессиональная ассоциация рефлекотерапевтов
+                     </div>
+                     <div class="partners-page__main-text">
+                        Китайская медицина более чем четырехтысячелетней историей доказала свою эффективность
+                        и давно стала мировым достоянием. При всех культурных и философских различиях,
+                        Китайская и Западная медицины прекрасно дополняют друг друга.
+                     </div>
+                     <div class="partners-page__main-contact">
+                        <div>Адрес:</div>
+                        <div>
+                           Санкт-Петербург, Набережная Обводного канала, д. 92 (вход с Заозерной улицы)
+                        </div>
+                     </div>
+                     <div class="partners-page__main-contact mobile">
+                        <span>Адрес:</span>
+                        Санкт-Петербург, Набережная Обводного канала, д. 92 (вход с Заозерной улицы)
+                     </div>
+                     <div class="partners-page__main-contact">
+                        <div>Телефон:</div>
+                        <a href="#">+7 (812) 467-39-93</a>
+                        <a href="#">+7 (921) 870-27-19</a>
+                     </div>
+                     <div class="partners-page__main-contact mobile">
+                        <span>Телефон:</span>
+                        <a href="#">+7 (812) 467-39-93</a>
+                        <a href="#">+7 (921) 870-27-19</a>
+                     </div>
+                     <button class="all-btn">
+                        <span>Перейти на сайт</span>
+                        <div class="all-btn__arrow">
+                           <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543"
+                                 stroke="#840D06"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                              />
+                           </svg>
+                        </div>
+                     </button>
+                  </div>
+                  <picture class="partners-page__main-right">
+                     <source media="(min-width: 48em)" srcset="./img/partners-page/partner.png" />
+                     <source media="(min-width: 48em)" srcset="./img/partners-page/partner.png" />
+                     <img src="./img/partners-page/partner.png" alt="partner" />
+                  </picture>
+               </div>
+            </div>
+         </section>
+         @@include('./template/invitation.html')
+      </main>
+      @@include('./template/footer.html')
+   </body>
+</html>
