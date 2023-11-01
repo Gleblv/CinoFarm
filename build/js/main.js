@@ -119,6 +119,26 @@ const contactsSlider = new Swiper(".contacts-slider__swiper", {
    },
 });
 
+const teacherSlider = new Swiper(".teacher__swiper", {
+   speed: 500,
+   slidesPerView: 1,
+   slidesPerGroup: 1,
+   spaceBetween: 20,
+
+   breakpoints: {
+      768: {
+         slidesPerView: 2,
+         slidesPerGroup: 2,
+         spaceBetween: 30,
+      },
+   },
+
+   navigation: {
+      prevEl: ".teacher__prev",
+      nextEl: ".teacher__next",
+   },
+});
+
 if (document.querySelector("#invitationModal")) {
    const invitationModal = document.querySelector("#invitationModal"),
       openBtn = document.querySelector("#openInvitationModal"),
