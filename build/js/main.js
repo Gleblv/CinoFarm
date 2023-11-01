@@ -107,6 +107,18 @@ const projectsSwiper = new Swiper(".projects__swiper", {
    },
 });
 
+const contactsSlider = new Swiper(".contacts-slider__swiper", {
+   speed: 500,
+   slidesPerView: 2,
+   slidesPerGroup: 2,
+   spaceBetween: 32,
+
+   navigation: {
+      prevEl: ".contacts__prev",
+      nextEl: ".contacts__next",
+   },
+});
+
 if (document.querySelector("#invitationModal")) {
    const invitationModal = document.querySelector("#invitationModal"),
       openBtn = document.querySelector("#openInvitationModal"),
