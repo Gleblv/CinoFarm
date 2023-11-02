@@ -185,3 +185,30 @@ if (document.querySelector(".buy-map")) {
       }
    });
 }
+
+// Переключение табов на странице товара
+
+if (document.querySelector(".item-description")) {
+   const tabsContainer = document.querySelector(".item-description__tabs"),
+      tabs = document.querySelectorAll(".item-description__tab"),
+      blocks = document.querySelectorAll(".item-description__block");
+
+   tabsContainer.addEventListener("click", (e) => {
+      if (e.target.classList.contains("item-description__tab")) {
+         let activeTab = e.target;
+         let activeTabAttr = activeTab.dataset.blockName;
+
+         tabs.forEach((tab) => {
+            tab.classList.remove("active");
+         });
+
+         activeTab.classList.add("active");
+
+         blocks.forEach((block) => {
+            block.classList.contains(activeTabAttr)
+               ? block.classList.add("active")
+               : block.classList.remove("active");
+         });
+      }
+   });
+}
