@@ -212,3 +212,30 @@ if (document.querySelector(".item-description")) {
       }
    });
 }
+
+// Переключение табов на странице ингредиента
+
+if (document.querySelector(".ingredient-descr")) {
+   const tabsContainer = document.querySelector(".ingredient-descr__tabs"),
+      tabs = document.querySelectorAll(".ingredient-descr__tab"),
+      blocks = document.querySelectorAll(".ingredient-descr__block");
+
+   tabsContainer.addEventListener("click", (e) => {
+      if (e.target.classList.contains("ingredient-descr__tab")) {
+         let activeTab = e.target;
+         let activeTabAttr = activeTab.dataset.blockName;
+
+         tabs.forEach((tab) => {
+            tab.classList.remove("active");
+         });
+
+         activeTab.classList.add("active");
+
+         blocks.forEach((block) => {
+            block.classList.contains(activeTabAttr)
+               ? block.classList.add("active")
+               : block.classList.remove("active");
+         });
+      }
+   });
+}
