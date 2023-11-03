@@ -139,6 +139,8 @@ const teacherSlider = new Swiper(".teacher__swiper", {
    },
 });
 
+// Модалка на главной
+
 if (document.querySelector("#invitationModal")) {
    const invitationModal = document.querySelector("#invitationModal"),
       openBtn = document.querySelector("#openInvitationModal"),
@@ -152,6 +154,24 @@ if (document.querySelector("#invitationModal")) {
 
    closeBtn.addEventListener("click", () => {
       invitationModal.classList.remove("active");
+   });
+}
+
+// Модалка на странице оформления заказа
+
+if (document.querySelector("#orderModal")) {
+   const orderModal = document.querySelector("#orderModal"),
+      openBtn = document.querySelector("#openOrderModal"),
+      closeBtn = orderModal.querySelector(".modal-order__close");
+
+   openBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      orderModal.classList.add("active");
+   });
+
+   closeBtn.addEventListener("click", () => {
+      orderModal.classList.remove("active");
    });
 }
 
@@ -240,7 +260,9 @@ if (document.querySelector(".ingredient-descr")) {
    });
 }
 
-if (document.querySelector(".basket-aside")) {
+// Закрепление чека при скролле на мобилке
+
+if (document.querySelector(".basket-aside") && window.screen.width < 768) {
    const check = document.querySelector(".basket-aside");
    let checkOffsetTop = offset(check).top;
 
@@ -250,5 +272,28 @@ if (document.querySelector(".basket-aside")) {
       let offsetTop = window.scrollY + document.documentElement.clientHeight;
 
       offsetTop < checkOffsetTop ? check.classList.add("popup") : check.classList.remove("popup");
+   });
+}
+
+// Перключение контента на странице оформления заказа
+
+if (document.querySelector(".order")) {
+   const inputsType = document.querySelectorAll(".order__delivery-method");
+
+   const deliveryTypeTitle = document.querySelector(".order__addres-title"),
+      deliveryInputType = document.querySelector(".order__addres-addres label");
+
+   inputsType.forEach((input) => {
+      input.addEventListener("click", (e) => {
+         let value = e.target.value;
+
+         if (value == "courier-delivery") {
+            deliveryTypeTitle.textContent = "Адрес доставки";
+            deliveryInputType.textContent = "Адрес";
+         } else {
+            deliveryTypeTitle.textContent = "Адрес пункта выдачи";
+            deliveryInputType.textContent = "Пункт выдачи";
+         }
+      });
    });
 }

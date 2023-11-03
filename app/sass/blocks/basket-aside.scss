@@ -93,6 +93,10 @@
         }
     }
 
+    &__popup {
+        display: none;
+    }
+
     @media (max-width: 48em) {
         position: relative;
         margin-top: 16rem;

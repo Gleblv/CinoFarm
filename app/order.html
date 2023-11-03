@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+      <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Главная</title>
+   </head>
+
+   <body>
+      @@include('./template/header.html')
+      <main>
+         <section class="order">
+            <div class="order__container container">
+               <div class="order__link">Вернуться в корзину</div>
+               <div class="order__title">Оформление заказа</div>
+               <div class="order__main">
+                  <div class="order__left">
+                     <form action="#" class="order__data">
+                        <div class="order__data-title">Ваши данные</div>
+                        <div class="order__data-input">
+                           <label for="name">Имя</label>
+                           <input type="text" id="name" />
+                           <div class="order__data-invalid">Неверный формат</div>
+                        </div>
+                        <div class="order__data-input invalid">
+                           <label for="phone">Телефон</label>
+                           <input type="text" id="phone" />
+                           <div class="order__data-invalid">Неверный формат</div>
+                        </div>
+                        <div class="order__data-input">
+                           <label for="email">E-mail</label>
+                           <input type="text" id="email" />
+                           <div class="order__data-invalid">Неверный формат</div>
+                        </div>
+                     </form>
+                     <div class="order__delivery">
+                        <div class="order__delivery-title">Способ доставки</div>
+                        <div class="order__delivery-box">
+                           <div class="order__delivery-method">
+                              <label for="self-delivery">
+                                 <input
+                                    type="radio"
+                                    id="self-delivery"
+                                    name="delivery-type"
+                                    value="self-delivery"
+                                 />
+                                 <span>Самовывоз</span>
+                              </label>
+                           </div>
+                           <div class="order__delivery-method">
+                              <label for="courier-delivery">
+                                 <input
+                                    type="radio"
+                                    id="courier-delivery"
+                                    name="delivery-type"
+                                    value="courier-delivery"
+                                 />
+                                 <span>Курьером</span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="order__text">
+                        Курьерская доставка осуществляется по России. Возможность доставки, точные сроки и
+                        доступные интервалы зависят от времени подготовки товаров Продавцом и указанного
+                        адреса получения заказа. Также вы можете получить товары самовывозом в ближайшем
+                        магазине в день оформления заказа.
+                     </div>
+                     <div class="order__addres">
+                        <div class="order__addres-title">Адрес доставки</div>
+                        <div class="order__addres-city">
+                           <label for="addres-city">Город</label>
+                           <input type="text" id="addres-city" />
+                           <div class="arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="16"
+                                 viewBox="0 0 16 16"
+                                 fill="none"
+                              >
+                                 <path d="M8 12L1.93782 6L14.0622 6L8 12Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="order__addres-addres">
+                           <label for="addres-addres">Адрес</label>
+                           <input type="text" id="addres-addres" />
+                        </div>
+                     </div>
+                     <div class="order__map">
+                        <div class="order__map-wrapper" id="myMap"></div>
+                     </div>
+                     <div class="order__payment">
+                        <div class="order__payment-title">Способ оплаты</div>
+                        <div class="order__payment-box">
+                           <div class="order__payment-method">
+                              <label for="card-payment">
+                                 <input type="radio" id="card-payment" name="payment" />
+                                 <span>Картой</span>
+                              </label>
+                           </div>
+                           <div class="order__payment-method">
+                              <label for="cash-payment">
+                                 <input type="radio" id="cash-payment" name="payment" />
+                                 <span>Наличными</span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="order__right">
+                     <div class="order__items">
+                        <div class="order__items-title">Товары</div>
+                        <ul class="order__items-list">
+                           <li class="order__item">
+                              <div class="order__item-img">
+                                 <img src="./img/order/item.png" alt="" />
+                              </div>
+                              <div class="order__item-descr">
+                                 <div class="order__item-name">
+                                    Формула Пяти Элементов 0242 Гэ Цзе Дин Чуань Цзяо На
+                                 </div>
+                                 <div class="order__item-count">Количество: 1</div>
+                              </div>
+                              <div class="order__item-price">750 ₽</div>
+                              <div class="order__item-delete">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="21"
+                                    height="21"
+                                    viewBox="0 0 21 21"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M1 1L10.5 10.5M10.5 10.5L1 20M10.5 10.5L20 1M10.5 10.5L20 20"
+                                       stroke="#6D6D6D"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                           </li>
+                           <li class="order__item">
+                              <div class="order__item-img">
+                                 <img src="./img/order/item.png" alt="" />
+                              </div>
+                              <div class="order__item-descr">
+                                 <div class="order__item-name">
+                                    Формула Пяти Элементов 0242 Гэ Цзе Дин Чуань Цзяо На
+                                 </div>
+                                 <div class="order__item-count">Количество: 1</div>
+                              </div>
+                              <div class="order__item-price">750 ₽</div>
+                              <div class="order__item-delete">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="21"
+                                    height="21"
+                                    viewBox="0 0 21 21"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M1 1L10.5 10.5M10.5 10.5L1 20M10.5 10.5L20 1M10.5 10.5L20 20"
+                                       stroke="#6D6D6D"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                           </li>
+                           <li class="order__item">
+                              <div class="order__item-img">
+                                 <img src="./img/order/item.png" alt="" />
+                              </div>
+                              <div class="order__item-descr">
+                                 <div class="order__item-name">
+                                    Формула Пяти Элементов 0242 Гэ Цзе Дин Чуань Цзяо На
+                                 </div>
+                                 <div class="order__item-count">Количество: 1</div>
+                              </div>
+                              <div class="order__item-price">750 ₽</div>
+                              <div class="order__item-delete">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="21"
+                                    height="21"
+                                    viewBox="0 0 21 21"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M1 1L10.5 10.5M10.5 10.5L1 20M10.5 10.5L20 1M10.5 10.5L20 20"
+                                       stroke="#6D6D6D"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <aside class="basket-aside">
+                        <div class="basket-aside__title">Ваш заказ</div>
+                        <div class="basket-aside__info">
+                           <div class="basket-aside__title-m">Товары</div>
+                           <div class="basket-aside__price">2250</div>
+                        </div>
+                        <div class="basket-aside__info">
+                           <div class="basket-aside__title-m">Доставка</div>
+                           <div class="basket-aside__price">250</div>
+                        </div>
+                        <div class="basket-aside__result">
+                           <div class="basket-aside__result-title">Итого</div>
+                           <div class="basket-aside__result-price">2500</div>
+                        </div>
+                        <button class="all-btn" id="openOrderModal">
+                           <span> Оплатить</span>
+                           <div class="all-btn__arrow">
+                              <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543"
+                                    stroke="#840D06"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                 />
+                              </svg>
+                           </div>
+                        </button>
+                        <div class="basket-aside__popup">
+                           <div class="basket-aside__popup-price">2500 <span>₽</span></div>
+                           <button class="all-btn">
+                              <span>Оплатить</span>
+                              <div class="all-btn__arrow">
+                                 <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543"
+                                       stroke="#840D06"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                           </button>
+                        </div>
+                     </aside>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="modal-order modal" id="orderModal">
+            <div class="modal-order__content">
+               <div class="modal-order__close">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="21"
+                     height="21"
+                     viewBox="0 0 21 21"
+                     fill="none"
+                  >
+                     <path
+                        d="M1 1L10.5 10.5M10.5 10.5L1 20M10.5 10.5L20 1M10.5 10.5L20 20"
+                        stroke="#1A1A1A"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     />
+                  </svg>
+               </div>
+               <div class="modal-order__body">
+                  <div class="modal-order__title">Ваш заказ успешно оформлен!</div>
+                  <div class="modal-order__subtitle">
+                     Благодарим вас за покупку, в ближайшее время с вами свяжется наш менеджер для уточнения
+                     деталей.
+                  </div>
+                  <a href="./index.html">
+                     <button class="all-btn">
+                        <span>В личный кабинет</span>
+                        <div class="all-btn__arrow">
+                           <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543"
+                                 stroke="#840D06"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                              />
+                           </svg>
+                        </div>
+                     </button>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include('./template/footer.html')
+   </body>
+</html>

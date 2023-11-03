@@ -1,9 +1,9 @@
-async function buyMapInit() {
+async function myMap() {
    await ymaps3.ready;
 
    const { YMap, YMapDefaultSchemeLayer } = ymaps3;
 
-   const map = new YMap(document.getElementById("buy-map"), {
+   const map = new YMap(document.getElementById("myMap"), {
       location: {
          center: [37.588144, 55.733842],
          zoom: 10,
@@ -13,24 +13,7 @@ async function buyMapInit() {
    map.addChild(new YMapDefaultSchemeLayer());
 }
 
-buyMapInit();
-
-async function contactsMapInit() {
-   await ymaps3.ready;
-
-   const { YMap, YMapDefaultSchemeLayer } = ymaps3;
-
-   const map = new YMap(document.getElementById("contactsMap"), {
-      location: {
-         center: [37.588144, 55.733842],
-         zoom: 10,
-      },
-   });
-
-   map.addChild(new YMapDefaultSchemeLayer());
-}
-
-contactsMapInit();
+myMap();
 
 // ymaps.ready(function () {
 //     var myMap = new ymaps.Map(
