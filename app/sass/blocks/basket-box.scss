@@ -179,11 +179,123 @@
         }
     }
 
-   
+    @media (max-width: 48em) {
+        width: auto;
+        padding-bottom: 8rem;
+        padding-top: 8rem;
 
+        &__block-image {
+            width: 20rem;
+            height: 26.2rem;
+            min-height: 0;
+            min-width: 0;
+            border-radius: 0rem 6rem;
+            margin-right: 4rem;
+            padding: 1.2rem;
+        }
+
+        &__inner {
+            padding: 0;
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 3.6rem;
+            font-weight: 500;
+            line-height: 130%; /* 4.68rem */
+            margin-bottom: 3.2rem;
+        }
+
+        &__release,
+        &__manufacturer {
+            margin-bottom: 0.8rem;
+
+            strong {
+                color: #6D6D6D;
+                font-size: 3.2rem;
+                font-weight: 400;
+                line-height: 130%; /* 4.16rem */
+            }
+
+            span {
+                font-size: 3.2rem;
+                font-weight: 400;
+                line-height: 130%; /* 4.16rem */
+            }
+        }
+
+        &__manufacturer {
+            margin-bottom: 4.8rem;
+        }
+
+        &__wrap {
+            margin-left: -24rem;
+            justify-content: space-between;
+            margin-bottom: 4.8rem;
+
+            .basket-box__smooth {
+                margin-right: 0;
     
+                .number {
+                    column-gap: 4.8rem;
+                }
+    
+                .minus,
+                .plus {
+                    width: 8.8rem;
+                    height: 8.8rem;
+                    margin-right: 0;
+                    
+                    svg {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+    
+                .text {
+                    font-size: 3.6rem;
+                    line-height: 130%; /* 4.68rem */
+                    margin-right: 0;
+                }
+            }
 
-   
+            .basket-box__price {
+                font-size: 6.4rem;
+                font-weight: 500;
+                line-height: normal;
+                padding-right: 2rem;
+
+                &::before {
+                    font-family: 'Inter';
+                    font-size: 3.2rem;
+                    line-height: 130%;
+                }
+            }
+    
+            .all-btn {
+                svg {
+                    width: 3.6rem;
+                    height: 3.6rem;
+                }
+            }
+        }
+
+        &__block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: -24rem;
+            
+            .link {
+                margin: 0;
+                padding: 1.6rem 7rem;
+                border-radius: 10rem;
+                font-size: 3.2rem;
+                font-weight: 500;
+                line-height: 110%; /* 3.52rem */
+            }
+        }
+    }
 }
 
 .basket-box:first-child {

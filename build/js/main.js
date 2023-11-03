@@ -239,3 +239,16 @@ if (document.querySelector(".ingredient-descr")) {
       }
    });
 }
+
+if (document.querySelector(".basket-aside")) {
+   const check = document.querySelector(".basket-aside");
+   let checkOffsetTop = offset(check).top;
+
+   check.classList.add("popup");
+
+   window.addEventListener("scroll", () => {
+      let offsetTop = window.scrollY + document.documentElement.clientHeight;
+
+      offsetTop < checkOffsetTop ? check.classList.add("popup") : check.classList.remove("popup");
+   });
+}

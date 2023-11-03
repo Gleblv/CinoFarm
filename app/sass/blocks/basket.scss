@@ -15,5 +15,19 @@
         justify-content: space-between;
     }
 
+    @media (max-width: 48em) {
+        padding-top: 32.4rem;
+        margin-bottom: 20rem;
 
+        .title {
+            font-size: 7.2rem;
+            font-weight: 500;
+            line-height: 110%; /* 7.92rem */
+            margin-bottom: 8rem;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
 }
