@@ -5072,6 +5072,15 @@ input[type="number"] {
       border-radius: 6rem 0rem;
       overflow: hidden;
       margin-right: 9rem; }
+      @media (min-width: 48em) {
+        .item-info__main-left {
+          width: 63.3rem;
+          height: 52rem;
+          background: #DEDAD6;
+          padding: 1.2rem; }
+          .item-info__main-left img {
+            border-radius: 6rem 0rem;
+            overflow: inherit; } }
     .item-info__main-right {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -5542,6 +5551,13 @@ input[type="number"] {
     border-radius: 0rem 6rem;
     overflow: hidden;
     margin-right: 9rem; }
+    @media (min-width: 48em) {
+      .ingredient-info__left {
+        background: #DEDAD6;
+        padding: 1.2rem; }
+        .ingredient-info__left img {
+          border-radius: 0rem 6rem;
+          overflow: inherit; } }
   .ingredient-info__right {
     padding: 2rem 0;
     display: -webkit-box;

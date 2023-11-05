@@ -13,6 +13,16 @@
             border-radius: 0rem 6rem;
             overflow: hidden;
             margin-right: 9rem;
+
+            @media (min-width: 48em) {
+                background: #DEDAD6;
+                padding: 1.2rem;
+
+                img {
+                    border-radius: 0rem 6rem;
+                    overflow: inherit;
+                }
+            }
         }
 
         &__right {
