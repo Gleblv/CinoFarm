@@ -295,6 +295,25 @@
 		padding-left: 8rem;
 	}
 	
+	@media (max-width: 48em) {
+		margin: 8rem 0;
+
+		&::before {
+			width: 4.5rem;
+			height: 4.5rem;
+			left: 2.9rem;
+			top: 5rem;
+		}
+
+		input {
+			padding: 3rem 11.4rem 3.2rem 9.6rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			font-size: 3.2rem;
+			line-height: 130%; /* 4.16rem */
+			width: 100%;
+		}
+	}
 }
 
 .pagination-page {
@@ -364,6 +383,31 @@
 		  }
 		svg {
 			transition: transform .5s ease;
+		}
+	}
+
+	@media (max-width: 48em) {
+		margin-top: 4rem;
+		column-gap: 4.8rem;
+
+		&__prev,
+		&__next {
+			width: 10.8rem;
+			height: 10.8rem;
+			margin: 0;
+
+			svg {
+				width: 2.3352rem;
+				height: 4.3784rem;
+			}
+		}
+
+		&__numbers {
+			a {
+				font-size: 4.4rem;
+				font-weight: 500;
+				line-height: 110%; /* 4.84rem */
+			}
 		}
 	}
 }
