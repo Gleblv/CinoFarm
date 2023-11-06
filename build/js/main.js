@@ -297,3 +297,62 @@ if (document.querySelector(".order")) {
       });
    });
 }
+
+// Категории
+if (document.querySelector(".categories")) {
+   const categoryList = document.querySelector("#categoriesList");
+
+   categoryList.addEventListener("click", (e) => {
+      let target = e.target;
+
+      if (target.tagName == "LI") {
+         target.classList.toggle("active");
+      }
+   });
+}
+
+// rangeInput
+
+if (document.querySelector(".categories")) {
+   const inputsRange = document.querySelectorAll(".categories__range-inputs input");
+   const inputsPrice = document.querySelectorAll(".categories__range-value input");
+   const progres = document.querySelector(".categories__range-progres");
+   const minGap = 1000;
+
+   inputsPrice.forEach((input) => {
+      input.addEventListener("input", (e) => {
+         let minValue = +inputsPrice[0].value;
+         let maxValue = +inputsPrice[1].value;
+
+         if (maxValue - minValue >= minGap && maxValue <= 10000) {
+            if (e.target.classList.contains("categories__price-input__min")) {
+               inputsPrice[0].value = minValue;
+               progres.style.left = `${(minValue / inputsRange[0].max) * 100}%`;
+            } else {
+               inputsPrice[1].value = maxValue;
+               progres.style.right = `${100 - (maxValue / inputsRange[0].max) * 100}%`;
+            }
+         }
+      });
+   });
+
+   inputsRange.forEach((input) => {
+      input.addEventListener("input", (e) => {
+         let minValue = +inputsRange[0].value;
+         let maxValue = +inputsRange[1].value;
+
+         if (maxValue - minValue < minGap) {
+            if (e.target.classList.contains("categories__range-input__min")) {
+               inputsRange[0].value = maxValue - minGap;
+            } else {
+               inputsRange[1].value = minValue + minGap;
+            }
+         } else {
+            inputsPrice[0].value = minValue;
+            inputsPrice[1].value = maxValue;
+            progres.style.left = `${(minValue / inputsRange[0].max) * 100}%`;
+            progres.style.right = `${100 - (maxValue / inputsRange[0].max) * 100}%`;
+         }
+      });
+   });
+}
