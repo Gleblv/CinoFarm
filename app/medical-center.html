@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+      <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Главная</title>
+   </head>
+
+   <body>
+      @@include('./template/header.html')
+      <main>
+         <section class="med-center">
+            <div class="med-center__container container">
+               <div class="med-center__left">
+                  <div class="med-center__title">Медицинский центр</div>
+                  <div class="med-center__text">
+                     Центр традиционной медицины «Синофарм» ориентирован на оказание медицинской помощи
+                     пациентам, в первую очередь, с использованием нелекарственных методов лечения и средств
+                     традиционной китайской медицины (ТКМ).
+                  </div>
+                  <div class="med-center__adress">
+                     <div class="med-center__adress-title">Адрес</div>
+                     <div class="med-center__adress-text">г. Москва,ул. Ленинская Слобода,д. 19, стр. 6</div>
+                  </div>
+                  <div class="med-center__box">
+                     <div class="med-center__phones">
+                        <div class="med-center__phones-title">Телефон</div>
+                        <a href="#" class="med-center__phone">8 495 248-03-48</a>
+                        <a href="#" class="med-center__phone">8 925 248-03-08</a>
+                     </div>
+                     <div class="med-center__time">
+                        <div class="med-center__time-title">Режим работы</div>
+                        <div class="med-center__time-work">
+                           пн-пт с 9:00 до 20:00 сб с 9:00 до 18:00 вс - выходной
+                        </div>
+                     </div>
+                  </div>
+                  <button class="all-btn">
+                     <span>На сайт мед.центра</span>
+                     <div class="all-btn__arrow">
+                        <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543"
+                              stroke="#840D06"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           />
+                        </svg>
+                     </div>
+                  </button>
+               </div>
+               <div class="med-center__right">
+                  <img src="./img/med-center/img.png" alt="" />
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('./template/footer.html')
+   </body>
+</html>
