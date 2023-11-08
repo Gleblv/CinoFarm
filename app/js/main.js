@@ -139,6 +139,35 @@ const teacherSlider = new Swiper(".teacher__swiper", {
    },
 });
 
+// Поле поиска в хеадере
+
+if (document.querySelector(".header")) {
+   const header = document.querySelector(".header"),
+      openSearchBtn = document.querySelector(".header__search"),
+      closeSearchBtn = document.querySelector(".header__search-input__close"),
+      headerSearchMenu = document.querySelector(".header__search-input__menu");
+
+   openSearchBtn.addEventListener("click", () => {
+      header.classList.add("search-active");
+   });
+
+   closeSearchBtn.addEventListener("click", () => {
+      header.classList.remove("search-active");
+      headerSearchMenu.classList.remove("active");
+   });
+}
+
+// Меню при поиске в хеадере
+
+if (document.querySelector(".header")) {
+   const headerSearchInput = document.querySelector(".header__search-input input"),
+      headerSearchMenu = document.querySelector(".header__search-input__menu");
+
+   headerSearchInput.addEventListener("input", (e) => {
+      e.target.value ? headerSearchMenu.classList.add("active") : headerSearchMenu.classList.remove("active");
+   });
+}
+
 // Модалка на главной
 
 if (document.querySelector("#invitationModal")) {

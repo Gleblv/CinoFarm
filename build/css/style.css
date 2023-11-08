@@ -1118,6 +1118,119 @@ input[type="number"] {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 6rem; }
+  .header.search-active .header__search-input {
+    max-width: 156rem; }
+  .header.search-active .header__logo-small {
+    display: block; }
+  .header.search-active .header__wrapper {
+    visibility: hidden; }
+  .header__search-input {
+    position: absolute;
+    top: 9.2rem;
+    left: 16rem;
+    width: 156rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 0;
+    -webkit-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+    overflow-x: hidden; }
+    .header__search-input div:first-child input {
+      background-color: #fff;
+      padding: 2.4rem 3.2rem 2.4rem 8.4rem;
+      border-radius: 6rem;
+      border: none;
+      width: 142.4rem;
+      margin-right: 1.4rem;
+      color: #1A1A1A;
+      font-size: 2.6rem;
+      font-weight: 400;
+      line-height: 130%;
+      /* 3.38rem */
+      background-image: url(../../img/header/header-search-icon.svg);
+      background-repeat: no-repeat;
+      background-position: 3.2rem center;
+      background-size: 3.2rem 3.2rem; }
+    .header__search-input div:nth-child(2) {
+      width: 7.4rem;
+      height: 7.4rem;
+      background-color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-radius: 50%;
+      cursor: pointer; }
+    .header__search-input__menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      width: 142.3rem;
+      padding: 2.4rem 3.2rem;
+      left: 16rem;
+      top: 17.9rem;
+      border-radius: 6rem;
+      -webkit-box-shadow: 6px 10px 20px 0px rgba(71, 71, 71, 0.15);
+              box-shadow: 6px 10px 20px 0px rgba(71, 71, 71, 0.15);
+      display: none; }
+      .header__search-input__menu.active {
+        display: block; }
+      .header__search-input__menu .show-all {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 110%;
+        /* 2.2rem */
+        color: #840D06;
+        cursor: pointer; }
+      .header__search-input__menu ul {
+        padding-bottom: 2.4rem;
+        border-bottom: 1px solid #6D6D6D; }
+        .header__search-input__menu ul:nth-last-child(2) {
+          margin-bottom: 2.4rem; }
+        .header__search-input__menu ul.coincidense li {
+          background-image: url(../../img/header/header-search-icon.svg); }
+        .header__search-input__menu ul.name li {
+          background-image: url(../../img/header/header-menu-name-icon.svg); }
+          .header__search-input__menu ul.name li div:last-child {
+            font-weight: 500; }
+        .header__search-input__menu ul.category li {
+          background-image: url(../../img/header/header-menu-category-icon.svg); }
+          .header__search-input__menu ul.category li div:last-child {
+            color: #6D6D6D; }
+        .header__search-input__menu ul:not(:first-child) {
+          padding-top: 2.4rem; }
+        .header__search-input__menu ul li {
+          font-size: 2.2rem;
+          font-weight: 400;
+          line-height: 130%;
+          /* 2.86rem */
+          padding-left: 5rem;
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-size: 2.8rem 2.8rem;
+          cursor: pointer; }
+          .header__search-input__menu ul li:hover {
+            color: #840D06; }
+          .header__search-input__menu ul li:not(:last-child) {
+            margin-bottom: 1.6rem; }
+  .header__logo-small {
+    position: absolute;
+    top: 2.3rem;
+    left: 92.3rem;
+    width: 6.5rem;
+    height: 8rem;
+    display: none; }
   .header__container {
     width: 157rem;
     margin: 0 auto; }

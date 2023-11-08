@@ -4,11 +4,168 @@
     position: absolute;
     width: 100%;
     z-index: 5;
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items:center;
         margin-bottom: 6rem;
+    }
+
+    &.search-active {
+        .header__search-input {
+            max-width: 156rem;
+        }
+
+        .header__logo-small {
+            display: block;
+        }
+
+        .header__wrapper {
+            visibility: hidden;
+        }
+    }
+
+    &__search-input {
+        position: absolute;
+        top: 9.2rem;
+        left: 16rem;
+        width: 156rem;
+        display: flex;
+        align-items: center;
+        max-width: 0;
+        transition: 0.8s ease-in-out;
+        overflow-x: hidden;
+
+        div {
+            &:first-child {
+                input {
+                    background-color: #fff;
+                    padding: 2.4rem 3.2rem 2.4rem 8.4rem;
+                    border-radius: 6rem;
+                    border: none;
+                    width: 142.4rem;
+                    margin-right: 1.4rem;
+                    color: #1A1A1A;
+                    font-size: 2.6rem;
+                    font-weight: 400;
+                    line-height: 130%; /* 3.38rem */
+                    background-image: url(../../img/header/header-search-icon.svg);
+                    background-repeat: no-repeat;
+                    background-position: 3.2rem center;
+                    background-size: 3.2rem 3.2rem;
+                }
+            }
+
+            &:nth-child(2) {
+                width: 7.4rem;
+                height: 7.4rem;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+        &__menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            width: 142.3rem;
+            padding: 2.4rem 3.2rem;
+            left: 16rem;
+            top: 17.9rem;
+            border-radius: 6rem;
+            box-shadow: 6px 10px 20px 0px rgba(71, 71, 71, 0.15);
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            .show-all {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 110%; /* 2.2rem */
+                color: #840D06;
+                cursor: pointer;
+            }
+
+            ul {
+                padding-bottom: 2.4rem;
+                border-bottom: 1px solid #6D6D6D;
+
+                &:nth-last-child(2) {
+                    margin-bottom: 2.4rem;
+                }
+
+                &.coincidense {
+                    li {
+                        background-image: url(../../img/header/header-search-icon.svg);
+                    }
+                }
+
+                &.name {
+                    li {
+                        background-image: url(../../img/header/header-menu-name-icon.svg);
+
+                        div {
+                            &:last-child {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+
+                &.category {
+                    li {
+                        background-image: url(../../img/header/header-menu-category-icon.svg);
+
+                        div {
+                            &:last-child {
+                                color: #6D6D6D;
+                            }
+                        }
+                    }
+                }
+
+                &:not(:first-child) {
+                    padding-top: 2.4rem;
+                }
+
+                li {
+                    font-size: 2.2rem;
+                    font-weight: 400;
+                    line-height: 130%; /* 2.86rem */
+                    padding-left: 5rem;
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    background-size: 2.8rem 2.8rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #840D06;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__logo-small {
+        position: absolute;
+        top: 2.3rem;
+        left: 92.3rem;
+        width: 6.5rem;
+        height: 8rem;
+        display: none;
     }
 
     &__container {
