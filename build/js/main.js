@@ -141,7 +141,7 @@ const teacherSlider = new Swiper(".teacher__swiper", {
 
 // Поле поиска в хеадере
 
-if (document.querySelector(".header")) {
+if (document.querySelector(".header") && window.screen.width > 768) {
    const header = document.querySelector(".header"),
       openSearchBtn = document.querySelector(".header__search"),
       closeSearchBtn = document.querySelector(".header__search-input__close"),
@@ -165,6 +165,24 @@ if (document.querySelector(".header")) {
 
    headerSearchInput.addEventListener("input", (e) => {
       e.target.value ? headerSearchMenu.classList.add("active") : headerSearchMenu.classList.remove("active");
+   });
+}
+
+// Бургер меню в хеадере
+
+if (document.querySelector(".header") && window.screen.width <= 768) {
+   const openBurgerBtn = document.querySelector(".header__burger"),
+      closeBurgerBtn = document.querySelector(".header__burger-close"),
+      burgerMenu = document.querySelector(".header__burger-menu");
+
+   openBurgerBtn.addEventListener("click", () => {
+      burgerMenu.classList.add("active");
+      document.querySelector("body").style.overflow = "hidden";
+   });
+
+   closeBurgerBtn.addEventListener("click", () => {
+      burgerMenu.classList.remove("active");
+      document.querySelector("body").style.overflow = "visible";
    });
 }
 
