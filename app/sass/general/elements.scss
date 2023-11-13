@@ -67,8 +67,8 @@
 
 .main-home {
 	background-image: url(../img/focal/bg1.png);
-    background-size: contain;
     background-repeat: no-repeat;
+	background-position: top center;
 
 	& + .footer {
 		.footer__top {

@@ -449,7 +449,7 @@ ul li {
 
 .section {
   scroll-snap-align: start;
-  height: 100vh;
+  margin-bottom: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,8 +544,8 @@ input[type="number"] {
 
 .main-home {
   background-image: url(../img/focal/bg1.png);
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: top center; }
   .main-home + .footer .footer__top {
     border-top: 0.1rem solid #6D6D6D; }
 
@@ -2227,9 +2227,8 @@ input[type="number"] {
 
 .news {
   background-image: url(../img/news/bg.png);
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 10rem; }
+  background-position: center 4rem; }
   .news .container {
     padding-top: 5rem; }
   .news .title {
@@ -2889,7 +2888,7 @@ input[type="number"] {
 .partners {
   background-image: url(../img/partners/bg.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-position: center center; }
   .partners .container {
     position: relative;
     padding-top: 5rem; }
@@ -3058,8 +3057,7 @@ input[type="number"] {
 .projects {
   background-image: url(../img/projects/bg.png);
   background-repeat: no-repeat;
-  background-size: 100% 120rem;
-  background-position: 100% -30rem; }
+  background-position: center -35rem; }
   .projects .container {
     position: relative;
     padding-top: 5rem; }
@@ -3226,9 +3224,8 @@ input[type="number"] {
 
 .invitation {
   background-image: url(../img/invitation/bg.png);
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 35rem;
+  background-position: center top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
