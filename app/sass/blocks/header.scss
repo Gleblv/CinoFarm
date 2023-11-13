@@ -26,9 +26,9 @@
         }
     }
 
-    &__burger-menu {
-        display: none;
-    }
+    // &__burger-menu {
+    //     display: none;
+    // }
 
     &__search-input {
         position: absolute;
@@ -696,6 +696,79 @@
         margin-bottom: 7.7rem;
         top: 0;
         left: 0;
+
+        &.search-active {
+            .header__burger-menu {
+                ul {
+                    display: none;
+                }
+            }
+        }
+
+        &__search-input {
+            z-index: 10;
+            top: 16.8rem;
+            left: 2rem;
+            width: 71rem;
+
+            div {
+                &:first-child {
+                    input {
+                        width: 71rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 3.2rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%; /* 4.16rem */
+                        color: #1A1A1A;
+                        padding: 3.2rem 3.2rem 3.4rem 9.6rem;
+                        background-size: 4rem 4rem;
+                        background-position: 3.2rem center;
+                    }
+                }
+
+                &:last-child {
+                    display: none;
+                }
+            }
+
+            &__menu {
+                z-index: 10;
+                left: 2rem;
+                top: 28.4rem;
+                width: 71rem;
+                padding: 3.2rem;
+
+                ul {
+                    padding-bottom: 3.2rem;
+
+                    &:not(:first-child) {
+                        padding-top: 3.2rem;
+                    }
+
+                    &:nth-last-child(2) {
+                        margin-bottom: 3.2rem;
+                    }
+
+                    li {
+                        font-size: 3.2rem;
+                        line-height: 130%; /* 4.16rem */
+                        padding-left: 6.4rem;
+                        background-size: 4.8rem 4.8rem;
+
+                        &:not(:last-child) {
+                            margin-bottom: 1.9rem;
+                        }
+                    }
+                }
+
+                .show-all {
+                    font-size: 3.2rem;
+                    line-height: 110%; /* 3.52rem */
+                }
+            }
+        }
 
         &__container {
             width: 100%;

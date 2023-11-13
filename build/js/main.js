@@ -155,6 +155,13 @@ if (document.querySelector(".header") && window.screen.width > 768) {
       header.classList.remove("search-active");
       headerSearchMenu.classList.remove("active");
    });
+} else if (document.querySelector(".header") && window.screen.width <= 768) {
+   const header = document.querySelector(".header"),
+      openSearchBtn = document.getElementById("openSearchMobile");
+
+   openSearchBtn.addEventListener("click", () => {
+      header.classList.add("search-active");
+   });
 }
 
 // Меню при поиске в хеадере
@@ -177,12 +184,18 @@ if (document.querySelector(".header") && window.screen.width <= 768) {
 
    openBurgerBtn.addEventListener("click", () => {
       burgerMenu.classList.add("active");
-      document.querySelector("body").style.overflow = "hidden";
    });
 
    closeBurgerBtn.addEventListener("click", () => {
-      burgerMenu.classList.remove("active");
-      document.querySelector("body").style.overflow = "visible";
+      const header = document.querySelector(".header"),
+         headerSearchMenu = document.querySelector(".header__search-input__menu");
+
+      if (!header.classList.contains("search-active")) {
+         burgerMenu.classList.remove("active");
+      } else {
+         header.classList.remove("search-active");
+         headerSearchMenu.classList.remove("active");
+      }
    });
 }
 

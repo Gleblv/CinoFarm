@@ -1126,8 +1126,6 @@ input[type="number"] {
     display: block; }
   .header.search-active .header__wrapper {
     visibility: hidden; }
-  .header__burger-menu {
-    display: none; }
   .header__search-input {
     position: absolute;
     top: 9.2rem;
@@ -1628,6 +1626,52 @@ input[type="number"] {
       margin-bottom: 7.7rem;
       top: 0;
       left: 0; }
+      .header.search-active .header__burger-menu ul {
+        display: none; }
+      .header__search-input {
+        z-index: 10;
+        top: 16.8rem;
+        left: 2rem;
+        width: 71rem; }
+        .header__search-input div:first-child input {
+          width: 71rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 3.2rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%;
+          /* 4.16rem */
+          color: #1A1A1A;
+          padding: 3.2rem 3.2rem 3.4rem 9.6rem;
+          background-size: 4rem 4rem;
+          background-position: 3.2rem center; }
+        .header__search-input div:last-child {
+          display: none; }
+        .header__search-input__menu {
+          z-index: 10;
+          left: 2rem;
+          top: 28.4rem;
+          width: 71rem;
+          padding: 3.2rem; }
+          .header__search-input__menu ul {
+            padding-bottom: 3.2rem; }
+            .header__search-input__menu ul:not(:first-child) {
+              padding-top: 3.2rem; }
+            .header__search-input__menu ul:nth-last-child(2) {
+              margin-bottom: 3.2rem; }
+            .header__search-input__menu ul li {
+              font-size: 3.2rem;
+              line-height: 130%;
+              /* 4.16rem */
+              padding-left: 6.4rem;
+              background-size: 4.8rem 4.8rem; }
+              .header__search-input__menu ul li:not(:last-child) {
+                margin-bottom: 1.9rem; }
+          .header__search-input__menu .show-all {
+            font-size: 3.2rem;
+            line-height: 110%;
+            /* 3.52rem */ }
       .header__container {
         width: 100%; }
       .header__inner {
