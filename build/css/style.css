@@ -1706,8 +1706,8 @@ input[type="number"] {
         height: 100vh;
         padding-top: 8rem;
         background: url(../../img/header/burger-background.png) no-repeat right bottom #F5F2EA;
-        -webkit-transform: translateY(-100%);
-                transform: translateY(-100%);
+        -webkit-transform: translateY(-200%);
+                transform: translateY(-200%);
         -webkit-transition: 0.8s ease-in-out;
         transition: 0.8s ease-in-out; }
         .header__burger-menu.active {
