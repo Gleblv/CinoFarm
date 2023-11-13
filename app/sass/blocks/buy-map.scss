@@ -78,4 +78,61 @@
             overflow: inherit;
         }
     }
+
+    @media (max-width: 48em) {
+        &__tabs {
+            margin-bottom: 8rem;
+        }
+
+        &__tab-btn {
+            text-wrap: nowrap;
+        }
+
+        &__main {
+            flex-direction: column;
+        }
+
+        &__contacts {
+            width: auto;
+            margin-bottom: 8rem;
+
+            &-title {
+                font-size: 3.6rem;
+                font-weight: 500;
+                line-height: 130%; /* 4.68rem */
+                margin-bottom: 4.8rem;
+            }
+
+            &-subtitle {
+                font-size: 3.6rem;
+                font-weight: 500;
+                line-height: 130%; /* 4.68rem */
+                margin-bottom: 0;
+                margin-right: 1.5rem;
+            }
+
+            &-text {
+                font-size: 3.6rem;
+                line-height: 130%;
+                margin-bottom: 3.2rem;
+            }
+
+            &-email {
+                .buy-map__contacts-text {
+                    color: #1A1A1A;
+                }
+            }
+        }
+
+        &__map {
+            width: 71rem;
+            height: 88rem;
+            border-radius: 0rem 12rem;
+            padding: 1.6rem;
+
+            &-wrapper {
+                border-radius: 0rem 12rem;
+            }
+        }
+    }
 }

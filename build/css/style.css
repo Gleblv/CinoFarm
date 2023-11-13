@@ -4788,6 +4788,36 @@ input[type="number"] {
       background-position: left center;
       background-size: 1.4rem 1.4rem;
       background-repeat: no-repeat; }
+  @media (max-width: 48em) {
+    .buy-info {
+      padding-top: 28.6rem;
+      margin-bottom: 20rem; }
+      .buy-info__title {
+        font-size: 7.2rem;
+        font-weight: 500;
+        line-height: 110%;
+        /* 7.92rem */
+        margin-bottom: 4rem; }
+      .buy-info__subtitle {
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 130%;
+        /* 4.68rem */
+        margin-bottom: 4rem; }
+      .buy-info__list {
+        row-gap: 2rem; }
+        .buy-info__list-title {
+          margin-bottom: 2rem;
+          font-size: 3.6rem;
+          line-height: 130%;
+          /* 4.68rem */ }
+        .buy-info__list-item {
+          font-size: 3.6rem;
+          line-height: 130%;
+          /* 4.68rem */
+          padding-left: 6rem;
+          background-size: 2.8rem 2.8rem;
+          background-position: left 0.5rem; } }
 
 .buy-map__tabs {
   display: -webkit-box;
@@ -4864,6 +4894,46 @@ input[type="number"] {
     height: 100%;
     border-radius: 0rem 6rem;
     overflow: inherit; }
+
+@media (max-width: 48em) {
+  .buy-map__tabs {
+    margin-bottom: 8rem; }
+  .buy-map__tab-btn {
+    text-wrap: nowrap; }
+  .buy-map__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .buy-map__contacts {
+    width: auto;
+    margin-bottom: 8rem; }
+    .buy-map__contacts-title {
+      font-size: 3.6rem;
+      font-weight: 500;
+      line-height: 130%;
+      /* 4.68rem */
+      margin-bottom: 4.8rem; }
+    .buy-map__contacts-subtitle {
+      font-size: 3.6rem;
+      font-weight: 500;
+      line-height: 130%;
+      /* 4.68rem */
+      margin-bottom: 0;
+      margin-right: 1.5rem; }
+    .buy-map__contacts-text {
+      font-size: 3.6rem;
+      line-height: 130%;
+      margin-bottom: 3.2rem; }
+    .buy-map__contacts-email .buy-map__contacts-text {
+      color: #1A1A1A; }
+  .buy-map__map {
+    width: 71rem;
+    height: 88rem;
+    border-radius: 0rem 12rem;
+    padding: 1.6rem; }
+    .buy-map__map-wrapper {
+      border-radius: 0rem 12rem; } }
 
 .contacts-main {
   padding-top: 20.4rem;
