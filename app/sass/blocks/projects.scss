@@ -21,16 +21,16 @@
         flex-direction: column;
         display: flex;
         align-items: initial;
-        margin-bottom: 6vh;
+        margin-bottom: 6rem;
         h2 {
-            margin-bottom: 6vh;
+            margin-bottom: 6rem;
         }
 
         p {
             color:  #1A1A1A;
             max-width: 88.2rem;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.6vh;
+            font-size: 2.6rem;
             font-style: normal;
             font-weight: 400;
             line-height: 130%; 
@@ -44,12 +44,12 @@
 
        
         width: 16.6rem;
-        height: 8.6vh;
+        height: 8.6rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         padding: 0.6rem;
-        margin-top: 2vh;
+        margin-top: 2rem;
         
     }
 
@@ -58,8 +58,8 @@
         display: flex;
         align-items:center;
         justify-content: center;
-        width: 7.4vh;
-        height: 7.4vh;
+        width: 7.4rem;
+        height: 7.4rem;
         background: none;
         &:hover {
            
@@ -80,8 +80,8 @@
         display: flex;
         align-items:center;
         justify-content: center;
-        width: 7.4vh;
-        height: 7.4vh;
+        width: 7.4rem;
+        height: 7.4rem;
         transition: 0.5s;
         background: none;
         &:hover {

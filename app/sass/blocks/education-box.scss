@@ -1,12 +1,12 @@
 .education-box {
     width: 76.5rem;
-    height: 72.1vh;
+    height: 72.1rem;
     border-radius: 0px 6rem 0px 0px;
     background: #DEDAD6;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
-    padding-top: 1.2vh;
-    padding-bottom: 3.2vh;
+    padding-top: 1.2rem;
+    padding-bottom: 3.2rem;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -17,7 +17,7 @@
 
     &__image {
         width: 100%;
-        height: 36.2vh;
+        height: 36.2rem;
         margin-bottom: 3.2rem;
 
         img {
@@ -32,11 +32,11 @@
     &__title {
         color: #191919;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 3vh;
+        font-size: 3rem;
         font-style: normal;
         font-weight: 500;
         line-height: 110%; 
-        margin-bottom: 3.2vh;
+        margin-bottom: 3.2rem;
         padding:  0 2rem;
     }
 
@@ -55,17 +55,17 @@
             display: block;
             color:  #6D6D6D;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2vh;
+            font-size: 2.2rem;
             font-style: normal;
             font-weight: 500;
             line-height: 110%; 
-            margin-bottom: 0.8vh;
+            margin-bottom: 0.8rem;
         }
 
         span {
             display: block;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2vh;
+            font-size: 2.2rem;
             font-style: normal;
             font-weight: 400;
             line-height: 110%; 
@@ -82,17 +82,17 @@
             display: block;
             color:  #6D6D6D;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2vh;
+            font-size: 2.2rem;
             font-style: normal;
             font-weight: 500;
             line-height: 110%; 
-            margin-bottom: 0.8vh;
+            margin-bottom: 0.8rem;
         }
 
         span {
             display: block;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2vh;
+            font-size: 2.2rem;
             font-style: normal;
             font-weight: 400;
             line-height: 110%; 
@@ -112,15 +112,15 @@
     &__link {
         border-radius: 5rem;
         background: #FFF;
-        padding: 0.8vh 3.5rem;
+        padding: 0.8rem 3.5rem;
       
            
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2vh;
+            font-size: 2rem;
             font-style: normal;
             font-weight: 500;
             line-height: 110%; 
-            margin-bottom: 0.8vh;
+            margin-bottom: 0.8rem;
             transition: 0.3s;
             &:hover {
                 border-radius: 5rem 0px;
@@ -131,7 +131,7 @@
     &__status {
         color:  #840D06;
         font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2vh;
+            font-size: 2.2rem;
             font-style: normal;
             font-weight: 500;
             line-height: 110%; 

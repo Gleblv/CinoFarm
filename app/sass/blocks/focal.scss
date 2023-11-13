@@ -32,7 +32,7 @@
         align-items:center;
         padding-top: 1rem;
         width: 50rem;
-        height: 29.8vh;
+        height: 29.8rem;
         margin-right: 3rem;
         transition: ease-in-out 0.3s;
         &:hover {
@@ -43,7 +43,7 @@
 
     &__box {
         width: 50rem;
-        height: 29.8vh;
+        height: 29.8rem;
         position: relative;
         border-radius: 0px 6rem;
         margin-right: 3rem;
@@ -90,7 +90,7 @@
         display: block;
         color:  #FFF;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 3vh;
+        font-size: 3rem;
         font-style: normal;
         font-weight: 500;
         line-height: 110%; 
@@ -102,7 +102,7 @@
         color: #881104;
         text-align: center;
         font-family: 'Proun', arial;
-        font-size: 3.6vh;
+        font-size: 3.6rem;
         font-style: normal;
         font-weight: 700;
         line-height: 110%;
@@ -135,8 +135,8 @@
     }
 
     &__scroll {
-        width: 7.4vh;
-        height: 7.4vh;
+        width: 7.4rem;
+        height: 7.4rem;
         border-radius: 50%;
         background: rgba(222, 218, 214, 0.50);
         backdrop-filter: blur(3px);
@@ -158,8 +158,8 @@
     }
 
     &__scroll-box {
-        width: 6.2vh;
-        height: 6.2vh;
+        width: 6.2rem;
+        height: 6.2rem;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -177,7 +177,7 @@
         position: absolute;
         z-index: 4;
         width: 50rem;
-        height: 29.8vh;
+        height: 29.8rem;
         border-radius: 0px 6rem;
         top: 0;
         transition: 0.5s;

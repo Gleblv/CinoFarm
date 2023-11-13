@@ -1,6 +1,6 @@
 .popular-box {
     width: 50rem;
-    height: 64.5vh;
+    height: 64.5rem;
     border-radius: 0px 6rem;
     background:  #DEDAD6;
     padding: 1.1rem 1.2rem;
@@ -18,7 +18,7 @@
 
     &__image {
         width: 47.6rem;
-        height: 41vh;
+        height: 41rem;
         margin-bottom: 3.2rem;
 
         img {
@@ -85,7 +85,7 @@
         color:  #1A1A1A;
         text-overflow: ellipsis;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 3vh;
+        font-size: 3rem;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -104,7 +104,7 @@
     &__price {
         color:  #840D06;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 5vh;
+        font-size: 5rem;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -118,7 +118,7 @@
             position: absolute;
             content:'₽';
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2vh;
+            font-size: 2rem;
             font-style: normal;
             font-weight: 400;
             line-height: normal;

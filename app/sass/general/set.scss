@@ -138,14 +138,12 @@ ul li {
 
 
 .section {
- 
     scroll-snap-align: start;
     height: 100vh;
    
-   display: flex;
-   flex-flow: column;
-   justify-content: center;
-   
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .full {

@@ -1,5 +1,5 @@
 .education {
-    height: 100vh;
+    height: 100rem;
     flex-wrap: wrap;
     display: flex;
    .container {
@@ -24,12 +24,12 @@
 
        
         width: 16.6rem;
-        height: 8.6vh;
+        height: 8.6rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         padding: 0.6rem;
-        margin-top: 2vh;
+        margin-top: 2rem;
         
     }
 
@@ -38,8 +38,8 @@
         display: flex;
         align-items:center;
         justify-content: center;
-        width: 7.4vh;
-        height: 7.4vh;
+        width: 7.4rem;
+        height: 7.4rem;
         background: none;
         &:hover {
            
@@ -60,8 +60,8 @@
         display: flex;
         align-items:center;
         justify-content: center;
-        width: 7.4vh;
-        height: 7.4vh;
+        width: 7.4rem;
+        height: 7.4rem;
         transition: 0.5s;
         background: none;
         &:hover {
