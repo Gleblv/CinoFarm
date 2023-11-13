@@ -1,6 +1,7 @@
 @media only all and (max-width: 48em) {
  .main-home {
-    background-position-y: 77rem;
+    background-image: url(../../img/focal/bg1-mobile.png);
+    background-position: center 90rem;
  }
 
  .focal {
@@ -731,8 +732,8 @@
     height: auto;
     min-height: auto;
     margin-bottom: 10rem;
-    background-position-x: -54rem;
-    background-position-y: 78rem;
+    background-image: url(../../img/invitation/bg-mobile.png);
+    background-position: center 110rem;
 
     &__wrapper {
         flex-direction: column;
