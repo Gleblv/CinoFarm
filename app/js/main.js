@@ -424,3 +424,35 @@ if (document.querySelector(".categories")) {
       });
    });
 }
+
+// Перелючение карточек на странице Оплата, доставка и возврат
+
+if (document.querySelector(".payment-info__delivery-dropdown")) {
+   const dropdownContainer = document.querySelector(".payment-info__delivery-dropdown"),
+      cardBoxes = document.querySelectorAll(".payment-info__delivery-box"),
+      dropdownItems = document.querySelectorAll(".payment-info__delivery-dropdown__item"),
+      dropdownInput = document.querySelector(".payment-info__delivery-dropdown__value");
+
+   dropdownInput.addEventListener("click", () => {
+      dropdownContainer.classList.toggle("active");
+   });
+
+   dropdownContainer.addEventListener("click", (e) => {
+      let dataAttr;
+      let target = e.target;
+
+      if (target.classList.contains("payment-info__delivery-dropdown__item")) {
+         dropdownInput.innerHTML = target.innerHTML;
+         dataAttr = target.dataset.deliveryMethod;
+         dropdownContainer.classList.remove("active");
+
+         cardBoxes.forEach((box) => {
+            box.classList.remove("active");
+
+            if (box.classList.contains(dataAttr)) {
+               box.classList.add("active");
+            }
+         });
+      }
+   });
+}

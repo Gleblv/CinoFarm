@@ -7609,6 +7609,209 @@ input[type="number"] {
       .project-detail .all-btn span {
         margin-right: 4rem; } }
 
+.payment-info {
+  padding-top: 23.4rem;
+  margin-bottom: 20rem; }
+  .payment-info + .contacts-main {
+    padding-top: 0;
+    margin-bottom: 20rem; }
+  .payment-info__title {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 110%;
+    /* 6.6rem */
+    margin-bottom: 6rem; }
+  .payment-info__card {
+    width: 100%;
+    border-radius: 6rem 0rem;
+    background-color: #DEDAD6;
+    padding: 4rem;
+    margin-bottom: 7.2rem;
+    position: relative; }
+    .payment-info__card-title {
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 130%;
+      /* 3.9rem */
+      margin-bottom: 3.2rem; }
+    .payment-info__card-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 4rem; }
+    .payment-info__card-left {
+      width: 40rem;
+      margin-right: 13.8rem; }
+    .payment-info__card-right {
+      width: 92.4rem; }
+    .payment-info__card-subtitle {
+      font-size: 2.6rem;
+      line-height: 130%;
+      /* 3.38rem */ }
+      .payment-info__card-subtitle:not(:last-child) {
+        margin-bottom: 2.4rem; }
+    .payment-info__card-list li {
+      font-size: 2.2rem;
+      line-height: 130%;
+      /* 2.86rem */
+      min-height: 6rem;
+      padding-left: 8rem;
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 6rem 6rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .payment-info__card-list li:not(:last-child) {
+        margin-bottom: 1.2rem; }
+      .payment-info__card-list li:first-child {
+        background-image: url(../../img/payment-info/card-icon1.svg); }
+      .payment-info__card-list li:last-child {
+        background-image: url(../../img/payment-info/card-icon2.svg); }
+    .payment-info__card-text {
+      font-size: 2.2rem;
+      line-height: 130%;
+      /* 2.86rem */ }
+      .payment-info__card-text:not(:last-child) {
+        margin-bottom: 3.2rem; }
+    .payment-info__card-background {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      opacity: 0.2; }
+      .payment-info__card-background img {
+        mix-blend-mode: darken; }
+  .payment-info__delivery-title {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 130%;
+    /* 3.9rem */
+    margin-bottom: 3.2rem; }
+  .payment-info__delivery-subtitle {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 2.4rem;
+    line-height: 3rem;
+    /* 125% */
+    margin-bottom: 1.2rem; }
+  .payment-info__delivery-dropdown {
+    width: 76.8rem;
+    position: relative;
+    margin-bottom: 2.4rem; }
+    .payment-info__delivery-dropdown.active .payment-info__delivery-dropdown__menu {
+      display: block; }
+    .payment-info__delivery-dropdown.active .payment-info__delivery-dropdown__arrow {
+      -webkit-transform: rotateZ(180deg);
+              transform: rotateZ(180deg); }
+      .payment-info__delivery-dropdown.active .payment-info__delivery-dropdown__arrow path {
+        fill: #840D06; }
+    .payment-info__delivery-dropdown__arrow {
+      position: absolute;
+      right: 0;
+      top: 2.8rem; }
+    .payment-info__delivery-dropdown__value {
+      padding: 1.6rem 1.2rem;
+      border-bottom: 1px solid rgba(109, 109, 109, 0.7);
+      font-family: 'Inter';
+      font-size: 2.4rem;
+      line-height: 3rem;
+      /* 125% */
+      cursor: pointer; }
+    .payment-info__delivery-dropdown__menu {
+      display: none;
+      position: absolute;
+      top: 6.5rem;
+      left: 0;
+      width: 100%;
+      max-height: 22.5rem;
+      overflow-y: scroll;
+      padding: 2.4rem 4rem;
+      background-color: #fff;
+      border-radius: 6rem 0rem 0rem 0rem;
+      z-index: 10; }
+    .payment-info__delivery-dropdown__item {
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 130%;
+      /* 2.86rem */
+      cursor: pointer; }
+      .payment-info__delivery-dropdown__item:not(:last-child) {
+        margin-bottom: 0.8rem; }
+  .payment-info__delivery-box {
+    display: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .payment-info__delivery-box.active {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .payment-info__delivery-box .moscow-delivery__card {
+      position: relative;
+      min-height: 25.3rem;
+      width: 76.8rem;
+      border-radius: 6rem 0rem;
+      border: 1px solid rgba(109, 109, 109, 0.7);
+      padding: 4rem; }
+      .payment-info__delivery-box .moscow-delivery__card-icon {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        max-width: 10rem;
+        max-height: 10rem;
+        min-width: 6.9rem;
+        min-height: 6.9rem; }
+      .payment-info__delivery-box .moscow-delivery__card-title {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 130%;
+        /* 3.9rem */
+        margin-bottom: 3.2rem; }
+      .payment-info__delivery-box .moscow-delivery__card-text {
+        font-size: 2.6rem;
+        line-height: 130%;
+        /* 3.38rem */
+        max-width: 55rem; }
+        .payment-info__delivery-box .moscow-delivery__card-text:not(:last-child) {
+          margin-bottom: 1.2rem; }
+      .payment-info__delivery-box .moscow-delivery__card-price {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 130%;
+        /* 2.86rem */ }
+    .payment-info__delivery-box .other-city-delivery__card {
+      position: relative;
+      min-height: 18.5rem;
+      width: 76.9rem;
+      border-radius: 6rem 0rem;
+      border: 1px solid rgba(109, 109, 109, 0.7);
+      padding: 4rem; }
+      .payment-info__delivery-box .other-city-delivery__card-icon {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        max-width: 20.4rem;
+        max-height: 10.3rem;
+        min-width: 6.9rem;
+        min-height: 6.9rem; }
+      .payment-info__delivery-box .other-city-delivery__card-title {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 130%;
+        /* 3.9rem */
+        margin-bottom: 3.2rem; }
+      .payment-info__delivery-box .other-city-delivery__card-price {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 130%;
+        /* 2.86rem */ }
+
 .footer__top {
   width: 156rem;
   padding-top: 4rem;

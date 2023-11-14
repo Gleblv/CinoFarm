@@ -1,0 +1,266 @@
+.payment-info {
+    padding-top: 23.4rem;
+    margin-bottom: 20rem;
+
+    & + .contacts-main {
+        padding-top: 0;
+        margin-bottom: 20rem;
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 110%; /* 6.6rem */
+        margin-bottom: 6rem;
+    }
+
+    &__card {
+        width: 100%;
+        border-radius: 6rem 0rem;
+        background-color: #DEDAD6;
+        padding: 4rem;
+        margin-bottom: 7.2rem;
+        position: relative;
+
+        &-title {
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 130%; /* 3.9rem */
+            margin-bottom: 3.2rem;
+        }
+
+        &-row {
+            display: flex;
+            margin-bottom: 4rem;
+        }
+
+        &-left {
+            width: 40rem;
+            margin-right: 13.8rem;
+        }
+
+        &-right {
+            width: 92.4rem;
+        }
+
+        &-subtitle {
+            font-size: 2.6rem;
+            line-height: 130%; /* 3.38rem */
+
+            &:not(:last-child) {
+                margin-bottom: 2.4rem;
+            }
+        }
+
+        &-list {
+            li {
+                font-size: 2.2rem;
+                line-height: 130%; /* 2.86rem */
+                min-height: 6rem;
+                padding-left: 8rem;
+                background-repeat: no-repeat;
+                background-position: top left;
+                background-size: 6rem 6rem;
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-bottom: 1.2rem;
+                }
+
+                &:first-child {
+                    background-image: url(../../img/payment-info/card-icon1.svg);
+                }
+
+                &:last-child {
+                    background-image: url(../../img/payment-info/card-icon2.svg);
+                }
+            }
+        }
+
+        &-text {
+            font-size: 2.2rem;
+            line-height: 130%; /* 2.86rem */
+
+            &:not(:last-child) {
+                margin-bottom: 3.2rem;
+            }
+        }
+
+        &-background {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            opacity: 0.2;
+
+            img {
+                mix-blend-mode: darken;
+            }
+        }
+    }
+
+    &__delivery {
+        &-title {
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 130%; /* 3.9rem */
+            margin-bottom: 3.2rem;
+        }
+
+        &-subtitle {
+            color: #000;
+            font-family: 'Inter';
+            font-size: 2.4rem;
+            line-height: 3rem; /* 125% */
+            margin-bottom: 1.2rem;
+        }
+
+        &-dropdown {
+            width: 76.8rem;
+            position: relative;
+            margin-bottom: 2.4rem;
+
+            &.active {
+                .payment-info__delivery-dropdown__menu {
+                    display: block;
+                }
+
+                .payment-info__delivery-dropdown__arrow {
+                    transform: rotateZ(180deg);
+
+                    path {
+                        fill: #840D06;
+                    }
+                }
+            }
+
+            &__arrow {
+                position: absolute;
+                right: 0;
+                top: 2.8rem;
+            }
+
+            &__value {
+                padding: 1.6rem 1.2rem;
+                border-bottom: 1px solid rgba(109, 109, 109, 0.70);
+                font-family: 'Inter';
+                font-size: 2.4rem;
+                line-height: 3rem; /* 125% */
+                cursor: pointer;
+            }
+
+            &__menu {
+                display: none;
+                position: absolute;
+                top: 6.5rem;
+                left: 0;
+                width: 100%;
+                max-height: 22.5rem;
+                overflow-y: scroll;
+                padding: 2.4rem 4rem;
+                background-color: #fff;
+                border-radius: 6rem 0rem 0rem 0rem;
+                z-index: 10;
+            }
+
+            &__item {
+                font-size: 2.2rem;
+                font-weight: 500;
+                line-height: 130%; /* 2.86rem */
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    margin-bottom: 0.8rem;
+                }
+            }
+        }
+
+        &-box {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+
+            &.active {
+                display: flex;
+            }
+
+            .moscow-delivery {
+                &__card {
+                    position: relative;
+                    min-height: 25.3rem;
+                    width: 76.8rem;
+                    border-radius: 6rem 0rem;
+                    border: 1px solid rgba(109, 109, 109, 0.70);
+                    padding: 4rem;
+
+                    &-icon {
+                        position: absolute;
+                        top: 4rem;
+                        right: 4rem;
+                        max-width: 10rem;
+                        max-height: 10rem;
+                        min-width: 6.9rem;
+                        min-height: 6.9rem;
+                    }
+
+                    &-title {
+                        font-size: 3rem;
+                        font-weight: 500;
+                        line-height: 130%; /* 3.9rem */
+                        margin-bottom: 3.2rem;
+                    }
+
+                    &-text {
+                        font-size: 2.6rem;
+                        line-height: 130%; /* 3.38rem */
+                        max-width: 55rem;
+
+                        &:not(:last-child) {
+                            margin-bottom: 1.2rem;
+                        }
+                    }
+
+                    &-price {
+                        font-size: 2.2rem;
+                        font-weight: 500;
+                        line-height: 130%; /* 2.86rem */
+                    }
+                }
+            }
+
+            .other-city-delivery {
+                &__card {
+                    position: relative;
+                    min-height: 18.5rem;
+                    width: 76.9rem;
+                    border-radius: 6rem 0rem;
+                    border: 1px solid rgba(109, 109, 109, 0.70);
+                    padding: 4rem;
+
+                    &-icon {
+                        position: absolute;
+                        top: 4rem;
+                        right: 4rem;
+                        max-width: 20.4rem;
+                        max-height: 10.3rem;
+                        min-width: 6.9rem;
+                        min-height: 6.9rem;
+                    }
+
+                    &-title {
+                        font-size: 3rem;
+                        font-weight: 500;
+                        line-height: 130%; /* 3.9rem */
+                        margin-bottom: 3.2rem;
+                    }
+
+                    &-price {
+                        font-size: 2.2rem;
+                        font-weight: 500;
+                        line-height: 130%; /* 2.86rem */
+                    }
+                }
+            }
+        }
+    }
+}

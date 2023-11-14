@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+      <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Главная</title>
+   </head>
+
+   <body>
+      @@include('./template/header.html')
+      <main>
+         <section class="payment-info">
+            <div class="payment-info__container container">
+               <nav class="category">
+                  <ul class="category__lists">
+                     <li><a href="#">Главная</a></li>
+                     <li><a href="#">Доставка, оплата, возврат</a></li>
+                  </ul>
+               </nav>
+               <div class="payment-info__title">Информация для покупателей</div>
+               <div class="payment-info__card">
+                  <div class="payment-info__card-title">Оплата</div>
+                  <div class="payment-info__card-row">
+                     <div class="payment-info__card-left">
+                        <div class="payment-info__card-subtitle">
+                           В специализированном магазине оплата принимается
+                        </div>
+                        <ul class="payment-info__card-list">
+                           <li>Банковскими картами</li>
+                           <li>Наличный расчёт</li>
+                        </ul>
+                     </div>
+                     <div class="payment-info__card-right">
+                        <p class="payment-info__card-text">
+                           Кроме оплаты наличными мы предусмотрели взаиморасчеты с юридическими лицами.
+                           Заполните требуемые поля формы (ИНН, КПП, р/с, к/с и т.д.) или отправьте реквизиты
+                           компании на e-mail: info@cinofarm.ru Реквизиты требуются для оформления документов
+                           (счета, ТТН и т.д.); Менеджер выставляет счет для оплаты, который необходимо
+                           оплатить в течении трех рабочих дней.
+                        </p>
+                        <p class="payment-info__card-text">
+                           Если возможно, сообщите о факте оплаты, прислав копию документа, подтверждающего
+                           факт перечисления денежной суммы за заказ (платежное поручение с отметкой банка в
+                           сканированном виде или его разборчивое фото) на e-mail: info@cinofarm.ru Это
+                           позволит избежать ошибок при зачислении денежных средств на наш расчетный счет.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="payment-info__card-title">Возврат</div>
+                  <div class="payment-info__card-subtitle">
+                     Согласно Федеральному закону №29-Ф3 от 02.01.2000 г., фитопрепараты и БАДы возврату и
+                     обмену не подлежат.
+                  </div>
+                  <div class="payment-info__card-background">
+                     <img src="./img/payment-info/card-background.png" alt="" />
+                  </div>
+               </div>
+               <div class="payment-info__delivery">
+                  <div class="payment-info__delivery-title">Доставка</div>
+                  <div class="payment-info__delivery-subtitle">Выберите регион доставки</div>
+                  <div class="payment-info__delivery-dropdown">
+                     <div class="payment-info__delivery-dropdown__arrow">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="16"
+                           height="16"
+                           viewBox="0 0 16 16"
+                           fill="none"
+                        >
+                           <path d="M8 12L1.93782 6L14.0622 6L8 12Z" fill="#1A1A1A" />
+                        </svg>
+                     </div>
+                     <div class="payment-info__delivery-dropdown__value">Москва</div>
+                     <div class="payment-info__delivery-dropdown__menu">
+                        <div
+                           class="payment-info__delivery-dropdown__item"
+                           data-delivery-method="moscow-delivery"
+                        >
+                           Москва
+                        </div>
+                        <div
+                           class="payment-info__delivery-dropdown__item"
+                           data-delivery-method="other-city-delivery"
+                        >
+                           Другой город
+                        </div>
+                     </div>
+                  </div>
+                  <div class="payment-info__delivery-box moscow-delivery active">
+                     <div class="moscow-delivery__card">
+                        <img
+                           src="./img/payment-info/moscow-card1-icon.svg"
+                           alt=""
+                           class="moscow-delivery__card-icon"
+                        />
+                        <div class="moscow-delivery__card-title">Курьер</div>
+                        <div class="moscow-delivery__card-text">
+                           Доставят ваш заказ точно в срок, с сохранностью всех товаров
+                        </div>
+                        <div class="moscow-delivery__card-price">Приблизительная цена: 2000₽</div>
+                     </div>
+                     <div class="moscow-delivery__card">
+                        <img
+                           src="./img/payment-info/moscow-card2-icon.svg"
+                           alt=""
+                           class="moscow-delivery__card-icon"
+                        />
+                        <div class="moscow-delivery__card-title">Самовывоз</div>
+                        <div class="moscow-delivery__card-text">
+                           Москва, Летниковская 5, офисный центр ТБН Групп, 5-7 минут пешком от станции метро
+                           "Павелецкая-радиальная", 1-й вагон из центра
+                        </div>
+                     </div>
+                  </div>
+                  <div class="payment-info__delivery-box other-city-delivery">
+                     <div class="other-city-delivery__card">
+                        <img
+                           src="./img/payment-info/other-city-card1-icon.png"
+                           alt=""
+                           class="other-city-delivery__card-icon"
+                        />
+                        <div class="other-city-delivery__card-title">dpd доставка</div>
+                        <div class="other-city-delivery__card-price">Приблизительная цена: 2000₽</div>
+                     </div>
+                     <div class="other-city-delivery__card">
+                        <img
+                           src="./img/payment-info/other-city-card2-icon.png"
+                           alt=""
+                           class="other-city-delivery__card-icon"
+                        />
+                        <div class="other-city-delivery__card-title">Почта России</div>
+                        <div class="other-city-delivery__card-price">Приблизительная цена: 2000₽</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="contacts-main">
+            <div class="contacts-main__container container">
+               <div class="contacts-main__title">Контакты</div>
+               <div class="contacts-main__box">
+                  <div class="contacts-main__map">
+                     <div class="contacts-main__map-wrapper" id="myMap"></div>
+                  </div>
+                  <div class="contacts-main__info">
+                     <div class="contacts-main__info-row">
+                        <div class="contacts-main__info-title">Центр Традиционной Медицины «СИНОФАРМ»</div>
+                        <div class="contacts-main__info-contact">
+                           Адрес: <span>Москва, ул. Ленинская Слобода, д. 19, строение 6</span>
+                        </div>
+                        <div class="contacts-main__info-contact">
+                           Время работы:
+                           <span>
+                              с 9:00 до 20:00 с понедельника по пятницу, суббота до 18:00, воскресенье -
+                              выходной</span
+                           >
+                        </div>
+                     </div>
+                     <div class="contacts-main__info-row">
+                        <div class="contacts-main__info-title">
+                           Учебный центр (Профессиональная Ассоциация Рефлексотерапевтов)
+                        </div>
+                        <div class="contacts-main__info-contact">
+                           Адрес: <span>Москва, ул. Ленинская Слобода, д. 19, строение 5</span>
+                        </div>
+                        <div class="contacts-main__info-contact">
+                           Время работы: <span>с 13:00 до 21:00 с понедельника по пятницу</span>
+                        </div>
+                     </div>
+                     <div class="contacts-main__info-card">
+                        <div class="contacts-main__info-card__title">
+                           Свяжитесь с нами, если у Вас есть вопросы
+                        </div>
+                        <div class="contacts-main__info-card__phone">
+                           Телефон: <span>+7 (499) 922-06-17</span>
+                        </div>
+                        <div class="contacts-main__info-card__email">
+                           E-mail: <span>edu@cinofarm.ru</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('./template/footer.html')
+   </body>
+</html>
