@@ -1,0 +1,96 @@
+.project-detail {
+    padding-top: 23.4rem;
+    margin-bottom: 26rem;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10rem;
+    }
+
+    &__left {
+        width: 95.9rem;
+    }
+
+    &__right {
+        width: 50rem;
+        height: 61.5rem;
+        border-radius: 0rem 6rem;
+        overflow: hidden;
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 110%; /* 6.6rem */
+        margin-bottom: 6rem;
+    }
+
+    &__subtitle {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 130%; /* 3.9rem */
+        margin-bottom: 6rem;
+    }
+
+    &__text {
+        font-size: 2.6rem;
+        line-height: 130%; /* 3.38rem */
+        margin-bottom: 6rem;
+    }
+
+    .all-btn {
+        span {
+            margin-right: 1.4rem;
+        }
+
+        .all-btn__arrow {
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 28.6rem;
+        margin-bottom: 20rem;
+
+        &__box {
+            flex-direction: column;
+            column-gap: 0;
+            row-gap: 6.4rem;
+        }
+
+        &__left {
+            width: 71rem;
+        }
+
+        &__right {
+            width: 71rem;
+            height: 71.4rem;
+            border-radius: 12rem 0rem;
+        }
+
+        &__title {
+            font-size: 7.2rem;
+            line-height: 110%; /* 7.92rem */
+            margin-bottom: 4rem;
+        }
+
+        &__subtitle {
+            font-size: 4.4rem;
+            line-height: 110%; /* 4.84rem */
+            margin-bottom: 4rem;
+        }
+
+        &__text {
+            font-size: 3.6rem;
+            line-height: 130%; /* 4.68rem */
+            margin-bottom: 4rem;
+        }
+
+        .all-btn {
+            span {
+                margin-right: 4rem;
+            }
+        }
+    }
+}

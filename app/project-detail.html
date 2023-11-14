@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+      <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Главная</title>
+   </head>
+
+   <body>
+      @@include('./template/header.html')
+      <main>
+         <section class="project-detail">
+            <div class="project-detail__container container">
+               <nav class="category">
+                  <ul class="category__lists">
+                     <li><a href="#">Главная</a></li>
+                     <li><a href="#">Сертификаты</a></li>
+                  </ul>
+               </nav>
+               <div class="project-detail__box">
+                  <div class="project-detail__left">
+                     <div class="project-detail__title">
+                        Создание рынка услуг по сохранению здоровья граждан РФ
+                     </div>
+                     <div class="project-detail__subtitle">
+                        в том числе методами и средствами традиционной китайской медицины
+                     </div>
+                     <div class="project-detail__text">
+                        Компания «СИНОФАРМ» на протяжении 9 лет успешно занимается развитием и продвижением
+                        Традиционной Китайской Медицины на российский рынок. Нашей уникальной разработкой
+                        является программный продукт «ТКМ Эксперт». Наша цель — сделать методы и средства
+                        китайской медицины (КМ) доступными для понимания российскими специалистами.
+                     </div>
+                     <button class="all-btn">
+                        <span>Перейти на сайт</span>
+                        <div class="all-btn__arrow">
+                           <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543"
+                                 stroke="#840D06"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                              />
+                           </svg>
+                        </div>
+                     </button>
+                  </div>
+                  <div class="project-detail__right">
+                     <img src="./img/project-detail/project.png" alt="" />
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('./template/footer.html')
+   </body>
+</html>
