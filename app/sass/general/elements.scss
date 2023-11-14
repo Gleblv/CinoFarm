@@ -1,3 +1,36 @@
+// ---font-sizes----------------------------
+
+// desktop
+
+$titleBig: 6rem;
+$titleMedium: 3rem;
+$titleSmall: 2.2rem;
+
+$price: 5rem;
+
+$textBig: 2.6rem;
+$textSmall: 2.2rem;
+
+$button: 2rem;
+
+$menuBig: 2.4rem;
+$menuSmall: 2.2rem;
+
+// Mobile
+
+$titleBigMob: 7.2rem;
+$titleMediumMob: 4.4rem;
+$titleSmallMob: 3.6rem;
+
+$textBigMob: 3.6rem;
+$textSmallMob: 3.2rem;
+
+$buttonMob: 2rem;
+
+$menuMob: 3.2rem;
+
+// ------------------------------------
+
 .pagination {
 	position: absolute;
 	top: 50%;
@@ -83,7 +116,7 @@
 	justify-content: space-between;
 	h2 {
 		font-family: 'PP Neue Montreal',sans-serif;
-		font-size: 6rem;
+		font-size: $titleBig;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 110%;
