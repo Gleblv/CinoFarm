@@ -1,0 +1,91 @@
+.static-table {
+    width: 100%;
+    border-radius: 5rem;
+    overflow: hidden;
+
+    &__row {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Inter';
+        font-size: 2.4rem;
+        line-height: 3rem; /* 125% */
+
+        &.titles {
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 130%; /* 3.9rem */
+        }
+
+        &:first-child {
+            padding-top: 5rem;
+            color: #840D06;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 130%; /* 3.9rem */
+        }
+
+        &:last-child {
+            padding-bottom: 5rem;
+        }
+
+        &:not(:first-child) {
+            padding-top: 2.4rem;
+        }
+
+        &:not(:last-child) {
+            padding-bottom: 2.4rem;
+        }
+
+        &:nth-child(odd) {
+            background-color: #E8E4E0;
+        }
+
+        &:nth-child(even) {
+            background-color: #DEDAD6;
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__row {
+            padding-left: 4.8rem;
+            padding-right: 4.8rem;
+
+            // &:nth-child(even),
+            // &:nth-child(odd) {
+            //     background-color: #E8E4E0;
+            // }
+
+            &.row-head {
+                font-size: 4.4rem;
+                line-height: 110%; /* 4.84rem */
+            }
+
+            &.row-list {
+                flex-direction: column;
+                row-gap: 3.2rem;
+                align-items: flex-start;
+                font-size: 3.2rem;
+                line-height: 130%; /* 4.16rem */
+            }
+
+            &:not(:last-child),
+            &:not(:first-child) {
+                padding-top: 1.6rem;
+                padding-bottom: 1.6rem;
+            }
+
+            &:first-child {
+                padding-top: 4.8rem;
+                font-size: 4.4rem;
+                line-height: 110%; /* 4.84rem */
+            }
+
+            &:last-child {
+                padding-bottom: 4.8rem;
+            }
+        }
+    }
+}
