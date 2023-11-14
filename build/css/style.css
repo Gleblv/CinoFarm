@@ -7811,6 +7811,140 @@ input[type="number"] {
         font-weight: 500;
         line-height: 130%;
         /* 2.86rem */ }
+  @media (max-width: 48em) {
+    .payment-info {
+      padding-top: 28.6rem;
+      margin-bottom: 20rem; }
+      .payment-info__title {
+        font-size: 7.2rem;
+        line-height: 110%;
+        /* 7.92rem */
+        margin-bottom: 8rem; }
+      .payment-info__card {
+        border-radius: 6rem 0rem;
+        padding: 4.8rem 3.2rem;
+        margin-bottom: 8rem; }
+        .payment-info__card-title {
+          font-size: 4.4rem;
+          line-height: 110%;
+          /* 4.84rem */
+          margin-bottom: 8rem; }
+        .payment-info__card-row {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+        .payment-info__card-left, .payment-info__card-right {
+          width: auto;
+          margin: 0; }
+        .payment-info__card-subtitle {
+          font-size: 3.6rem;
+          line-height: 130%;
+          /* 4.68rem */ }
+          .payment-info__card-subtitle:not(:last-child) {
+            margin-bottom: 4rem; }
+        .payment-info__card-list {
+          margin-bottom: 6.4rem; }
+          .payment-info__card-list li {
+            font-size: 3.2rem;
+            line-height: 130%;
+            /* 4.16rem */
+            min-height: 10rem;
+            background-size: 10rem 10rem;
+            padding-left: 12.4rem; }
+        .payment-info__card-text {
+          font-size: 3.2rem;
+          line-height: 130%;
+          /* 4.16rem */ }
+          .payment-info__card-text:not(:last-child) {
+            margin-bottom: 2.4rem; }
+        .payment-info__card-right {
+          margin-bottom: 8rem; }
+      .payment-info__delivery-title {
+        font-size: 4.4rem;
+        line-height: 110%;
+        /* 4.84rem */
+        margin-bottom: 6.4rem; }
+      .payment-info__delivery-subtitle {
+        font-size: 3.2rem;
+        line-height: 130%;
+        /* 4.16rem */
+        margin-bottom: 2.4rem; }
+      .payment-info__delivery-dropdown {
+        width: auto;
+        margin-bottom: 6.4rem; }
+        .payment-info__delivery-dropdown__value {
+          padding: 3.2rem 2.4rem;
+          font-size: 3.2rem;
+          line-height: 130%;
+          /* 4.16rem */ }
+        .payment-info__delivery-dropdown__arrow {
+          top: 3.8rem; }
+        .payment-info__delivery-dropdown__menu {
+          top: 11rem; }
+        .payment-info__delivery-dropdown__item {
+          font-size: 3.2rem;
+          line-height: 130%;
+          /* 4.16rem */ }
+          .payment-info__delivery-dropdown__item:not(:last-child) {
+            margin-bottom: 1.6rem; }
+      .payment-info__delivery-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 6.4rem; }
+        .payment-info__delivery-box .moscow-delivery__card {
+          width: 71rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          min-height: 27rem; }
+          .payment-info__delivery-box .moscow-delivery__card-title {
+            font-size: 4.4rem;
+            line-height: 110%;
+            /* 4.84rem */ }
+          .payment-info__delivery-box .moscow-delivery__card-text {
+            font-size: 3.2rem;
+            line-height: 130%;
+            /* 4.16rem */
+            width: auto; }
+          .payment-info__delivery-box .moscow-delivery__card-price {
+            font-size: 3.6rem;
+            font-weight: 500;
+            line-height: 130%;
+            /* 4.68rem */ }
+          .payment-info__delivery-box .moscow-delivery__card:first-child .moscow-delivery__card-text {
+            display: none; }
+        .payment-info__delivery-box .other-city-delivery__card {
+          width: 71rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          min-height: 27rem; }
+          .payment-info__delivery-box .other-city-delivery__card-title {
+            font-size: 4.4rem;
+            line-height: 110%;
+            /* 4.84rem */ }
+          .payment-info__delivery-box .other-city-delivery__card-price {
+            font-size: 3.6rem;
+            font-weight: 500;
+            line-height: 130%;
+            /* 4.68rem */ } }
 
 .footer__top {
   width: 156rem;
