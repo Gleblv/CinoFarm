@@ -263,4 +263,208 @@
     &__tab-block.active {
         display: block;
     }
+
+    @media (max-width: 48em) {
+        padding-top: 28.6rem;
+        margin-bottom: 20rem;
+
+        &__wrapper {
+            position: relative;
+            flex-direction: column;
+            margin-bottom: 20rem;
+        }
+
+        &__image,
+        &__left {
+            width: 34.6rem;
+            height: 49.2rem;
+        }
+
+        &__image {
+            margin: 0;
+        }
+
+        &__left {
+            margin-bottom: 6.4rem;
+        }
+
+        &__title {
+            font-size: 4.4rem;
+            line-height: 110%; /* 4.84rem */
+            margin-bottom: 1.6rem;
+        }
+
+        &__name {
+            font-size: 3.6rem;
+            line-height: 130%; /* 4.68rem */
+            margin-bottom: 4rem;
+        }
+
+        &__text {
+            font-size: 3.6rem;
+            line-height: 130%; /* 4.68rem */
+            margin-bottom: 4rem;
+        }
+
+        &__inner {
+            position: absolute;
+            top: 0rem;
+            left: 36.6rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 3.2rem;
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            column-gap: 1.6rem;
+
+            &:first-child,
+            &:last-child {
+                flex-direction: column;
+                row-gap: 1.6rem;
+                align-items: flex-start;
+            }
+
+            strong {
+                font-size: 3.6rem;
+                line-height: 130%; /* 4.68rem */
+                margin: 0;
+            }
+
+            span {
+                font-size: 3.2rem;
+                line-height: 130%; /* 4.16rem */
+            }
+        }
+
+        &__block {
+            flex-wrap: wrap;
+            align-items: center;
+            row-gap: 4rem;
+
+            .product__price {
+                order: 1;
+            }
+
+            .like {
+                order: 2;
+                margin-left: 48.8rem;
+                width: 9.6rem;
+                height: 9.6rem;
+
+                svg {
+                    width: 4.2rem;
+                    height: 4.2rem;
+                }
+            }
+
+            .product__smooth {
+                order: 3;
+            }
+
+            .all-btn {
+                order: 4;
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+
+        &__price {
+            margin: 0;
+            font-size: 4.4rem;
+            line-height: 110%; /* 4.84rem */
+            padding-right: 2.8rem;
+
+            &::before {
+                font-size: 3.2rem;
+                line-height: 110%; /* 3.52rem */
+                right: 0;
+                bottom: 0.5rem;
+            }
+        }
+
+        &__smooth {
+            .number {
+                column-gap: 4.8rem;
+
+                .minus,
+                input {
+                    margin: 0;
+                }
+
+                .minus,
+                .plus {
+                    width: 8.8rem;
+                    height: 8.8rem;
+
+                    svg {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+
+                input {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 3.6rem;
+                    line-height: 130%; /* 4.68rem */
+                }
+            }
+        }
+
+        &__tab-item {
+            font-size: 3.6rem;
+            line-height: 130%; /* 4.68rem */
+            padding: 2rem 4rem;
+            border-radius: 12rem 0rem;
+        }
+
+        &__tab-block {
+            padding-top: 8rem;
+            font-size: 3.6rem;
+            line-height: 130%; /* 4.68rem */
+
+            p {
+                font-size: 3.6rem;
+                line-height: 130%; /* 4.68rem */
+
+                &:not(:last-child) {
+                    margin-bottom: 4rem;
+                }
+            }
+
+            ul {
+                li {
+                    font-size: 3.6rem;
+                    line-height: 130%; /* 4.68rem */
+                    padding-left: 4.4rem;
+
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+
+                    &::before {
+                        width: 2.4rem;
+                        height: 2rem;
+                        background-size: 2.4rem 2rem;
+                    }
+                }
+            }
+        }
+
+        & + .literature {
+            .literature__wrapper {
+                position: relative;
+
+                .literature__left {
+                    position: absolute;
+                    top: calc(100% + 4rem);
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

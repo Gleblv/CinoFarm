@@ -561,7 +561,7 @@ input[type="number"] {
           justify-content: space-between; }
   .title h2 {
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 5.4rem;
+    font-size: 6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%; }
@@ -578,7 +578,7 @@ input[type="number"] {
   padding: 0.6rem 0.6rem 0.6rem 2.4rem;
   overflow: hidden;
   font-family: 'PP Neue Montreal',sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 500;
   color: #fff;
@@ -626,7 +626,7 @@ input[type="number"] {
   background: #FFF;
   padding: 0.8rem 3.5rem;
   font-family: 'PP Neue Montreal',sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
@@ -643,7 +643,7 @@ input[type="number"] {
   position: relative;
   cursor: pointer;
   font-weight: 500;
-  font-size: 1.98rem;
+  font-size: 2.2rem;
   line-height: 130%;
   letter-spacing: 0.02em;
   -webkit-user-select: none;
@@ -742,7 +742,7 @@ input[type="number"] {
     border-radius: 6rem;
     background: #F9F9F8;
     border: none;
-    font-size: 2.34rem;
+    font-size: 2.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
@@ -760,7 +760,7 @@ input[type="number"] {
         padding: 3rem 11.4rem 3.2rem 9.6rem;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         line-height: 130%;
         /* 4.16rem */
         width: 100%; } }
@@ -811,7 +811,7 @@ input[type="number"] {
     display: flex; }
     .pagination-page__numbers a {
       display: inline-block;
-      font-size: 2.7rem;
+      font-size: 3rem;
       font-style: normal;
       font-weight: 500;
       line-height: 110%;
@@ -848,7 +848,7 @@ input[type="number"] {
           width: 2.3352rem;
           height: 4.3784rem; }
       .pagination-page__numbers a {
-        font-size: 3.96rem;
+        font-size: 4.4rem;
         font-weight: 500;
         line-height: 110%;
         /* 4.84rem */ } }
@@ -888,7 +888,7 @@ input[type="number"] {
   cursor: pointer;
   position: relative;
   padding-left: 5.6rem;
-  font-size: 1.98rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 130%; }
@@ -917,7 +917,7 @@ input[type="number"] {
 .error-input {
   color: #840D06;
   margin-top: 0.4rem;
-  font-size: 1.98rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
@@ -940,7 +940,7 @@ input[type="number"] {
   padding-left: 4rem;
   padding-top: 2rem;
   padding-bottom: 0.3rem;
-  font-size: 1.98rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 130%; }
@@ -1030,7 +1030,7 @@ input[type="number"] {
 
 .button {
   padding: 1.4rem 4rem;
-  font-size: 1.98rem;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 110%;
   /* 2.42rem */
@@ -1053,7 +1053,7 @@ input[type="number"] {
   @media (max-width: 48em) {
     .button {
       padding: 2rem 6.4rem;
-      font-size: 3.24rem;
+      font-size: 3.6rem;
       font-weight: 500;
       line-height: 130%;
       /* 4.68rem */
@@ -1061,20 +1061,20 @@ input[type="number"] {
 
 .item-price {
   color: #840D06;
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase; }
   .item-price span {
     color: #840D06;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: normal; }
 
 .sale-price {
   position: relative;
   color: #585858;
-  font-size: 1.98rem;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 130%;
   /* 2.86rem */ }
@@ -1189,7 +1189,7 @@ input[type="number"] {
         display: block; }
       .header__search-input__menu .show-all {
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: 500;
         line-height: 110%;
         /* 2.2rem */
@@ -1213,7 +1213,7 @@ input[type="number"] {
         .header__search-input__menu ul:not(:first-child) {
           padding-top: 2.4rem; }
         .header__search-input__menu ul li {
-          font-size: 1.98rem;
+          font-size: 2.2rem;
           font-weight: 400;
           line-height: 130%;
           /* 2.86rem */
@@ -1277,7 +1277,7 @@ input[type="number"] {
       line-height: 115.385%; }
     .header__data-item span {
       font-family: 'Inter',sans-serif;
-      font-size: 2.16rem;
+      font-size: 2.4rem;
       font-style: normal;
       font-weight: 400;
       line-height: 125%;
@@ -1310,7 +1310,7 @@ input[type="number"] {
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between;
-          font-size: 2.16rem;
+          font-size: 2.4rem;
           line-height: 3rem;
           /* 125% */ }
           .header__data-item:first-child .header__data-item__contacts .header__data-item__contact a {
@@ -1345,7 +1345,7 @@ input[type="number"] {
         color: #840D06; }
       .header__data-block li span {
         font-family: 'Inter',sans-serif;
-        font-size: 2.16rem;
+        font-size: 2.4rem;
         font-style: normal;
         font-weight: 400;
         line-height: 125%; }
@@ -1359,7 +1359,7 @@ input[type="number"] {
       margin-bottom: 0; }
   .header__inner-date {
     font-family: 'Inter',sans-serif;
-    font-size: 2.16rem;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
@@ -1390,7 +1390,7 @@ input[type="number"] {
     margin-right: 13.7rem; }
     .header__lists-left li {
       font-family: 'Inter';
-      font-size: 2.16rem;
+      font-size: 2.4rem;
       font-style: normal;
       font-weight: 400;
       line-height: 125%;
@@ -1409,7 +1409,7 @@ input[type="number"] {
     display: flex; }
     .header__lists-right li {
       font-family: 'Inter';
-      font-size: 2.16rem;
+      font-size: 2.4rem;
       font-style: normal;
       font-weight: 400;
       line-height: 125%;
@@ -1447,7 +1447,7 @@ input[type="number"] {
         background-color: #fff;
         border-radius: 3rem;
         padding: 3.2rem;
-        font-size: 1.98rem;
+        font-size: 2.2rem;
         line-height: 130%;
         /* 2.86rem */ }
         .header__user-menu__login > a {
@@ -1461,7 +1461,7 @@ input[type="number"] {
         border-radius: 3rem;
         padding: 3.2rem; }
         .header__user-menu__account-item {
-          font-size: 1.98rem;
+          font-size: 2.2rem;
           font-weight: 400;
           line-height: 130%;
           /* 2.86rem */
@@ -1526,7 +1526,7 @@ input[type="number"] {
     .header__menu-item {
       cursor: pointer;
       position: relative;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-weight: 500;
       line-height: 130%;
       /* 2.86rem */
@@ -1561,13 +1561,13 @@ input[type="number"] {
         .header__menu-item__menu-column:first-child {
           margin-right: 3.2rem; }
         .header__menu-item__menu-title {
-          font-size: 1.98rem;
+          font-size: 2.2rem;
           font-weight: 500;
           line-height: 130%;
           /* 2.86rem */
           margin-bottom: 3.2rem; }
         .header__menu-item__menu-item {
-          font-size: 1.98rem;
+          font-size: 2.2rem;
           font-weight: 400;
           line-height: 130%;
           /* 2.86rem */ }
@@ -1595,7 +1595,7 @@ input[type="number"] {
           width: 71rem;
           overflow: hidden;
           text-overflow: ellipsis;
-          font-size: 2.88rem;
+          font-size: 3.2rem;
           font-style: normal;
           font-weight: 400;
           line-height: 130%;
@@ -1619,7 +1619,7 @@ input[type="number"] {
             .header__search-input__menu ul:nth-last-child(2) {
               margin-bottom: 3.2rem; }
             .header__search-input__menu ul li {
-              font-size: 2.88rem;
+              font-size: 3.2rem;
               line-height: 130%;
               /* 4.16rem */
               padding-left: 6.4rem;
@@ -1627,7 +1627,7 @@ input[type="number"] {
               .header__search-input__menu ul li:not(:last-child) {
                 margin-bottom: 1.9rem; }
           .header__search-input__menu .show-all {
-            font-size: 2.88rem;
+            font-size: 3.2rem;
             line-height: 110%;
             /* 3.52rem */ }
       .header__container {
@@ -1669,12 +1669,12 @@ input[type="number"] {
         position: absolute;
         top: 0;
         right: -46rem;
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         font-weight: 400;
         line-height: 6rem;
         /* 187.5% */ }
       .header__data-item > span {
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         line-height: 6rem;
         /* 187.5% */
         margin-right: 1.6rem; }
@@ -1688,7 +1688,7 @@ input[type="number"] {
           padding: 4.8rem;
           border-radius: 4rem; }
           .header__data-item:first-child .header__data-item__contacts-wrapper .header__data-item__contacts .header__data-item__contact {
-            font-size: 2.88rem;
+            font-size: 3.2rem;
             line-height: 130%;
             /* 4.16rem */ }
             .header__data-item:first-child .header__data-item__contacts-wrapper .header__data-item__contacts .header__data-item__contact > a {
@@ -1742,7 +1742,7 @@ input[type="number"] {
       .header__burger-row.contacts .header__burger-item:last-child {
         background-image: url(../../img/header/header-burger-time.svg); }
       .header__burger-item {
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         line-height: 130%;
         /* 4.16rem */
         padding: 2.4rem 0; } }
@@ -1824,7 +1824,7 @@ input[type="number"] {
     display: block;
     color: #FFF;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 2.7rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
@@ -1938,7 +1938,7 @@ input[type="number"] {
     -webkit-transition: 0.5s;
     transition: 0.5s; }
     .focal__box-hover-text strong {
-      font-size: 2.7rem;
+      font-size: 3rem;
       font-style: normal;
       font-weight: 500;
       line-height: 110%;
@@ -1948,7 +1948,7 @@ input[type="number"] {
     .focal__box-hover-text span {
       color: #1A1A1A;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 400;
       line-height: 110%; }
@@ -2047,7 +2047,7 @@ input[type="number"] {
   .popular__title strong {
     display: block;
     font-family: 'PP Neue Montreal';
-    font-size: 5.4rem;
+    font-size: 6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
@@ -2056,7 +2056,7 @@ input[type="number"] {
   .popular__title span {
     display: block;
     font-family: 'PP Neue Montreal';
-    font-size: 2.34rem;
+    font-size: 2.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; }
@@ -2141,7 +2141,7 @@ input[type="number"] {
     .popular__title {
       margin-bottom: 8rem; }
       .popular__title strong {
-        font-size: 6.48rem;
+        font-size: 7.2rem;
         margin-bottom: 0; }
     .popular__scroll {
       display: none; } }
@@ -2182,7 +2182,7 @@ input[type="number"] {
     background: #840D06;
     color: #F9F9F8;
     font-family: 'PP Neue Montreal';
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
@@ -2233,7 +2233,7 @@ input[type="number"] {
     color: #1A1A1A;
     text-overflow: ellipsis;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 2.7rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
@@ -2251,7 +2251,7 @@ input[type="number"] {
   .popular-box__price {
     color: #840D06;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -2267,7 +2267,7 @@ input[type="number"] {
       position: absolute;
       content: '₽';
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -2276,7 +2276,7 @@ input[type="number"] {
   .popular-box__sale {
     color: #6D6D6D;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
@@ -2334,7 +2334,7 @@ input[type="number"] {
         left: 4rem;
         top: 4rem; }
       .popular-box__title {
-        font-size: 3.96rem;
+        font-size: 4.4rem;
         font-style: normal;
         font-weight: 500;
         margin-bottom: 3.2rem; }
@@ -2511,14 +2511,14 @@ input[type="number"] {
     margin-bottom: 2.4rem; }
   .news-box__title {
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 2.7rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
     margin-bottom: 3.8rem; }
   .news-box__text {
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; }
@@ -2538,7 +2538,7 @@ input[type="number"] {
     width: 13.2rem;
     height: 3.8rem;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
@@ -2574,7 +2574,7 @@ input[type="number"] {
     background: #840D06;
     border-radius: 10rem 0px;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
@@ -2598,19 +2598,19 @@ input[type="number"] {
         margin-bottom: 4rem;
         padding: 0 2rem; }
       .news-box__category {
-        font-size: 3.24rem;
+        font-size: 3.6rem;
         margin-bottom: 2rem; }
       .news-box__title {
-        font-size: 3.96rem;
+        font-size: 4.4rem;
         max-width: 66rem;
         margin-bottom: 4rem; }
       .news-box__text {
         width: 63rem;
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         line-height: 130%;
         margin-bottom: 4rem; }
       .news-box__link {
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         width: 23.8rem;
         height: 6.8rem;
         border-radius: 10rem; }
@@ -2623,7 +2623,7 @@ input[type="number"] {
         right: 2rem;
         padding: 2rem 4rem;
         line-height: 130%;
-        font-size: 3.24rem; } }
+        font-size: 3.6rem; } }
 
 .education {
   height: 100rem;
@@ -2757,7 +2757,7 @@ input[type="number"] {
   .education-box__title {
     color: #191919;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 2.7rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
@@ -2784,7 +2784,7 @@ input[type="number"] {
       display: block;
       color: #6D6D6D;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 500;
       line-height: 110%;
@@ -2792,7 +2792,7 @@ input[type="number"] {
     .education-box__lector span {
       display: block;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 400;
       line-height: 110%;
@@ -2809,7 +2809,7 @@ input[type="number"] {
       display: block;
       color: #6D6D6D;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 500;
       line-height: 110%;
@@ -2817,7 +2817,7 @@ input[type="number"] {
     .education-box__date span {
       display: block;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 400;
       line-height: 110%;
@@ -2839,7 +2839,7 @@ input[type="number"] {
     background: #FFF;
     padding: 0.8rem 3.5rem;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
@@ -2853,7 +2853,7 @@ input[type="number"] {
   .education-box__status {
     color: #840D06;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%; }
@@ -2867,7 +2867,7 @@ input[type="number"] {
         height: 45.6rem;
         margin-bottom: 4rem; }
       .education-box__title {
-        font-size: 3.96rem;
+        font-size: 4.4rem;
         line-height: 110%;
         margin-bottom: 4rem; }
       .education-box__inner {
@@ -2878,23 +2878,23 @@ input[type="number"] {
         gap: 3.2rem;
         margin-bottom: 4rem; }
       .education-box__lector strong {
-        font-size: 3.24rem;
+        font-size: 3.6rem;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
         margin-bottom: 1.6rem; }
       .education-box__lector span {
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         font-style: normal;
         font-weight: 400;
         line-height: 130%; }
       .education-box__link {
         border-radius: 10rem;
         margin-bottom: 0;
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         padding: 1.6rem 7rem; }
       .education-box__status {
-        font-size: 2.88rem; } }
+        font-size: 3.2rem; } }
 
 .literature .title {
   margin-bottom: 6rem; }
@@ -3027,7 +3027,7 @@ input[type="number"] {
     margin-right: 3.2rem; }
   .literature-box__title {
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 2.7rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
@@ -3047,7 +3047,7 @@ input[type="number"] {
       display: block;
       color: #6D6D6D;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 500;
       line-height: 130%;
@@ -3055,7 +3055,7 @@ input[type="number"] {
     .literature-box__author span {
       color: #1A1A1A;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 400;
       line-height: 130%;
@@ -3074,7 +3074,7 @@ input[type="number"] {
       display: block;
       color: #6D6D6D;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 500;
       line-height: 130%;
@@ -3082,7 +3082,7 @@ input[type="number"] {
     .literature-box__publishing span {
       color: #1A1A1A;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 400;
       line-height: 130%;
@@ -3098,7 +3098,7 @@ input[type="number"] {
   .literature-box__price {
     color: #840D06;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-style: normal;
     font-weight: 500;
     position: relative;
@@ -3186,32 +3186,32 @@ input[type="number"] {
         padding-top: 1rem;
         margin-bottom: 4rem; }
         .literature-box__author strong {
-          font-size: 3.24rem;
+          font-size: 3.6rem;
           font-style: normal;
           font-weight: 500;
           line-height: 130%;
           margin-bottom: 2rem; }
         .literature-box__author span {
-          font-size: 2.88rem;
+          font-size: 3.2rem;
           line-height: 130%; }
       .literature-box__publishing {
         margin-bottom: 0;
         max-width: auto; }
         .literature-box__publishing strong {
-          font-size: 3.24rem;
+          font-size: 3.6rem;
           font-style: normal;
           font-weight: 500;
           line-height: 130%;
           margin-bottom: 2rem; }
         .literature-box__publishing span {
-          font-size: 2.88rem;
+          font-size: 3.2rem;
           line-height: 130%; }
       .literature-box__mob-wrap-two {
         padding: 0 2rem; }
       .literature-box__title {
         color: #1A1A1A;
         text-overflow: ellipsis;
-        font-size: 3.96rem;
+        font-size: 4.4rem;
         font-style: normal;
         font-weight: 500;
         line-height: 110%;
@@ -3262,7 +3262,7 @@ input[type="number"] {
       color: #1A1A1A;
       max-width: 88.2rem;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 2.34rem;
+      font-size: 2.6rem;
       font-style: normal;
       font-weight: 400;
       line-height: 130%; }
@@ -3346,7 +3346,7 @@ input[type="number"] {
           margin-bottom: 4rem; }
         .partners .title p {
           max-width: 100%;
-          font-size: 3.24rem;
+          font-size: 3.6rem;
           line-height: 130%; }
       .partners__pagination {
         position: absolute;
@@ -3384,7 +3384,7 @@ input[type="number"] {
   .partners-box__text {
     color: #1A1A1A;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%; }
@@ -3415,7 +3415,7 @@ input[type="number"] {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
@@ -3451,7 +3451,7 @@ input[type="number"] {
           border-radius: 6rem 6rem 6rem 0px; }
       .partners-box__text {
         width: 60rem;
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -3468,7 +3468,7 @@ input[type="number"] {
             -ms-flex-align: center;
                 align-items: center;
         padding: 1.6rem 7rem;
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         font-style: normal;
         font-weight: 500;
         line-height: 110%; } }
@@ -3500,7 +3500,7 @@ input[type="number"] {
       color: #1A1A1A;
       max-width: 88.2rem;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 2.34rem;
+      font-size: 2.6rem;
       font-style: normal;
       font-weight: 400;
       line-height: 130%; }
@@ -3580,7 +3580,7 @@ input[type="number"] {
           margin-bottom: 4rem; }
         .projects .title p {
           max-width: 100%;
-          font-size: 2.88rem;
+          font-size: 3.2rem;
           line-height: 130%; }
       .projects__scroll {
         display: none; }
@@ -3618,7 +3618,7 @@ input[type="number"] {
   .projects-box__text {
     color: #1A1A1A;
     font-family: 'PP Neue Montreal',sans-serif;
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%; }
@@ -3649,7 +3649,7 @@ input[type="number"] {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
@@ -3686,7 +3686,7 @@ input[type="number"] {
           border-radius: 6rem 6rem 6rem 0px; }
       .projects-box__text {
         width: 100%;
-        font-size: 3.24rem;
+        font-size: 3.6rem;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -3703,7 +3703,7 @@ input[type="number"] {
             -ms-flex-align: center;
                 align-items: center;
         padding: 1.6rem 7rem;
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         font-style: normal;
         font-weight: 500;
         line-height: 110%; } }
@@ -3732,14 +3732,14 @@ input[type="number"] {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .invitation__title {
-    font-size: 5.4rem;
+    font-size: 6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
     width: 47.9rem;
     margin-bottom: 3rem; }
   .invitation__text {
-    font-size: 2.34rem;
+    font-size: 2.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
@@ -3750,13 +3750,13 @@ input[type="number"] {
     padding-left: 3.6rem;
     margin-bottom: 2rem; }
     .invitation__phone span {
-      font-size: 2.34rem;
+      font-size: 2.6rem;
       font-style: normal;
       font-weight: 400;
       line-height: 130%; }
     .invitation__phone a {
       margin-left: 1.2rem;
-      font-size: 2.34rem;
+      font-size: 2.6rem;
       font-style: normal;
       font-weight: 500; }
     .invitation__phone::before {
@@ -3789,7 +3789,7 @@ input[type="number"] {
     position: relative;
     margin-bottom: 3.2rem; }
     .invitation__form-inner label {
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 500;
       line-height: 130%;
@@ -3808,7 +3808,7 @@ input[type="number"] {
       padding-left: 4rem;
       padding-top: 1.6rem;
       padding-bottom: 0.3rem;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 400;
       line-height: 130%; }
@@ -3828,27 +3828,27 @@ input[type="number"] {
             -ms-flex-direction: column;
                 flex-direction: column; }
       .invitation__title {
-        font-size: 6.48rem;
+        font-size: 7.2rem;
         width: 100%;
         margin-bottom: 4rem; }
       .invitation__text {
         max-width: 100%;
         margin-bottom: 8rem;
-        font-size: 3.24rem;
+        font-size: 3.6rem;
         font-style: normal;
         font-weight: 400;
         line-height: 130%; }
       .invitation__phone {
         padding-left: 6rem;
         margin-bottom: 4rem;
-        font-size: 3.24rem;
+        font-size: 3.6rem;
         line-height: 130%; }
         .invitation__phone span {
-          font-size: 3.24rem;
+          font-size: 3.6rem;
           line-height: 130%;
           /* 4.68rem */ }
         .invitation__phone a {
-          font-size: 3.24rem;
+          font-size: 3.6rem;
           font-weight: 500;
           line-height: 130%;
           /* 4.68rem */
@@ -3863,7 +3863,7 @@ input[type="number"] {
       .invitation__form-inner {
         margin-bottom: 6rem; }
         .invitation__form-inner label {
-          font-size: 3.24rem;
+          font-size: 3.6rem;
           padding-left: 8rem;
           top: -1.7rem; }
         .invitation__form-inner input {
@@ -3871,7 +3871,7 @@ input[type="number"] {
           background-image: url(../img/invitation/fonmbinput.svg);
           height: 13rem;
           padding: 3.6rem 8rem;
-          font-size: 3.24rem; }
+          font-size: 3.6rem; }
       .invitation .checkbox {
         margin-left: 3rem; }
       .invitation__form .checkbox .checkmark:after {
@@ -3953,7 +3953,7 @@ input[type="number"] {
       background: #840D06;
       border-radius: 10rem 0px;
       font-family: 'PP Neue Montreal',sans-serif;
-      font-size: 1.98rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 500;
       line-height: 130%;
@@ -3985,12 +3985,12 @@ input[type="number"] {
     display: flex; }
   .news-p__box-date {
     color: #6D6D6D;
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     line-height: 130%;
     /* 2.86rem */ }
   .news-p__box-category {
     color: #840D06;
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     margin-bottom: 3.2rem;
     font-style: normal;
     font-weight: 400;
@@ -3999,13 +3999,13 @@ input[type="number"] {
   .news-p__box-title {
     margin-bottom: 2.4rem;
     max-width: 76.3rem;
-    font-size: 2.7rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: 130%; }
   .news-p__box-text {
     max-width: 76.3rem;
-    font-size: 1.98rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; }
@@ -4022,7 +4022,7 @@ input[type="number"] {
       padding-top: 28.6rem;
       padding-bottom: 20rem; }
       .news-p .title {
-        font-size: 6.48rem;
+        font-size: 7.2rem;
         line-height: 110%;
         /* 7.92rem */
         margin-bottom: 8rem; }
@@ -4041,29 +4041,29 @@ input[type="number"] {
                   align-items: flex-start;
           margin-bottom: 2rem; }
         .news-p__box-category {
-          font-size: 3.24rem;
+          font-size: 3.6rem;
           line-height: 130%;
           /* 4.68rem */
           margin: 0; }
         .news-p__box-date {
-          font-size: 3.24rem;
+          font-size: 3.6rem;
           line-height: 130%;
           /* 4.68rem */
           margin: 0; }
         .news-p__box-title {
-          font-size: 3.96rem;
+          font-size: 4.4rem;
           line-height: 110%;
           /* 4.84rem */
           margin-bottom: 4rem; }
         .news-p__box-text {
-          font-size: 2.88rem;
+          font-size: 3.2rem;
           line-height: 130%;
           /* 4.16rem */
           margin-bottom: 4rem; }
         .news-p__box .link {
           padding: 1.6rem 7rem;
           border-radius: 10rem;
-          font-size: 2.88rem;
+          font-size: 3.2rem;
           line-height: 110%;
           /* 3.52rem */
           margin-bottom: 4rem; }
@@ -4077,7 +4077,7 @@ input[type="number"] {
           left: 42.2rem;
           padding: 2rem 6.4rem;
           border-radius: 20rem 0rem;
-          font-size: 3.24rem;
+          font-size: 3.6rem;
           line-height: 130%;
           /* 4.68rem */ } }
 
@@ -4518,6 +4518,178 @@ input[type="number"] {
       margin-bottom: 0; }
   .product__tab-block.active {
     display: block; }
+  @media (max-width: 48em) {
+    .product {
+      padding-top: 28.6rem;
+      margin-bottom: 20rem; }
+      .product__wrapper {
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 20rem; }
+      .product__image, .product__left {
+        width: 34.6rem;
+        height: 49.2rem; }
+      .product__image {
+        margin: 0; }
+      .product__left {
+        margin-bottom: 6.4rem; }
+      .product__title {
+        font-size: 4.4rem;
+        line-height: 110%;
+        /* 4.84rem */
+        margin-bottom: 1.6rem; }
+      .product__name {
+        font-size: 3.6rem;
+        line-height: 130%;
+        /* 4.68rem */
+        margin-bottom: 4rem; }
+      .product__text {
+        font-size: 3.6rem;
+        line-height: 130%;
+        /* 4.68rem */
+        margin-bottom: 4rem; }
+      .product__inner {
+        position: absolute;
+        top: 0rem;
+        left: 36.6rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        row-gap: 3.2rem; }
+      .product__info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-column-gap: 1.6rem;
+           -moz-column-gap: 1.6rem;
+                column-gap: 1.6rem; }
+        .product__info:first-child, .product__info:last-child {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          row-gap: 1.6rem;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; }
+        .product__info strong {
+          font-size: 3.6rem;
+          line-height: 130%;
+          /* 4.68rem */
+          margin: 0; }
+        .product__info span {
+          font-size: 3.2rem;
+          line-height: 130%;
+          /* 4.16rem */ }
+      .product__block {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        row-gap: 4rem; }
+        .product__block .product__price {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+        .product__block .like {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2;
+          margin-left: 48.8rem;
+          width: 9.6rem;
+          height: 9.6rem; }
+          .product__block .like svg {
+            width: 4.2rem;
+            height: 4.2rem; }
+        .product__block .product__smooth {
+          -webkit-box-ordinal-group: 4;
+              -ms-flex-order: 3;
+                  order: 3; }
+        .product__block .all-btn {
+          -webkit-box-ordinal-group: 5;
+              -ms-flex-order: 4;
+                  order: 4;
+          margin-left: auto;
+          margin-right: 0; }
+      .product__price {
+        margin: 0;
+        font-size: 4.4rem;
+        line-height: 110%;
+        /* 4.84rem */
+        padding-right: 2.8rem; }
+        .product__price::before {
+          font-size: 3.2rem;
+          line-height: 110%;
+          /* 3.52rem */
+          right: 0;
+          bottom: 0.5rem; }
+      .product__smooth .number {
+        -webkit-column-gap: 4.8rem;
+           -moz-column-gap: 4.8rem;
+                column-gap: 4.8rem; }
+        .product__smooth .number .minus,
+        .product__smooth .number input {
+          margin: 0; }
+        .product__smooth .number .minus,
+        .product__smooth .number .plus {
+          width: 8.8rem;
+          height: 8.8rem; }
+          .product__smooth .number .minus svg,
+          .product__smooth .number .plus svg {
+            width: 4rem;
+            height: 4rem; }
+        .product__smooth .number input {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 3.6rem;
+          line-height: 130%;
+          /* 4.68rem */ }
+      .product__tab-item {
+        font-size: 3.6rem;
+        line-height: 130%;
+        /* 4.68rem */
+        padding: 2rem 4rem;
+        border-radius: 12rem 0rem; }
+      .product__tab-block {
+        padding-top: 8rem;
+        font-size: 3.6rem;
+        line-height: 130%;
+        /* 4.68rem */ }
+        .product__tab-block p {
+          font-size: 3.6rem;
+          line-height: 130%;
+          /* 4.68rem */ }
+          .product__tab-block p:not(:last-child) {
+            margin-bottom: 4rem; }
+        .product__tab-block ul li {
+          font-size: 3.6rem;
+          line-height: 130%;
+          /* 4.68rem */
+          padding-left: 4.4rem; }
+          .product__tab-block ul li:not(:last-child) {
+            margin-bottom: 2rem; }
+          .product__tab-block ul li::before {
+            width: 2.4rem;
+            height: 2rem;
+            background-size: 2.4rem 2rem; }
+      .product + .literature .literature__wrapper {
+        position: relative; }
+        .product + .literature .literature__wrapper .literature__left {
+          position: absolute;
+          top: calc(100% + 4rem);
+          left: 0;
+          width: 100%; } }
 
 .basket {
   padding-top: 25.1rem;
@@ -8602,7 +8774,7 @@ input[type="number"] {
   .footer__top-inner li {
     color: #1A1A1A;
     font-family: 'Inter';
-    font-size: 2.16rem;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
@@ -8641,7 +8813,7 @@ input[type="number"] {
               justify-content: space-between; }
       .footer__top-inner-mob li {
         max-width: 34.2rem;
-        font-size: 2.88rem;
+        font-size: 3.2rem;
         font-style: normal;
         font-weight: 400;
         line-height: 130%;
