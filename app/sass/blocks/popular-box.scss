@@ -35,7 +35,7 @@
         background:  #840D06;
         color:  #F9F9F8;
         font-family: 'PP Neue Montreal';
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -85,7 +85,7 @@
         color:  #1A1A1A;
         text-overflow: ellipsis;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -104,7 +104,7 @@
     &__price {
         color:  #840D06;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 5rem;
+        font-size: $price;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -118,7 +118,7 @@
             position: absolute;
             content:'₽';
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2rem;
+            font-size: $button;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -130,7 +130,7 @@
     &__sale {
         color:  #6D6D6D;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -167,6 +167,78 @@
         background:#840D06;
         svg {
             fill: #fff;
+        }
+    }
+
+    @media (max-width: 48em) {
+        width: 100%;
+        height: 106.2rem;
+        padding: 2rem;
+
+        &__image {
+            width: 100%;
+            height: 69rem;
+            border-radius: 0px 6rem;
+            margin-bottom: 4rem;
+
+        }
+
+        &__status {
+            border-radius: 10rem 0;
+            background: #840d06;
+            color: #f9f9f8;
+            font-family: 'PP Neue Montreal';
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            width: 24.8rem;
+            height: 8.6rem;
+            left: 4rem;
+            top:  4rem;
+        }
+
+        &__title {
+            font-size: $titleMediumMob;
+            font-style: normal;
+            font-weight: 500;
+            margin-bottom: 3.2rem;
+        }
+
+        &__like {
+            width: 9.6rem;
+            height: 9.6rem;
+            top: 4rem;
+            right: 4rem;
+            svg {
+                width: 4.2rem;
+                height: 4.2rem;
+            }
+        }
+
+        &__price {
+            font-size: 8rem;
+            padding-right: 2.5rem;
+            &::before {
+                font-size: 4rem;
+                color:  #840d06;
+                bottom: 1.3rem;
+
+            }
+        }
+
+        &__sale {
+            margin-top: 2rem;
+            font-size: 4rem;
+        }
+
+        &__basket {
+            width: 9.6rem;
+            height: 9.6rem;
+            svg {
+                width: 4.2rem;
+                height: 4.2rem;
+            }
         }
     }
 }

@@ -30,7 +30,7 @@
             border-radius: 10rem 0px;
     
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             line-height: 130%; 
@@ -68,13 +68,13 @@
 
     &__box-date {
         color: #6D6D6D;
-        font-size: 2.2rem;
+        font-size: $textSmall;
         line-height: 130%; /* 2.86rem */
     }
 
     &__box-category {
         color:  #840D06;
-        font-size: 2.2rem;
+        font-size: $textSmall;
         margin-bottom: 3.2rem;
         font-style: normal;
         font-weight: 400;
@@ -85,7 +85,7 @@
     &__box-title {
         margin-bottom: 2.4rem;
         max-width: 76.3rem;
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -93,7 +93,7 @@
 
     &__box-text {
         max-width: 76.3rem;
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-style: normal;
         font-weight: 400;
         line-height: 130%;
@@ -121,7 +121,7 @@
         padding-bottom: 20rem;
 
         .title {
-            font-size: 7.2rem;
+            font-size: $titleBigMob;
             line-height: 110%; /* 7.92rem */
             margin-bottom: 8rem;
         }
@@ -137,25 +137,25 @@
             }
 
             &-category {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
                 margin: 0;
             }
 
             &-date {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
                 margin: 0;
             }
 
             &-title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 4rem;
             }
 
             &-text {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
                 margin-bottom: 4rem;
             }
@@ -163,7 +163,7 @@
             .link {
                 padding: 1.6rem 7rem;
                 border-radius: 10rem;
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 110%; /* 3.52rem */
                 margin-bottom: 4rem;
             }
@@ -180,7 +180,7 @@
                 left: 42.2rem;
                 padding: 2rem 6.4rem;
                 border-radius: 20rem 0rem;
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
             }
         }

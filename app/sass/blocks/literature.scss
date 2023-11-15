@@ -1,6 +1,4 @@
 .literature {
-  
-
     .title {
         margin-bottom: 6rem;
     }
@@ -81,8 +79,30 @@
         }
     }
 
-
-
+    @media (max-width: 48em) {
+        height: initial;
+        margin-bottom: 20rem;
+        .container {
+            padding-top: 0;
+        }
+    
+        &__wrapper {
+            margin-bottom: 4rem;
+        }
+    
+        &__pagination {
+            top: calc(100% + 4rem);
+            position: absolute;
+        }
+    
+        .title {
+            margin-bottom: 8rem;
+        }
+    
+        &__scroll {
+            display: none;
+        }
+    }
 }
 
 

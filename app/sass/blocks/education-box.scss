@@ -32,7 +32,7 @@
     &__title {
         color: #191919;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-style: normal;
         font-weight: 500;
         line-height: 110%; 
@@ -55,7 +55,7 @@
             display: block;
             color:  #6D6D6D;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             line-height: 110%; 
@@ -65,7 +65,7 @@
         span {
             display: block;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 400;
             line-height: 110%; 
@@ -82,7 +82,7 @@
             display: block;
             color:  #6D6D6D;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             line-height: 110%; 
@@ -92,7 +92,7 @@
         span {
             display: block;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 400;
             line-height: 110%; 
@@ -116,7 +116,7 @@
       
            
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2rem;
+            font-size: $button;
             font-style: normal;
             font-weight: 500;
             line-height: 110%; 
@@ -131,10 +131,61 @@
     &__status {
         color:  #840D06;
         font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             line-height: 110%; 
 
+    }
+
+    @media (max-width: 48em) {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        padding-bottom: 4rem;
+    
+        &__image {
+            height: 45.6rem;
+            margin-bottom: 4rem;
+        }
+    
+        &__title {
+            font-size: $titleMediumMob;
+            line-height: 110%;
+            margin-bottom: 4rem;
+        }
+        &__inner {
+            flex-direction: column;
+            gap: 3.2rem;
+            margin-bottom: 4rem;
+        }
+    
+        &__lector {
+            strong {
+                font-size: $textBigMob;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                margin-bottom: 1.6rem; 
+            }
+    
+            span {
+                font-size: $textSmallMob;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+            }
+        }
+    
+        &__link {
+            border-radius: 10rem;
+            margin-bottom: 0;
+            font-size: $textSmallMob;
+            padding: 1.6rem 7rem;
+        }
+    
+        &__status {
+            font-size: $textSmallMob;
+        }
     }
 }

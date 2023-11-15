@@ -89,7 +89,7 @@
 
             .show-all {
                 text-align: center;
-                font-size: 2rem;
+                font-size: $button;
                 font-weight: 500;
                 line-height: 110%; /* 2.2rem */
                 color: #840D06;
@@ -139,7 +139,7 @@
                 }
 
                 li {
-                    font-size: 2.2rem;
+                    font-size: $menuSmall;
                     font-weight: 400;
                     line-height: 130%; /* 2.86rem */
                     padding-left: 5rem;
@@ -214,7 +214,7 @@
 
         span {
             font-family: 'Inter',sans-serif;
-            font-size: 2.4rem;
+            font-size: $menuBig;
             font-style: normal;
             font-weight: 400;
             line-height: 125% ;
@@ -250,7 +250,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    font-size: 2.4rem;
+                    font-size: $menuBig;
                     line-height: 3rem; /* 125% */
 
                     a {
@@ -293,7 +293,7 @@
             }
             span {
                 font-family: 'Inter',sans-serif;
-                font-size: 2.4rem;
+                font-size: $menuBig;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 125%; 
@@ -318,7 +318,7 @@
 
     &__inner-date {
         font-family: 'Inter',sans-serif;
-        font-size: 2.4rem;
+        font-size: $menuBig;
         font-style: normal;
         font-weight: 400;
         line-height: 125%;
@@ -351,7 +351,7 @@
         margin-right: 13.7rem;
         li {
             font-family: 'Inter';
-            font-size: 2.4rem;
+            font-size: $menuBig;
             font-style: normal;
             font-weight: 400;
             line-height: 125%;
@@ -374,7 +374,7 @@
         display: flex;
         li {
             font-family: 'Inter';
-            font-size: 2.4rem;
+            font-size: $menuBig;
             font-style: normal;
             font-weight: 400;
             line-height: 125%;
@@ -429,7 +429,7 @@
                 background-color: #fff;
                 border-radius: 3rem;
                 padding: 3.2rem;
-                font-size: 2.2rem;
+                font-size: $textSmall;
                 line-height: 130%; /* 2.86rem */
 
                 & > a {
@@ -451,7 +451,7 @@
                 padding: 3.2rem;
 
                 &-item {
-                    font-size: 2.2rem;
+                    font-size: $textSmall;
                     font-weight: 400;
                     line-height: 130%; /* 2.86rem */
                     padding-left: 4.6rem;
@@ -529,7 +529,7 @@
         &-item {
             cursor: pointer;
             position: relative;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 500;
             line-height: 130%; /* 2.86rem */
             padding-left: 2.4rem;
@@ -577,14 +577,14 @@
                 }
 
                 &-title {
-                    font-size: 2.2rem;
+                    font-size: $titleSmall;
                     font-weight: 500;
                     line-height: 130%; /* 2.86rem */
                     margin-bottom: 3.2rem;
                 }
 
                 &-item {
-                    font-size: 2.2rem;
+                    font-size: $textSmall;
                     font-weight: 400;
                     line-height: 130%; /* 2.86rem */
 
@@ -632,7 +632,7 @@
                         width: 71rem;
                         overflow: hidden;
                         text-overflow: ellipsis;
-                        font-size: 3.2rem;
+                        font-size: $textSmallMob;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 130%; /* 4.16rem */
@@ -667,7 +667,7 @@
                     }
 
                     li {
-                        font-size: 3.2rem;
+                        font-size: $menuMob;
                         line-height: 130%; /* 4.16rem */
                         padding-left: 6.4rem;
                         background-size: 4.8rem 4.8rem;
@@ -679,7 +679,7 @@
                 }
 
                 .show-all {
-                    font-size: 3.2rem;
+                    font-size: $textSmallMob;
                     line-height: 110%; /* 3.52rem */
                 }
             }
@@ -738,13 +738,13 @@
                     position: absolute;
                     top: 0;
                     right: -46rem;
-                    font-size: 3.2rem;
+                    font-size: $textSmallMob;
                     font-weight: 400;
                     line-height: 6rem; /* 187.5% */
                 }
 
                 & > span {
-                    font-size: 3.2rem;
+                    font-size: $textSmallMob;
                     line-height: 6rem; /* 187.5% */
                     margin-right: 1.6rem;
                 }
@@ -764,7 +764,7 @@
                             border-radius: 4rem;
 
                             .header__data-item__contact {
-                                font-size: 3.2rem;
+                                font-size: $textSmallMob;
                                 line-height: 130%; /* 4.16rem */
 
                                 & > a {
@@ -866,7 +866,7 @@
         }
     
         &__burger-item {
-            font-size: 3.2rem;
+            font-size: $textSmallMob;
             line-height: 130%; /* 4.16rem */
             padding: 2.4rem 0;
         }

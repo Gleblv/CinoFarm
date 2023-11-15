@@ -1,6 +1,4 @@
 .footer {
-
-  
     &__top {
         width: 156rem;
         // border-top: 0.1rem solid rgba(109, 109, 109, 1);
@@ -56,11 +54,6 @@
             animation-delay: -0.2s;
             transition: 0.2s;
         }
-
-    
-
-       
-     
     }
 
     &__scroll-wrap {
@@ -100,7 +93,7 @@
         li {
             color:  #1A1A1A;
             font-family: 'Inter';
-            font-size: 2.4rem;
+            font-size: $menuBig;
             font-style: normal;
             font-weight: 400;
             line-height: 125%;
@@ -115,6 +108,63 @@
 
         li:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 48em) {
+        overflow: hidden;
+
+        &__top {
+            width: 100%;
+            padding-top: 10rem;
+            flex-direction: column;
+            margin-bottom: 8rem;
+        }
+    
+        &__logo {
+            width: 18.6rem;
+            height: 23.4rem;
+            margin-bottom: 8rem;
+        }
+    
+        &__top-inner-mob {
+            display: flex;
+            justify-content: space-between;
+    
+            li {
+                max-width: 34.2rem;
+                font-size: $menuMob;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                margin-bottom: 3.2rem;
+            }
+        }
+    
+        &__top-inner {
+            display: none;
+        }
+    
+        &__bottom {
+            width: 100%;
+            padding-top: 6rem;
+            padding-bottom: 5rem;
+        }
+    
+        &__scroll {
+            display: none;
+        }
+    
+        &__policy {
+            font-size: 2.8rem;
+            max-width: 34.4rem;
+        }
+    
+        &__re {
+            width: 34.4rem;
+            height: 8.6rem;
+            position: relative;
+            top: -2.4rem;
         }
     }
 }

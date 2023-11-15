@@ -34,7 +34,7 @@
 
     &__title {
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-style: normal;
         font-weight: 500;
         line-height: 130%; 
@@ -52,7 +52,7 @@
             display: block;
             color:  #6D6D6D;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             line-height: 130%;
@@ -62,7 +62,7 @@
         span {
             color: #1A1A1A;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 400;
             line-height: 130%; 
@@ -81,7 +81,7 @@
             display: block;
             color:  #6D6D6D;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             line-height: 130%;
@@ -91,7 +91,7 @@
         span {
             color: #1A1A1A;
             font-family: 'PP Neue Montreal',sans-serif;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 400;
             line-height: 130%; 
@@ -108,7 +108,7 @@
     &__price {
         color: #840D06;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 5rem;
+        font-size: $price;
         font-style: normal;
         font-weight: 500;
         position: relative;
@@ -177,5 +177,112 @@
 
     &__mob {
         display: none;
+    }
+
+    @media (max-width: 48em) {
+        width: 100%;
+        padding: 10px 10px 20px 10px;
+        border-radius: 0px 0px 30px 0px;
+        height: auto;
+    
+    
+        &__desk {
+            display: none;
+        }
+    
+        &__mob {
+            display: block;
+        }
+    
+        &__mob-wrap-one {
+            display: flex;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+    
+        &__image {
+            width: 32.4rem;
+            height: 48.6rem;
+        }
+    
+        &__author {
+            max-width: 30.6rem;
+            padding-top: 1rem;
+            margin-bottom: 4rem;
+            strong {
+                font-size: $textBigMob;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                margin-bottom: 2rem;
+            }
+    
+            span {
+                font-size: $textSmallMob;
+                line-height: 130%;
+            }
+        }
+    
+        &__publishing {
+            margin-bottom: 0;
+            max-width: auto;
+           
+            strong {
+                font-size: $textBigMob;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                margin-bottom: 2rem;
+            }
+    
+            span {
+                font-size: $textSmallMob;
+                line-height: 130%;
+            }
+        }
+    
+        &__mob-wrap-two {
+            padding: 0 2rem;
+        }
+    
+        &__title {
+            color:  #1A1A1A;
+            text-overflow: ellipsis;
+            font-size: $titleMediumMob;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+            margin-bottom: 4rem;
+        }
+    
+        &__price {
+            font-size: 8rem;
+            padding-right: 2.8rem;
+            &::before {
+                color: #840D06;
+                font-size: 4rem;
+                bottom: 1.6rem;
+            }
+        }
+    
+        &__like {
+            width: 9.6rem;
+            height: 9.6rem;
+            margin-right: 3.2rem;
+            svg {
+                width: 4.2rem;
+                height: 4.2rem;
+            }
+        }
+    
+        &__basket {
+            width: 9.6rem;
+            height: 9.6rem;
+            
+            svg {
+                width: 4.2rem;
+                height: 4.2rem;
+            }
+        }
     }
 }

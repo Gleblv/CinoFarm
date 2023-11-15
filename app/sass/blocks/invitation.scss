@@ -1,5 +1,4 @@
 .invitation {
-    
     background-image: url(../img/invitation/bg.png);
     background-repeat: no-repeat;
     background-position: center top;
@@ -17,7 +16,7 @@
     }
 
     &__title {
-        font-size: 6rem;
+        font-size: $titleBig;
         font-style: normal;
         font-weight: 500;
         line-height: 110%;
@@ -26,7 +25,7 @@
     }
 
     &__text {
-        font-size: 2.6rem;
+        font-size: $textBig;
         font-style: normal;
         font-weight: 400;
         line-height: 130%; 
@@ -39,7 +38,7 @@
         padding-left: 3.6rem;
         margin-bottom: 2rem;
         span {
-            font-size: 2.6rem;
+            font-size: $textBig;
             font-style: normal;
             font-weight: 400;
             line-height: 130%; 
@@ -47,7 +46,7 @@
 
         a {
             margin-left: 1.2rem;
-            font-size: 2.6rem;
+            font-size: $textBig;
             font-style: normal;
             font-weight: 500;
         }
@@ -84,7 +83,7 @@
         position: relative;
         margin-bottom: 3.2rem;
         label {
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             line-height: 130%;
@@ -105,7 +104,7 @@
             padding-left: 4rem;
             padding-top: 1.6rem;
             padding-bottom: 0.3rem;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 400;
             line-height: 130%;
@@ -118,4 +117,92 @@
         margin-left: auto;
     }
   
+    @media (max-width: 48em) {
+        height: auto;
+        min-height: auto;
+        margin-bottom: 10rem;
+        background-image: url(../../img/invitation/bg-mobile.png);
+        background-position: center 110rem;
+    
+        &__wrapper {
+            flex-direction: column;
+        }
+    
+        &__title {
+            font-size: $titleBigMob;
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+    
+        &__text {
+            max-width: 100%;
+            margin-bottom: 8rem;
+            font-size: $textBigMob;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    
+        &__phone {
+            padding-left: 6rem;
+            margin-bottom: 4rem;
+            font-size: $textBigMob;
+            line-height: 130%;
+    
+            span {
+                font-size: $textBigMob;
+                line-height: 130%; /* 4.68rem */
+            }
+    
+            a {
+                font-size: $textBigMob;
+                font-weight: 500;
+                line-height: 130%; /* 4.68rem */
+                margin-left: 2.4rem;
+            }
+    
+            &::before {
+                width: 4.8rem;
+                height: 4.8rem;
+                transform: translate(0,-50%);
+            }
+        }
+    
+        &__right {
+            margin-top: 10rem;
+        }
+        
+    
+        &__form-inner {
+            margin-bottom: 6rem;
+            label {
+                font-size: $textBigMob;
+                padding-left: 8rem;
+                top: -1.7rem;
+            }
+            input {
+                width: 100%;
+                background-image: url(../img/invitation/fonmbinput.svg);
+                height: 13rem;
+                padding: 3.6rem 8rem;
+                font-size: $textBigMob;
+            }
+        }
+    
+        .checkbox {
+            margin-left: 3rem;
+        }
+    
+        &__form {
+            .checkbox .checkmark:after {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    
+        .all-btn {
+            margin-left: initial;
+            margin-top: 5rem;
+        }
+    }
 }

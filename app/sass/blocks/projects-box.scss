@@ -34,7 +34,7 @@
     &__text {
         color:  #1A1A1A;
         font-family: 'PP Neue Montreal',sans-serif;
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-style: normal;
         font-weight: 500;
         line-height: 130%; 
@@ -59,7 +59,7 @@
         justify-content: center;
         width: fit-content;
 
-        font-size: 2rem;
+        font-size: $button;
         font-style: normal;
         font-weight: 500;
         line-height: 110%;
@@ -68,5 +68,59 @@
             border-radius: 5rem 0px;
             transition: 0.3s;
         } 
+    }
+
+    @media (max-width: 48em) {
+        width: 100%;
+        height: auto;
+        border-radius: 6rem 6rem 6rem 0px;
+        padding: 4rem;
+        display: block;
+
+        &__wrapper {
+            flex-direction: column;
+            display: block;
+        }
+
+        &__left {
+            margin-right: 0;
+            margin-top: 0;
+        }
+
+        &__right {
+            display: block;
+        }
+
+        &__image {
+            height: 22rem;
+            width: 100%;
+            border-radius: 6rem 6rem 6rem 0px;
+            margin-bottom: 4rem;
+            img {
+                border-radius: 6rem 6rem 6rem 0px;
+            }
+        }
+
+        &__text {
+            width: 100%;
+            font-size: $textBigMob;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            margin-bottom: 4rem;
+        }
+
+        &__link {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            padding: 1.6rem 7rem;
+
+            font-size: $textSmallMob;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+        }
     }
 }

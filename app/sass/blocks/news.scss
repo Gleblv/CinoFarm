@@ -93,4 +93,29 @@
             border-radius: 0 6rem 0 0;
         }
     }
+
+    @media (max-width: 48em) {
+        padding-top: 0;
+        height: initial;
+        margin-bottom: 20rem;
+        background-image: none;
+    
+        .container {
+            padding-top: 0;
+        }
+        
+        &__wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: initial;
+        }
+    
+        &__swiper {
+            max-width: 100%;
+        }
+    
+        &__scroll {
+            display: none;
+        }
+    }
 }
