@@ -250,7 +250,7 @@ if (document.querySelector(".basket-aside") && window.screen.width >= 768) {
    let orderBlockOffset = offset(orderBlock).top;
 
    window.addEventListener("scroll", () => {
-      if (window.scrollY >= orderBlockOffset) {
+      if (window.scrollY >= orderBlockOffset - 50) {
          orderBlock.classList.add("sticky");
       } else {
          orderBlock.classList.remove("sticky");
@@ -259,6 +259,7 @@ if (document.querySelector(".basket-aside") && window.screen.width >= 768) {
 }
 
 // Переключение городов на странице "Где купить"
+
 if (document.querySelector(".buy-map")) {
    const tabs = document.querySelectorAll(".buy-map__tab-btn"),
       tabsContainer = document.querySelector(".buy-map__tabs");
