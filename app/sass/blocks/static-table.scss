@@ -48,6 +48,24 @@
         }
     }
 
+    &__column {
+        &.list {
+            list-style-type: none;
+
+            li {
+                padding-left: 2.8rem;
+                background-image: url(../../img/one-list-icon.svg);
+                background-repeat: no-repeat;
+                background-size: 1.2rem 1rem;
+                background-position: left 1.2rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         &__row {
             padding-left: 4.8rem;
@@ -85,6 +103,18 @@
 
             &:last-child {
                 padding-bottom: 4.8rem;
+            }
+        }
+
+        &.mobile-scroll {
+            .static-table__row {
+                font-size: 3.2rem;
+                line-height: 130%; /* 4.16rem */
+    
+                &:first-child {
+                    font-size: 4.4rem;
+                    line-height: 130%; /* 5.72rem */
+                }
             }
         }
     }
