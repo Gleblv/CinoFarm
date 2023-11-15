@@ -4521,7 +4521,8 @@ input[type="number"] {
   @media (max-width: 48em) {
     .product {
       padding-top: 28.6rem;
-      margin-bottom: 20rem; }
+      margin-bottom: 20rem;
+      background-image: none; }
       .product__wrapper {
         position: relative;
         -webkit-box-orient: vertical;
@@ -6813,14 +6814,12 @@ input[type="number"] {
     height: 42.2rem;
     border-radius: 0rem 6rem;
     overflow: hidden;
-    margin-right: 9rem; }
-    @media (min-width: 48em) {
-      .ingredient-info__left {
-        background: #DEDAD6;
-        padding: 1.2rem; }
-        .ingredient-info__left img {
-          border-radius: 0rem 6rem;
-          overflow: inherit; } }
+    margin-right: 9rem;
+    background: #DEDAD6;
+    padding: 1.2rem; }
+    .ingredient-info__left img {
+      border-radius: 0rem 6rem;
+      overflow: inherit; }
   .ingredient-info__right {
     padding: 2rem 0;
     display: -webkit-box;
@@ -6958,6 +6957,54 @@ input[type="number"] {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
+
+@media (max-width: 48em) {
+  .ingredient-info {
+    padding-top: 28.6rem;
+    margin-bottom: 12rem; }
+    .ingredient-info__main {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      row-gap: 4rem;
+      position: relative; }
+    .ingredient-info__background {
+      display: none; }
+    .ingredient-info__right {
+      padding: 0; }
+    .ingredient-info__name1 {
+      font-size: 4.4rem;
+      line-height: 110%;
+      /* 4.84rem */
+      margin-bottom: 1.6rem; }
+    .ingredient-info__name2 {
+      font-size: 3.6rem;
+      line-height: 130%;
+      /* 4.68rem */
+      margin-bottom: 1.6rem; }
+    .ingredient-info__name3 {
+      font-size: 3.6rem;
+      line-height: 130%;
+      /* 4.68rem */ }
+    .ingredient-info__composition {
+      position: absolute;
+      top: 30.4rem;
+      left: 36.6rem;
+      font-size: 3.2rem;
+      line-height: 130%;
+      /* 4.16rem */ }
+    .ingredient-info__left {
+      width: 34.6rem;
+      height: 36.6rem;
+      padding: 1.2rem;
+      border-radius: 12rem 0rem; }
+      .ingredient-info__left img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        border-radius: 12rem 0rem; } }
 
 .order {
   padding-top: 25.1rem;
