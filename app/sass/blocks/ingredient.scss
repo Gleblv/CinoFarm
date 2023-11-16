@@ -223,5 +223,78 @@
                 }
             }
         }
+
+        &-descr {
+            &__tabs {
+                margin-bottom: 8rem;
+                width: 71rem;
+                overflow-x: scroll;
+            }
+
+            &__tab {
+                text-wrap: nowrap;
+            }
+
+            &__blocks {
+                width: 71rem;
+
+                .description-block {
+                    &__box1 {
+                        margin-bottom: 8rem;
+                        row-gap: 4rem;
+
+                        .description-block__list {
+                            margin-top: 4rem;
+                        }
+                    }
+
+                    &__box2 {
+                        row-gap: 8rem;
+                    }
+
+                    &__title {
+                        font-size: 4.4rem;
+                        line-height: 110%; /* 4.84rem */
+                        margin-bottom: 1.6rem;
+                    }
+
+                    &__text {
+                        font-size: 3.6rem;
+                        line-height: 130%;
+
+                        div {
+                            span {
+                                font-size: 3.6rem;
+                                line-height: 130%; /* 4.68rem */
+                            }
+                        }
+                    }
+
+                    &__list {
+                        li {
+                            font-size: 3.6rem;
+                            line-height: 130%; /* 4.68rem */
+                            padding-left: 5.6rem;
+                            background-size: 2.4rem 2rem;
+
+                            &:not(:last-child) {
+                                margin-bottom: 2rem;
+                            }
+                        }
+                    } 
+                }
+
+                .raw-block {
+                    row-gap: 1.6rem;
+
+                    &__item {
+                        padding: 1.6rem 3.2rem;
+                        border-radius: 12rem;
+                        font-size: 3.2rem;
+                        line-height: 130%; /* 4.16rem */
+                    }
+                }
+            }
+        }
     }
 }
