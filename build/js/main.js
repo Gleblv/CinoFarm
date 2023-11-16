@@ -457,3 +457,29 @@ if (document.querySelector(".payment-info__delivery-dropdown")) {
       }
    });
 }
+
+// Табы на странице иглы
+
+if (document.querySelector(".needle-info")) {
+   const diametrsContainer = document.querySelector("#needleDiametrs"),
+      lengthsContainer = document.querySelector("#neddleLengths");
+
+   const onClickTab = (parentContainer) => {
+      parentContainer.addEventListener("click", (e) => {
+         let target = e.target;
+
+         if (target.classList.contains("needle-info__btn")) {
+            let childrenArr = parentContainer.children;
+
+            for (let i = 0; i < childrenArr.length; i++) {
+               childrenArr[i].classList.remove("active");
+            }
+
+            target.classList.add("active");
+         }
+      });
+   };
+
+   onClickTab(diametrsContainer);
+   onClickTab(lengthsContainer);
+}

@@ -1,0 +1,46 @@
+.needle-description {
+    &__list {
+        width: 89.7rem;
+
+        &-title {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 130%; /* 3.9rem */
+            margin-bottom: 2rem;
+        }
+
+        &-item {
+            font-size: 2.6rem;
+            line-height: 130%; /* 3.38rem */
+            padding-left: 2.8rem;
+            background-image: url(../../img/one-list-icon.svg);
+            background-repeat: no-repeat;
+            background-size: 1.2rem 1rem;
+            background-position: left 1.6rem;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__list {
+            width: 71rem;
+
+            &-title {
+                font-size: 4.4rem;
+                line-height: 110%; /* 4.84rem */
+                margin-bottom: 1.6rem;
+            }
+
+            &-item {
+                font-size: 3.6rem;
+                line-height: 130%; /* 4.68rem */
+                padding-left: 5.6rem;
+                background-size: 2.4rem 2rem;
+            }
+        }
+    }
+}
