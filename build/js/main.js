@@ -377,6 +377,20 @@ if (document.querySelector(".categories")) {
       if (target.tagName == "LI") {
          target.classList.toggle("active");
       }
+
+      if (target.classList.contains("categories__show-all")) {
+         let listElements = target.closest("ul").children;
+
+         for (let i = 0; i < listElements.length; i++) {
+            if (listElements[i].tagName == "LI") {
+               listElements[i].classList.add("active");
+            }
+         }
+      }
+
+      if (target.classList.contains("categories__collapse")) {
+         target.closest("li").classList.remove("active");
+      }
    });
 }
 
@@ -482,4 +496,38 @@ if (document.querySelector(".needle-info")) {
 
    onClickTab(diametrsContainer);
    onClickTab(lengthsContainer);
+}
+
+// popup сверху в каталогах
+
+if (document.querySelector(".catalog-items__categories") && window.screen.width <= 768) {
+   const popup = document.querySelector(".catalog-items__popup"),
+      categoriesBtn = document.querySelector(".catalog-items__categories");
+
+   let offsetTop = offset(categoriesBtn).top;
+
+   window.addEventListener("scroll", () => {
+      window.scrollY >= offsetTop ? popup.classList.add("active") : popup.classList.remove("active");
+   });
+}
+
+// Открытие/закрытие категории на мобилке
+
+if (document.querySelector(".catalog-items__categories") && window.screen.width <= 768) {
+   const openCaregoriesBtn1 = document.querySelector(".catalog-items__categories"),
+      openCaregoriesBtn2 = document.querySelector(".catalog-items__popup-column"),
+      closeCategoriesBtn = document.querySelector(".categories__head-close"),
+      categories = document.querySelector(".categories");
+
+   openCaregoriesBtn1.addEventListener("click", () => {
+      categories.classList.add("active");
+   });
+
+   openCaregoriesBtn2.addEventListener("click", () => {
+      categories.classList.add("active");
+   });
+
+   closeCategoriesBtn.addEventListener("click", () => {
+      categories.classList.remove("active");
+   });
 }
