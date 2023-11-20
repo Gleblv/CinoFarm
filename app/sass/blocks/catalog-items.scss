@@ -139,6 +139,12 @@
             gap: 4rem;
         }
 
+        &__title {
+            font-size: 7.2rem;
+            font-weight: 500;
+            line-height: 110%; /* 7.92rem */
+        }
+
         &__item {
             flex: 0 0 71rem;
             padding: 1.2rem;

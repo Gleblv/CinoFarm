@@ -69,4 +69,91 @@
             }
         }
     }
+
+    @media (max-width: 48em) {
+        padding-top: 28.6rem;
+
+        .catalog-items__search {
+            position: relative;
+            padding-bottom: 6rem;
+
+            .global-search {
+                display: none;
+            }
+
+            .catalog-items__sort {
+                position: absolute;
+                right: 0;
+                bottom: 5.5rem;
+            }
+        }
+
+        .categories {
+            &__author,
+            &__year,
+            &__range {
+                display: none;
+            }
+        }
+
+        &__head {
+            margin-bottom: 20rem;
+
+            &-title {
+                font-size: 7.2rem;
+                font-weight: 500;
+                line-height: 110%; /* 7.92rem */
+                margin-bottom: 8rem;
+            }
+
+            &-box1 {
+                flex-direction: column;
+            }
+
+            &-img {
+                width: 71rem;
+                height: 100.6rem;
+                border-radius: 12rem 0rem;
+                margin-right: 0;
+                margin-bottom: 6.4rem;
+
+                &:first-child {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 12rem 0rem;
+                        margin: 0;
+                    }
+                }
+
+                :last-child {
+                    display: none;
+                }
+            }
+
+            &-text {
+                font-size: 3.6rem;
+                font-weight: 500;
+                line-height: 130%; /* 4.68rem */
+            }
+
+            &-descr {
+                margin: 0;
+                width: auto;
+
+                &__box {
+                    flex-direction: column;
+                }
+            }
+
+            &-subtext {
+                font-size: 3.6rem;
+                line-height: 130%; /* 4.68rem */
+            }
+
+            .link {
+                display: none;
+            }
+        }
+    }
 }
