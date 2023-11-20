@@ -1,0 +1,234 @@
+.traditional-med {
+    padding-top: 33.8rem;
+    margin-bottom: 20rem;
+
+    &__head {
+        margin-bottom: 6rem;
+    }
+
+    &__body {
+        display: flex;
+    }
+
+    &__left {
+        width: 23.5rem;
+        margin-right: 16.3rem;
+        display: flex;
+        align-items: flex-start;
+
+        span {
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        svg {
+            margin-top: 1.7rem;
+            margin-left: 2rem;
+        }
+    }
+
+    &__right {
+        width: 89.7rem;
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 110%; /* 6.6rem */
+        margin-bottom: 3.2rem;
+    }
+
+    &__subtitle1 {
+        color: #6D6D6D;
+        font-size: 2.6rem;
+        line-height: 130%; /* 3.38rem */
+        margin-bottom: 11.9rem;
+    }
+
+    &__text {
+        font-size: 2.2rem;
+        line-height: 130%; /* 2.86rem */
+        margin-bottom: 2rem;
+
+        &_medium-margin {
+            margin-bottom: 4rem;
+        }
+
+        &_big-margin {
+            margin-bottom: 10rem;
+        }
+
+        &_before-image {
+            width: 36.6rem;
+        }
+
+        span {
+            color: #840D06;
+        }
+    }
+
+    &__subtitle2 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 130%; /* 2.86rem */
+        margin-bottom: 2rem;
+
+        &_medium-margin {
+            margin-bottom: 4rem;
+        }
+
+        &_big-margin {
+            margin-bottom: 10rem;
+        }
+    }
+
+    &__line {
+        opacity: 0.5;
+        background: #840D06;
+        width: 36.7rem;
+        height: 0.1rem;
+        margin: 6rem 0 2.5rem 0;
+    }
+
+    &__img {
+        width: 89.7rem;
+        height: 44.6rem;
+        border-radius: 18rem 0rem;
+        overflow: hidden;
+        margin-bottom: 6rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__heading {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 130%; /* 3.9rem */
+        margin-bottom: 2rem;
+
+        &_medium-margin {
+            margin-bottom: 4rem;
+        }
+
+        &_big-margin {
+            margin-bottom: 10rem;
+        }
+
+        &.red {
+            color: #840D06;
+        }
+    }
+
+    &__static-table {
+        margin-bottom: 6rem;
+
+        &_big-margin {
+            margin-bottom: 10rem;
+        }
+
+        &_1 {
+            .static-table__row {
+                &:first-child {
+                    padding-left: 22.05rem;
+                    background-image: url(../../img/traditional-medecine/table-1.svg);
+                    background-position: 16.25rem 5.25rem;
+                    background-repeat: no-repeat;
+                    background-size: 3.4rem 3.4rem;
+                    font-size: 2.6rem;
+                }
+            }
+
+            .static-table__column {
+                width: 27rem;
+            }
+        }
+
+        &_2 {
+            .static-table__row {
+                &:first-child {
+                    padding-left: 10.8rem;
+                    background-image: url(../../img/traditional-medecine/table-2.svg);
+                    background-position: 5rem 5.25rem;
+                    background-repeat: no-repeat;
+                    background-size: 3.4rem 3.4rem;
+                    font-size: 2.6rem;
+                }
+            }
+
+            .static-table__column {
+                &:first-child,
+                &:nth-child(2) {
+                    width: 20rem;
+                }
+
+                &:last-child {
+                    width: 23rem;
+                }
+            }
+        }
+
+        &_3 {
+            .static-table__row {
+                &:first-child {
+                    padding-left: 19.8rem;
+                    background-image: url(../../img/traditional-medecine/table-3.svg);
+                    background-position: 14rem 5.25rem;
+                    background-repeat: no-repeat;
+                    background-size: 3.4rem 3.4rem;
+                    font-size: 2.6rem;
+                }
+            }
+
+            .static-table__column {
+                &:first-child {
+                    width: 34.1rem;
+                }
+
+                &:last-child {
+                    width: 28.7rem;
+                }
+            }
+        }
+    }
+
+    &__list {
+        margin-bottom: 2rem;
+
+        &_medium-margin {
+            margin-bottom: 4rem;
+        }
+
+        &_big-margin {
+            margin-bottom: 10rem;
+        }
+
+        li {
+            font-size: 2.2rem;
+            line-height: 130%; /* 2.86rem */
+            padding-left: 3rem;
+            background-image: url(../../img/list-icon.svg);
+            background-position: left center;
+            background-size: 1.4rem 1.3rem;
+            background-repeat: no-repeat;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__last-text {
+        font-size: 2.6rem;
+        line-height: 130%; /* 3.38rem */
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .all-btn {
+        margin: 0 auto;
+    }
+}
