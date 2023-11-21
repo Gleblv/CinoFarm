@@ -9729,21 +9729,52 @@ input[type="number"] {
     display: -ms-flexbox;
     display: flex; }
   .traditional-med__left {
-    width: 23.5rem;
     margin-right: 16.3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer; }
     .traditional-med__left span {
+      pointer-events: none;
       font-size: 3rem;
       font-weight: 500;
-      line-height: normal; }
-    .traditional-med__left svg {
-      margin-top: 1.7rem;
+      line-height: normal;
+      height: -webkit-min-content;
+      height: -moz-min-content;
+      height: min-content; }
+    .traditional-med__left > svg {
+      pointer-events: none;
       margin-left: 2rem; }
+  @media (min-width: 48em) {
+    .traditional-med .categories {
+      background-color: #FFF;
+      position: absolute;
+      left: 17rem;
+      top: 59.6rem;
+      border-radius: 6rem;
+      padding: 5rem;
+      -webkit-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+              box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
+      display: none; }
+      .traditional-med .categories.active {
+        display: block; }
+      .traditional-med .categories__list {
+        margin-bottom: 0; }
+        .traditional-med .categories__list .sublist-last {
+          margin-bottom: 1rem; }
+          .traditional-med .categories__list .sublist-last li {
+            background-image: url(../../img/point-list-item.svg);
+            background-size: 0.8rem 0.8rem; }
+        .traditional-med .categories__list .sublist-2 > li {
+          border-bottom: 1px solid rgba(109, 109, 109, 0.2); }
+          .traditional-med .categories__list .sublist-2 > li:not(:last-child) {
+            margin-bottom: 0; } }
   .traditional-med__right {
     width: 89.7rem; }
   .traditional-med__title {
@@ -9808,41 +9839,41 @@ input[type="number"] {
       margin-bottom: 10rem; }
     .traditional-med__heading.red {
       color: #840D06; }
-  .traditional-med__static-table {
+  .traditional-med__table-container {
     margin-bottom: 6rem; }
-    .traditional-med__static-table_big-margin {
+    .traditional-med__table-container_big-margin {
       margin-bottom: 10rem; }
-    .traditional-med__static-table_1 .static-table__row:first-child {
-      padding-left: 22.05rem;
-      background-image: url(../../img/traditional-medecine/table-1.svg);
-      background-position: 16.25rem 5.25rem;
-      background-repeat: no-repeat;
-      background-size: 3.4rem 3.4rem;
-      font-size: 2.6rem; }
-    .traditional-med__static-table_1 .static-table__column {
-      width: 27rem; }
-    .traditional-med__static-table_2 .static-table__row:first-child {
-      padding-left: 10.8rem;
-      background-image: url(../../img/traditional-medecine/table-2.svg);
-      background-position: 5rem 5.25rem;
-      background-repeat: no-repeat;
-      background-size: 3.4rem 3.4rem;
-      font-size: 2.6rem; }
-    .traditional-med__static-table_2 .static-table__column:first-child, .traditional-med__static-table_2 .static-table__column:nth-child(2) {
-      width: 20rem; }
-    .traditional-med__static-table_2 .static-table__column:last-child {
-      width: 23rem; }
-    .traditional-med__static-table_3 .static-table__row:first-child {
-      padding-left: 19.8rem;
-      background-image: url(../../img/traditional-medecine/table-3.svg);
-      background-position: 14rem 5.25rem;
-      background-repeat: no-repeat;
-      background-size: 3.4rem 3.4rem;
-      font-size: 2.6rem; }
-    .traditional-med__static-table_3 .static-table__column:first-child {
-      width: 34.1rem; }
-    .traditional-med__static-table_3 .static-table__column:last-child {
-      width: 28.7rem; }
+  .traditional-med__static-table_1 .static-table__row:first-child {
+    padding-left: 22.05rem;
+    background-image: url(../../img/traditional-medecine/table-1.svg);
+    background-position: 16.25rem 5.25rem;
+    background-repeat: no-repeat;
+    background-size: 3.4rem 3.4rem;
+    font-size: 2.6rem; }
+  .traditional-med__static-table_1 .static-table__column {
+    width: 27rem; }
+  .traditional-med__static-table_2 .static-table__row:first-child {
+    padding-left: 10.8rem;
+    background-image: url(../../img/traditional-medecine/table-2.svg);
+    background-position: 5rem 5.25rem;
+    background-repeat: no-repeat;
+    background-size: 3.4rem 3.4rem;
+    font-size: 2.6rem; }
+  .traditional-med__static-table_2 .static-table__column:first-child, .traditional-med__static-table_2 .static-table__column:nth-child(2) {
+    width: 20rem; }
+  .traditional-med__static-table_2 .static-table__column:last-child {
+    width: 23rem; }
+  .traditional-med__static-table_3 .static-table__row:first-child {
+    padding-left: 19.8rem;
+    background-image: url(../../img/traditional-medecine/table-3.svg);
+    background-position: 14rem 5.25rem;
+    background-repeat: no-repeat;
+    background-size: 3.4rem 3.4rem;
+    font-size: 2.6rem; }
+  .traditional-med__static-table_3 .static-table__column:first-child {
+    width: 34.1rem; }
+  .traditional-med__static-table_3 .static-table__column:last-child {
+    width: 28.7rem; }
   .traditional-med__list {
     margin-bottom: 2rem; }
     .traditional-med__list_medium-margin {
@@ -9868,6 +9899,135 @@ input[type="number"] {
     text-align: center; }
   .traditional-med .all-btn {
     margin: 0 auto; }
+  @media (max-width: 48em) {
+    .traditional-med {
+      padding-top: 28.6rem; }
+      .traditional-med__head {
+        display: none; }
+      .traditional-med__left {
+        margin: 0 0 4rem 0; }
+        .traditional-med__left-menu .categories {
+          width: 71rem;
+          min-height: 100vh; }
+        .traditional-med__left span {
+          font-size: 4.4rem;
+          font-weight: 500;
+          line-height: 110%;
+          /* 4.84rem */ }
+        .traditional-med__left > svg {
+          margin-left: 1.6rem; }
+      .traditional-med__body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .traditional-med__right {
+        width: auto; }
+      .traditional-med__title {
+        font-size: 7.2rem;
+        line-height: 110%;
+        /* 7.92rem */
+        margin-bottom: 4rem; }
+      .traditional-med__subtitle1 {
+        font-size: 3.6rem;
+        line-height: 130%;
+        /* 4.68rem */
+        margin-bottom: 8rem; }
+      .traditional-med__heading {
+        font-size: 4.4rem;
+        line-height: 110%;
+        /* 4.84rem */
+        margin-bottom: 4rem; }
+      .traditional-med__text {
+        font-size: 3.2rem;
+        line-height: 130%;
+        /* 4.16rem */
+        margin-bottom: 4rem; }
+        .traditional-med__text_medium-margin {
+          margin-bottom: 8rem; }
+        .traditional-med__text_big-margin {
+          margin-bottom: 8rem; }
+        .traditional-med__text_before-image {
+          width: 42.4rem; }
+      .traditional-med__subtitle2 {
+        font-size: 3.6rem;
+        line-height: 130%;
+        /* 4.68rem */
+        margin-bottom: 4rem; }
+        .traditional-med__subtitle2_medium-margin {
+          margin-bottom: 8rem; }
+        .traditional-med__subtitle2_big-margin {
+          margin-bottom: 8rem; }
+      .traditional-med__line {
+        width: 48rem;
+        height: 0.2rem;
+        margin: 8rem 0 2.4rem 0; }
+      .traditional-med__img {
+        width: 71rem;
+        height: 60rem;
+        border-radius: 20rem 0rem;
+        margin-bottom: 8rem; }
+        .traditional-med__img img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .traditional-med__table-container {
+        width: 71rem;
+        overflow-x: scroll; }
+      .traditional-med__static-table {
+        margin-bottom: 6rem; }
+        .traditional-med__static-table_big-margin {
+          margin-bottom: 10rem; }
+        .traditional-med__static-table_1 {
+          width: 102.1rem; }
+          .traditional-med__static-table_1 .static-table__row:first-child {
+            padding-left: 16.4rem;
+            background-position: 4.8rem 4.4rem;
+            background-size: 6.8rem 6.8rem;
+            padding-bottom: 4.2rem; }
+          .traditional-med__static-table_1 .static-table__row:not(:first-child) {
+            padding: 3.2rem 4.8rem; }
+          .traditional-med__static-table_1 .static-table__column {
+            width: 41rem;
+            font-weight: 400; }
+        .traditional-med__static-table_2 {
+          width: 143.6rem; }
+          .traditional-med__static-table_2 .static-table__row:first-child {
+            padding-left: 16.4rem;
+            background-position: 4.8rem 4.4rem;
+            background-size: 6.8rem 6.8rem;
+            padding-bottom: 4.2rem; }
+          .traditional-med__static-table_2 .static-table__row:not(:first-child) {
+            padding: 3.2rem 4.8rem; }
+          .traditional-med__static-table_2 .static-table__column:last-child {
+            width: 47rem; }
+        .traditional-med__static-table_3 {
+          width: 111rem; }
+          .traditional-med__static-table_3 .static-table__row:first-child {
+            padding-left: 16.4rem;
+            background-position: 4.8rem 4.4rem;
+            background-size: 6.8rem 6.8rem;
+            padding-bottom: 4.2rem; }
+          .traditional-med__static-table_3 .static-table__row:not(:first-child) {
+            padding: 3.2rem 4.8rem; }
+          .traditional-med__static-table_3 .static-table__column:last-child {
+            width: 48.7rem; }
+      .traditional-med__list li {
+        font-size: 3.2rem;
+        line-height: 130%;
+        /* 4.16rem */
+        padding-left: 6rem;
+        background-position: left 0.4rem;
+        background-size: 2.8rem 2.7rem; }
+        .traditional-med__list li:not(:last-child) {
+          margin-bottom: 2rem; }
+      .traditional-med__last-text {
+        font-size: 3.6rem;
+        line-height: 130%;
+        /* 4.68rem */
+        text-align: left;
+        margin-bottom: 8rem; } }
 
 .footer__top {
   width: 156rem;

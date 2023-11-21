@@ -541,3 +541,35 @@ if (document.querySelector(".catalog-items__categories") && window.screen.width 
 
    closeCategoriesBtn.addEventListener("click", toggleCategories);
 }
+
+if (document.querySelector(".traditional-med") && window.screen.width > 768) {
+   const toggleMenuBtn = document.querySelector(".traditional-med__left"),
+      menu = document.querySelector(".categories");
+
+   toggleMenuBtn.addEventListener("click", () => {
+      menu.classList.toggle("active");
+   });
+}
+
+if (document.querySelector(".traditional-med") && window.screen.width <= 768) {
+   const openMenuBtn = document.querySelector(".traditional-med__left"),
+      closeMenuBtn = document.querySelector(".categories__head-close"),
+      menu = document.querySelector(".categories"),
+      categories = document.querySelector(".categories");
+
+   openMenuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+      document.querySelector(".header").style.display = "none";
+      document.querySelector(".footer").style.display = "none";
+      document.querySelector("main").style.height = `${categories.scrollHeight}px`;
+      document.querySelector("main").style.overflow = "hidden";
+   });
+
+   closeMenuBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+      document.querySelector(".header").style.display = "block";
+      document.querySelector(".footer").style.display = "block";
+      document.querySelector("main").style.height = "";
+      document.querySelector("main").style.overflow = "auto";
+   });
+}
