@@ -284,5 +284,31 @@
                 }
             }
         }
+
+        &__main {
+            .catalog-items {
+                &__search {
+                    width: 71rem;
+
+                    .global-search {
+                        display: none;
+                    }
+                }
+            }
+
+            .categories {
+                &__head {
+                    .global-search {
+                        input {
+                            width: 71rem;
+                        }
+                    }
+                }
+
+                &__range {
+                    display: none;
+                }
+            }
+        }
     }
 }

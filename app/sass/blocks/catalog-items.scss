@@ -1,6 +1,14 @@
 .catalog-items {
     width: 103rem;
 
+    &__popup-date {
+        display: none;
+    }
+
+    &__date-mobile {
+        display: none;
+    }
+
     &__popup {
         display: none;
     }
@@ -295,6 +303,87 @@
     @media (max-width: 48em) {
         width: auto;
 
+        &__popup-date {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #F5F2EA;
+            height: 100vh;
+            z-index: 20;
+            padding: 4rem 2rem 8.4rem 2rem;
+            transform: translateY(-100%);
+            transition: 0.8s ease-in-out;
+
+            &.active {
+                transform: translateY(0%);
+            }
+
+            &__head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 4.4rem;
+
+                span {
+                    font-size: 4.4rem;
+                    font-weight: 500;
+                    line-height: 110%; /* 4.84rem */
+                }
+
+                div {
+                    width: 10.8rem;
+                    height: 10.8rem;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                }
+            }
+
+            &__sort {
+                &-title {
+                    font-size: 3.6rem;
+                    font-weight: 500;
+                    line-height: 130%; /* 4.68rem */
+                    margin-bottom: 3.2rem;
+                }
+
+                &-list {
+                    margin-bottom: 6.4rem;
+
+                    li {
+                        font-size: 3.6rem;
+                        line-height: 130%; /* 4.68rem */
+
+                        &:not(:last-child) {
+                            margin-bottom: 1.6rem;
+                        }
+                    }
+                }
+            }
+
+            &__calendar {
+                color: #1A1A1A;
+                font-size: 3.6rem;
+                font-weight: 500;
+                line-height: 130%; /* 4.68rem */
+                background: none;
+                border: none;
+                width: 100%;
+                margin-bottom: 3.2rem;
+
+                &::placeholder {
+                    color: #1A1A1A;
+                    font-size: 3.6rem;
+                    font-weight: 500;
+                    line-height: 130%; /* 4.68rem */
+                }
+            }
+        }
+
         &__list {
             gap: 4rem;
         }
@@ -369,6 +458,77 @@
             }
         }
 
+        &__item2 {
+            padding: 2rem 2.4rem 4rem 2rem;
+            flex-direction: column;
+            width: 71rem;
+            min-height: 118.4rem;
+
+            &.sale {
+                .catalog-items__item-sale {
+                    top: 4rem;
+                    left: 4rem;
+                }
+            }
+
+            &-img {
+                width: 66.6rem;
+                height: 45.6rem;
+                border-radius: 0rem 6rem 0rem 0rem;
+                margin-right: 0;
+                margin-bottom: 4rem;
+
+                img {
+                    width: 66.6rem;
+                    height: 45.6rem;
+                }
+            }
+
+            &-descr {
+                height: calc(100% - 49.6rem);
+                width: 100%;
+                padding: 0 1.6rem 0 2rem;
+            }
+
+            &-title {
+                font-size: 4.4rem;
+                line-height: 110%; /* 4.84rem */
+                margin-bottom: 4rem;
+            }
+    
+            &-info {
+                flex-direction: column;
+                row-gap: 3.2rem;
+                margin-bottom: 4rem;
+            }
+
+            &-post,
+            &-days {
+                font-size: 3.6rem;
+                line-height: 130%; /* 4.68rem */
+                margin-bottom: 1.6rem;
+            }
+
+            &-dates {
+                width: auto;
+            }
+
+            &-name,
+            &-date {
+                font-size: 3.2rem;
+                line-height: 130%; /* 4.16rem */
+            }
+
+            &-bottom {
+                align-items: center;
+            }
+
+            &-type {
+                font-size: 3.6rem;
+                line-height: 130%; /* 4.68rem */
+            }
+        }
+
         &__sort {
             font-size: 3.2rem;
             font-weight: 500;
@@ -380,6 +540,7 @@
             }
         }
 
+        &__date-mobile,
         &__categories {
             display: flex;
             align-items: center;
@@ -392,6 +553,11 @@
                 width: 2rem;
                 height: 1rem;
             }
+        }
+
+        &__date,
+        &__tabs {
+            display: none;
         }
 
         &__popup {

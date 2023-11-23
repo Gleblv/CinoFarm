@@ -223,6 +223,13 @@ $menuMob: 3.2rem;
 			border-radius: 5rem 0px;
 			transition: 0.3s;
 		}
+
+	@media (max-width: 48em) {
+		padding: 1.6rem 7rem;
+		border-radius: 10rem;
+		font-size: 3.2rem;
+		line-height: 110%; /* 3.52rem */
+	}
 }
 
 

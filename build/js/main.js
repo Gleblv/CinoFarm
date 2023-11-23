@@ -15,6 +15,28 @@ function offset(el) {
    return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
 }
 
+function toggleCategories(e) {
+   let target = e.target;
+
+   if (target.tagName == "LI") {
+      target.classList.toggle("active");
+   }
+
+   if (target.classList.contains("categories__show-all")) {
+      let listElements = target.closest("ul").children;
+
+      for (let i = 0; i < listElements.length; i++) {
+         if (listElements[i].tagName == "LI") {
+            listElements[i].classList.add("active");
+         }
+      }
+   }
+
+   if (target.classList.contains("categories__collapse")) {
+      target.closest("li").classList.remove("active");
+   }
+}
+
 const popularSwiper = new Swiper(".popular__swiper", {
    slidesPerView: 1,
    spaceBetween: rem(3),
@@ -368,29 +390,22 @@ if (document.querySelector(".order")) {
 }
 
 // Категории
+
 if (document.querySelector(".categories")) {
    const categoryList = document.querySelector("#categoriesList");
 
    categoryList.addEventListener("click", (e) => {
-      let target = e.target;
+      toggleCategories(e);
+   });
+}
 
-      if (target.tagName == "LI") {
-         target.classList.toggle("active");
-      }
+// Список преподавателей
 
-      if (target.classList.contains("categories__show-all")) {
-         let listElements = target.closest("ul").children;
+if (document.querySelector("#teachersList")) {
+   const teachersList = document.querySelector("#teachersList");
 
-         for (let i = 0; i < listElements.length; i++) {
-            if (listElements[i].tagName == "LI") {
-               listElements[i].classList.add("active");
-            }
-         }
-      }
-
-      if (target.classList.contains("categories__collapse")) {
-         target.closest("li").classList.remove("active");
-      }
+   teachersList.addEventListener("click", (e) => {
+      toggleCategories(e);
    });
 }
 
@@ -574,9 +589,37 @@ if (document.querySelector(".traditional-med") && window.screen.width <= 768) {
    });
 }
 
-if (document.querySelector("#catalogDatepicer")) {
+// Календарь (десктоп)
+
+if (document.querySelector("#catalogDatepicer") && window.screen.width > 768) {
    const calendar = new AirDatepicker("#catalogDatepicer", {
       position: "bottom right",
+   });
+}
+
+if (document.querySelector("#mobileCatalogDatepicker") && window.screen.width <= 768) {
+   const mobileCalendar = new AirDatepicker("#mobileCatalogDatepicker", {
+      inline: true,
+   });
+
+   const openCalendarPopupBtn = document.querySelector(".catalog-items__date-mobile"),
+      calendarPopup = document.querySelector(".catalog-items__popup-date"),
+      closeCalendarPopupBtn = document.querySelector(".catalog-items__popup-date__close");
+
+   openCalendarPopupBtn.addEventListener("click", () => {
+      calendarPopup.classList.add("active");
+      document.querySelector(".header").style.display = "none";
+      document.querySelector(".footer").style.display = "none";
+      document.querySelector("main").style.height = `${calendarPopup.scrollHeight}px`;
+      document.querySelector("main").style.overflow = "hidden";
+   });
+
+   closeCalendarPopupBtn.addEventListener("click", () => {
+      calendarPopup.classList.remove("active");
+      document.querySelector(".header").style.display = "block";
+      document.querySelector(".footer").style.display = "block";
+      document.querySelector("main").style.height = "";
+      document.querySelector("main").style.overflow = "auto";
    });
 }
 
