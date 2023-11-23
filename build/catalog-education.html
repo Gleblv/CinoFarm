@@ -6,6 +6,7 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
       <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
       <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/air-datepicker.css" />
       <link rel="stylesheet" href="./css/style.min.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Главная</title>
@@ -14,6 +15,9 @@
    <body>
       <header class="header">
          <div class="header__container">
+            <div class="header__logo-small">
+               <img src="../img/header/header-logo-small.png" alt="logo" />
+            </div>
             <div class="header__inner">
                <div class="header__inner-block">
                   <ul class="header__data">
@@ -139,6 +143,120 @@
                   </button>
                </div>
             </div>
+            <div class="header__search-input">
+               <div>
+                  <input type="text" placeholder="Поиск по заболеванию, по номеру, по названию" />
+               </div>
+               <div class="header__search-input__close">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="21"
+                     height="21"
+                     viewBox="0 0 21 21"
+                     fill="none"
+                  >
+                     <path
+                        d="M1 1L10.5 10.5M10.5 10.5L1 20M10.5 10.5L20 1M10.5 10.5L20 20"
+                        stroke="#1A1A1A"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     />
+                  </svg>
+               </div>
+            </div>
+            <div class="header__search-input__menu">
+               <ul class="header__search-input__menu-row coincidense">
+                  <li class="header__search-input__menu-item">Гэ Цзе Дин Чуань Цзяо Нан</li>
+                  <li class="header__search-input__menu-item">Гэ Цзе Дин Чуань Цзяо Нан</li>
+                  <li class="header__search-input__menu-item">Гэ Цзе Дин Чуань Цзяо Нан</li>
+                  <li class="header__search-input__menu-item">Гэ Цзе Дин Чуань Цзяо Нан</li>
+               </ul>
+               <ul class="header__search-input__menu-row name">
+                  <li class="header__search-input__menu-item">
+                     <div>Формула Пяти Элементов 0242 Гэ Цзе Дин Чуань Цзяо Нан, 12 пакетов</div>
+                     <div>1650 ₽</div>
+                  </li>
+                  <li class="header__search-input__menu-item">
+                     <div>Формула Пяти Элементов 0242 Гэ Цзе Дин Чуань Цзяо Нан, 6 пакетов</div>
+                     <div>1150 ₽</div>
+                  </li>
+                  <li class="header__search-input__menu-item">
+                     <div>Формула Пяти Элементов 1019 Бу Ян Хуань У Вань</div>
+                     <div>800 ₽</div>
+                  </li>
+               </ul>
+               <ul class="header__search-input__menu-row category">
+                  <li class="header__search-input__menu-item">
+                     <div>Препараты по действию</div>
+                     <div>Препараты по действию / Охлаждающие Жар</div>
+                  </li>
+                  <li class="header__search-input__menu-item">
+                     <div>Препараты по действию</div>
+                     <div>Препараты по действию / Охлаждающие Жар</div>
+                  </li>
+                  <li class="header__search-input__menu-item">
+                     <div>Препараты по действию</div>
+                     <div>Препараты по действию / Охлаждающие Жар</div>
+                  </li>
+               </ul>
+               <div class="show-all">Показать всё</div>
+            </div>
+            <div class="header__wrapper-mob">
+               <button class="header__burger">
+                  <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M1 1L33 1" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
+                     <path d="M1 11L33 11" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
+                     <path d="M1 21L33 21" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+               </button>
+               <a href="#" class="header__logo">
+                  <img src="./img/logo/logo.svg" alt="" />
+               </a>
+               <button class="header__basket">
+                  <img src="./img/logo/bag.svg" alt="" />
+               </button>
+            </div>
+            <div class="header__burger-menu">
+               <div class="container">
+                  <div class="header__burger-close">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                     >
+                        <path
+                           d="M4 4L12 12M12 12L4 20M12 12L20 4M12 12L20 20"
+                           stroke="#1A1A1A"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                        />
+                     </svg>
+                  </div>
+                  <ul class="header__burger-row btns">
+                     <li class="header__burger-item" id="openSearchMobile">Поиск</li>
+                     <li class="header__burger-item"><a href="#">Профиль</a></li>
+                     <li class="header__burger-item"><a href="#">Корзина</a></li>
+                  </ul>
+                  <ul class="header__burger-row contacts">
+                     <li class="header__burger-item">Москва и МО</li>
+                     <li class="header__burger-item"><a href="#">8(499)938-99-50</a></li>
+                     <li class="header__burger-item">Пн-сб 9:00-21:00, вс 9:00-18:00</li>
+                  </ul>
+                  <ul class="header__burger-row nav">
+                     <li class="header__burger-item"><a href="#">Главная</a></li>
+                     <li class="header__burger-item"><a href="#">Продукция</a></li>
+                     <li class="header__burger-item"><a href="#">Мед. центр</a></li>
+                     <li class="header__burger-item"><a href="#">Обучение</a></li>
+                     <li class="header__burger-item"><a href="#">О компании</a></li>
+                     <li class="header__burger-item"><a href="#">Новости</a></li>
+                     <li class="header__burger-item"><a href="#">Контакты</a></li>
+                  </ul>
+               </div>
+            </div>
             <nav class="header__menu">
                <ul class="header__menu-list">
                   <li class="header__menu-item">
@@ -208,52 +326,71 @@
                   <li class="header__menu-item">Мед.центр</li>
                </ul>
             </nav>
-            <div class="header__wrapper-mob">
-               <button class="header__burger">
-                  <svg viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M1 1L33 1" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
-                     <path d="M1 11L33 11" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
-                     <path d="M1 21L33 21" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-               </button>
-               <a href="#" class="header__logo">
-                  <img src="./img/logo/logo.svg" alt="" />
-               </a>
-               <button class="header__basket">
-                  <img src="./img/logo/bag.svg" alt="" />
-               </button>
-            </div>
          </div>
       </header>
       <main>
-         <section class="med-center">
-            <div class="med-center__container container">
-               <div class="med-center__left">
-                  <div class="med-center__title">Медицинский центр</div>
-                  <div class="med-center__text">
-                     Центр традиционной медицины «Синофарм» ориентирован на оказание медицинской помощи
-                     пациентам, в первую очередь, с использованием нелекарственных методов лечения и средств
-                     традиционной китайской медицины (ТКМ).
+         <section class="catalog-education__head">
+            <div class="catalog-education__head-container container">
+               <div class="catalog-education__head-left">
+                  <div class="catalog-education__head-title">Обучение</div>
+                  <div class="catalog-education__head-text">
+                     Компания «Синофарм», член Профессиональной Ассоциации Рефлексотерапевтов, проводит
+                     обучающие семинары по акупунктуре и производным от нее методам, по традиционной китайской
+                     диагностике и траволечению. Семинары проводятся в Учебном центре Компании "Синофарм".
                   </div>
-                  <div class="med-center__adress">
-                     <div class="med-center__adress-title">Адрес</div>
-                     <div class="med-center__adress-text">г. Москва,ул. Ленинская Слобода,д. 19, стр. 6</div>
+                  <div class="catalog-education__head-addres">Адрес</div>
+                  <div class="catalog-education__head-addres__text">
+                     Москва, ул. Ленинская Слобода, дом 19, стр. 5 (ст. м. Автозаводская)
                   </div>
-                  <div class="med-center__box">
-                     <div class="med-center__phones">
-                        <div class="med-center__phones-title">Телефон</div>
-                        <a href="#" class="med-center__phone">8 495 248-03-48</a>
-                        <a href="#" class="med-center__phone">8 925 248-03-08</a>
+                  <div class="catalog-education__head-contacts">
+                     <div class="catalog-education__head-contact">
+                        <div class="catalog-education__head-contact__title">Телефон</div>
+                        <a href="#" class="catalog-education__head-contact__text">8 (499) 922-06-17</a>
                      </div>
-                     <div class="med-center__time">
-                        <div class="med-center__time-title">Режим работы</div>
-                        <div class="med-center__time-work">
-                           пн-пт с 9:00 до 20:00 сб с 9:00 до 18:00 вс - выходной
-                        </div>
+                     <div class="catalog-education__head-contact">
+                        <div class="catalog-education__head-contact__title">E-mail</div>
+                        <a href="#" class="catalog-education__head-contact__text">edu@cinofarm.ru</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="catalog-education__head-right">
+                  <div class="catalog-education__head-right__column">
+                     <picture class="catalog-education__head-right__img">
+                        <source media="(min-width: 48em)" srcset="./img/catalog-education/img1.png" />
+                        <source media="(max-width: 48em)" srcset="./img/catalog-education/img1-mobile.png" />
+                        <img src="./img/catalog-education/img1.png" alt="" />
+                     </picture>
+                     <div class="catalog-education__head-right__img">
+                        <img src="./img/catalog-education/img2.png" alt="" />
+                     </div>
+                  </div>
+                  <div class="catalog-education__head-right__img">
+                     <img src="./img/catalog-education/img3.png" alt="" />
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="catalog-education__article">
+            <div class="catalog-education__article-container container">
+               <div class="catalog-education__article-left">
+                  <img src="./img/catalog-education/article-img.png" alt="" />
+               </div>
+               <div class="catalog-education__article-right">
+                  <div class="catalog-education__article-title">О наших преподавателях</div>
+                  <div class="catalog-education__article-row">
+                     <div class="catalog-education__article-column">
+                        Учебно-методический центр «СИНОФАРМ» проводит обучение по традиционной китайской
+                        медицине и рефлексотерапии, содействуя повышению профессионального уровня специалистов
+                        в области традиционной китайской медицины. Обучение ведут опытные российские
+                        рефлексотерапевты, а также иностранные преподаватели
+                     </div>
+                     <div class="catalog-education__article-column">
+                        За время работы учебно-методического центра «СИНОФАРМ» проведено 2125 учебных
+                        мероприятия, которые посетило более 25900 слушателей
                      </div>
                   </div>
                   <button class="all-btn">
-                     <span>На сайт мед.центра</span>
+                     <span>Преподаватели</span>
                      <div class="all-btn__arrow">
                         <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path
@@ -267,8 +404,556 @@
                      </div>
                   </button>
                </div>
-               <div class="med-center__right">
-                  <img src="./img/med-center/img.png" alt="" />
+            </div>
+         </section>
+         <section class="catalog-education__main">
+            <div class="catalog-education__main-container container">
+               <aside class="categories">
+                  <div class="categories__title">Категории</div>
+                  <div class="categories__head modile">
+                     <div class="categories__head-row">
+                        <span>Категории</span>
+                        <div class="categories__head-close">
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                           >
+                              <path
+                                 d="M4 4L12 12M12 12L4 20M12 12L20 4M12 12L20 20"
+                                 stroke="#1A1A1A"
+                                 stroke-width="1.5"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                              />
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="global-search">
+                        <input type="text" placeholder="Поиск по заболеванию, по номеру, по названию" />
+                        <div class="global-search__icon"></div>
+                     </div>
+                  </div>
+                  <ul class="categories__list sublist-1" id="categoriesList">
+                     <li>
+                        <div class="categories__list-container">
+                           <div class="categories__list-name">
+                              Иглы корпоральные "ФОРМУЛА ПЯТИ
+                              <div class="categories__list-count">364</div>
+                           </div>
+                           <div class="categories__list-arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="17"
+                                 viewBox="0 0 16 17"
+                                 fill="none"
+                              >
+                                 <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                        <ul class="sublist-2">
+                           <li>
+                              <div class="categories__list-container">
+                                 <div class="categories__list-name">
+                                    С направителем
+                                    <div class="categories__list-count">364</div>
+                                 </div>
+                                 <div class="categories__list-arrow">
+                                    <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       width="16"
+                                       height="17"
+                                       viewBox="0 0 16 17"
+                                       fill="none"
+                                    >
+                                       <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                                    </svg>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="categories__list-container">
+                                 <div class="categories__list-name">
+                                    Без направителя
+                                    <div class="categories__list-count">364</div>
+                                 </div>
+                                 <div class="categories__list-arrow">
+                                    <svg
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       width="16"
+                                       height="17"
+                                       viewBox="0 0 16 17"
+                                       fill="none"
+                                    >
+                                       <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                                    </svg>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <div class="categories__list-container">
+                           <div class="categories__list-name">
+                              Иглы корпоральные
+                              <div class="categories__list-count">364</div>
+                           </div>
+                           <div class="categories__list-arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="17"
+                                 viewBox="0 0 16 17"
+                                 fill="none"
+                              >
+                                 <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="categories__list-container">
+                           <div class="categories__list-name">
+                              Иглы Су Джок
+                              <div class="categories__list-count">364</div>
+                           </div>
+                           <div class="categories__list-arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="17"
+                                 viewBox="0 0 16 17"
+                                 fill="none"
+                              >
+                                 <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="categories__list-container">
+                           <div class="categories__list-name">
+                              Иглы-шпажки
+                              <div class="categories__list-count">364</div>
+                           </div>
+                           <div class="categories__list-arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="17"
+                                 viewBox="0 0 16 17"
+                                 fill="none"
+                              >
+                                 <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="categories__list-container">
+                           <div class="categories__list-name">
+                              Моксы и приспособления для
+                              <div class="categories__list-count">364</div>
+                           </div>
+                           <div class="categories__list-arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="17"
+                                 viewBox="0 0 16 17"
+                                 fill="none"
+                              >
+                                 <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="categories__list-container">
+                           <div class="categories__list-name">
+                              Ушные иглы
+                              <div class="categories__list-count">364</div>
+                           </div>
+                           <div class="categories__list-arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="17"
+                                 viewBox="0 0 16 17"
+                                 fill="none"
+                              >
+                                 <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="categories__list-container">
+                           <div class="categories__list-name">
+                              Лучшее из царства живой природы
+                              <div class="categories__list-count">364</div>
+                           </div>
+                           <div class="categories__list-arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="17"
+                                 viewBox="0 0 16 17"
+                                 fill="none"
+                              >
+                                 <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="categories__list-container">
+                           <div class="categories__list-name">
+                              Принадлежности для Су Джок
+                              <div class="categories__list-count">364</div>
+                           </div>
+                           <div class="categories__list-arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="17"
+                                 viewBox="0 0 16 17"
+                                 fill="none"
+                              >
+                                 <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="categories__list-container">
+                           <div class="categories__list-name">
+                              Муляжи. Учебные пособия
+                              <div class="categories__list-count">364</div>
+                           </div>
+                           <div class="categories__list-arrow">
+                              <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="16"
+                                 height="17"
+                                 viewBox="0 0 16 17"
+                                 fill="none"
+                              >
+                                 <path d="M8 12.5L1.93782 6.5L14.0622 6.5L8 12.5Z" fill="#1A1A1A" />
+                              </svg>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+                  <div class="categories__range">
+                     <div class="categories__range-title">Цена</div>
+                     <div class="categories__range-input">
+                        <div class="categories__range-slider">
+                           <div class="categories__range-progres"></div>
+                        </div>
+                        <div class="categories__range-inputs">
+                           <input
+                              class="categories__range-input__min"
+                              type="range"
+                              min="0"
+                              max="10000"
+                              value="0"
+                              step="100"
+                           />
+                           <input
+                              class="categories__range-input__max"
+                              type="range"
+                              min="0"
+                              max="10000"
+                              value="10000"
+                              step="100"
+                           />
+                        </div>
+                     </div>
+                     <div class="categories__range-values">
+                        <div class="categories__range-value">
+                           <span>От</span>
+                           <input class="categories__price-input__min" type="number" value="0" />
+                           <span>₽</span>
+                        </div>
+                        <div class="categories__range-value">
+                           <span>От</span>
+                           <input class="categories__price-input__max" type="number" value="10000" />
+                           <span>₽</span>
+                        </div>
+                     </div>
+                  </div>
+               </aside>
+               <div class="catalog-items">
+                  <div class="catalog-items__title">Каталог</div>
+                  <div class="catalog-items__popup">
+                     <div class="catalog-items__popup-column">
+                        Категории
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="14"
+                           height="6"
+                           viewBox="0 0 14 6"
+                           fill="none"
+                        >
+                           <path d="M7 6L0.937822 -1.88258e-07L13.0622 8.71687e-07L7 6Z" fill="#1A1A1A" />
+                        </svg>
+                     </div>
+                     <div class="catalog-items__popup-column">
+                        Сортировка
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="14"
+                           height="6"
+                           viewBox="0 0 14 6"
+                           fill="none"
+                        >
+                           <path d="M7 6L0.937822 -1.88258e-07L13.0622 8.71687e-07L7 6Z" fill="#1A1A1A" />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="catalog-items__search">
+                     <div class="global-search">
+                        <input type="text" placeholder="Поиск по заболеванию, по номеру, по названию" />
+                        <div class="global-search__icon"></div>
+                     </div>
+                     <div class="catalog-items__categories mobile">
+                        Категории
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="14"
+                           height="6"
+                           viewBox="0 0 14 6"
+                           fill="none"
+                        >
+                           <path d="M7 6L0.937822 -1.88258e-07L13.0622 8.71687e-07L7 6Z" fill="#1A1A1A" />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="catalog-items__filtres">
+                     <div class="catalog-items__tabs">
+                        <div class="catalog-items__tab button">Январь</div>
+                        <div class="catalog-items__tab button">Февраль</div>
+                        <div class="catalog-items__tab button">Март</div>
+                        <div class="catalog-items__more button">
+                           <span>Ещё</span>
+                           <div class="catalog-items__more-list__wrapper">
+                              <ul class="catalog-items__more-list">
+                                 <li class="catalog-items__more-item">Апрель</li>
+                                 <li class="catalog-items__more-item">Май</li>
+                                 <li class="catalog-items__more-item">Июнь</li>
+                                 <li class="catalog-items__more-item">Июль</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <input
+                        type="text"
+                        class="catalog-items__date"
+                        id="catalogDatepicer"
+                        placeholder="Выбрать дату"
+                     />
+                  </div>
+                  <div class="catalog-items__list">
+                     <div class="catalog-items__item2">
+                        <div class="catalog-items__item-sale red button">Запись</div>
+                        <div class="catalog-items__item2-img">
+                           <img src="./img/catalog-education/item-img.png" alt="" />
+                        </div>
+                        <div class="catalog-items__item2-descr">
+                           <div class="catalog-items__item2-title">
+                              28 июня "Старение организма с точки зрения ТКМ. Применение фитопрепаратов ТКМ в
+                              пожилом возрасте". Лектор Боровикова Л.В.
+                           </div>
+                           <div class="catalog-items__item2-info">
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-post">Лектор</div>
+                                 <div class="catalog-items__item2-name">Боровикова Л.В.</div>
+                              </div>
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-days">Дата</div>
+                                 <div class="catalog-items__item2-dates">
+                                    <div class="catalog-items__item2-date">08.05.23</div>
+                                    <div class="catalog-items__item2-date">10.05.23</div>
+                                    <div class="catalog-items__item2-date">13.05.23</div>
+                                    <div class="catalog-items__item2-date">16.05.23</div>
+                                    <div class="catalog-items__item2-date">20.05.23</div>
+                                    <div class="catalog-items__item2-date">12.05.23</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="catalog-items__item2-bottom">
+                              <a href="#" class="catalog-items__item2-more link">Подробнее</a>
+                              <div class="catalog-items__item2-type">Видеосеминар</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="catalog-items__item2 sale">
+                        <div class="catalog-items__item-sale red button">Запись</div>
+                        <div class="catalog-items__item2-img">
+                           <img src="./img/catalog-education/item-img.png" alt="" />
+                        </div>
+                        <div class="catalog-items__item2-descr">
+                           <div class="catalog-items__item2-title">
+                              28 июня "Старение организма с точки зрения ТКМ. Применение фитопрепаратов ТКМ в
+                              пожилом возрасте". Лектор Боровикова Л.В.
+                           </div>
+                           <div class="catalog-items__item2-info">
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-post">Лектор</div>
+                                 <div class="catalog-items__item2-name">Боровикова Л.В.</div>
+                              </div>
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-days">Дата</div>
+                                 <div class="catalog-items__item2-dates">
+                                    <div class="catalog-items__item2-date">08.05.23</div>
+                                    <div class="catalog-items__item2-date">10.05.23</div>
+                                    <div class="catalog-items__item2-date">13.05.23</div>
+                                    <div class="catalog-items__item2-date">16.05.23</div>
+                                    <div class="catalog-items__item2-date">20.05.23</div>
+                                    <div class="catalog-items__item2-date">12.05.23</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="catalog-items__item2-bottom">
+                              <a href="#" class="catalog-items__item2-more link">Подробнее</a>
+                              <div class="catalog-items__item2-type">Видеосеминар</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="catalog-items__item2">
+                        <div class="catalog-items__item-sale red button">Запись</div>
+                        <div class="catalog-items__item2-img">
+                           <img src="./img/catalog-education/item-img.png" alt="" />
+                        </div>
+                        <div class="catalog-items__item2-descr">
+                           <div class="catalog-items__item2-title">
+                              28 июня "Старение организма с точки зрения ТКМ. Применение фитопрепаратов ТКМ в
+                              пожилом возрасте". Лектор Боровикова Л.В.
+                           </div>
+                           <div class="catalog-items__item2-info">
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-post">Лектор</div>
+                                 <div class="catalog-items__item2-name">Боровикова Л.В.</div>
+                              </div>
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-days">Дата</div>
+                                 <div class="catalog-items__item2-dates">
+                                    <div class="catalog-items__item2-date">08.05.23</div>
+                                    <div class="catalog-items__item2-date">10.05.23</div>
+                                    <div class="catalog-items__item2-date">13.05.23</div>
+                                    <div class="catalog-items__item2-date">16.05.23</div>
+                                    <div class="catalog-items__item2-date">20.05.23</div>
+                                    <div class="catalog-items__item2-date">12.05.23</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="catalog-items__item2-bottom">
+                              <a href="#" class="catalog-items__item2-more link">Подробнее</a>
+                              <div class="catalog-items__item2-type">Видеосеминар</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="catalog-items__item2">
+                        <div class="catalog-items__item-sale red button">Запись</div>
+                        <div class="catalog-items__item2-img">
+                           <img src="./img/catalog-education/item-img.png" alt="" />
+                        </div>
+                        <div class="catalog-items__item2-descr">
+                           <div class="catalog-items__item2-title">
+                              28 июня "Старение организма с точки зрения ТКМ. Применение фитопрепаратов ТКМ в
+                              пожилом возрасте". Лектор Боровикова Л.В.
+                           </div>
+                           <div class="catalog-items__item2-info">
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-post">Лектор</div>
+                                 <div class="catalog-items__item2-name">Боровикова Л.В.</div>
+                              </div>
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-days">Дата</div>
+                                 <div class="catalog-items__item2-dates">
+                                    <div class="catalog-items__item2-date">08.05.23</div>
+                                    <div class="catalog-items__item2-date">10.05.23</div>
+                                    <div class="catalog-items__item2-date">13.05.23</div>
+                                    <div class="catalog-items__item2-date">16.05.23</div>
+                                    <div class="catalog-items__item2-date">20.05.23</div>
+                                    <div class="catalog-items__item2-date">12.05.23</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="catalog-items__item2-bottom">
+                              <a href="#" class="catalog-items__item2-more link">Подробнее</a>
+                              <div class="catalog-items__item2-type">Видеосеминар</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="catalog-items__item2">
+                        <div class="catalog-items__item-sale red button">Запись</div>
+                        <div class="catalog-items__item2-img">
+                           <img src="./img/catalog-education/item-img.png" alt="" />
+                        </div>
+                        <div class="catalog-items__item2-descr">
+                           <div class="catalog-items__item2-title">
+                              28 июня "Старение организма с точки зрения ТКМ. Применение фитопрепаратов ТКМ в
+                              пожилом возрасте". Лектор Боровикова Л.В.
+                           </div>
+                           <div class="catalog-items__item2-info">
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-post">Лектор</div>
+                                 <div class="catalog-items__item2-name">Боровикова Л.В.</div>
+                              </div>
+                              <div class="catalog-items__item2-info__column">
+                                 <div class="catalog-items__item2-days">Дата</div>
+                                 <div class="catalog-items__item2-dates">
+                                    <div class="catalog-items__item2-date">08.05.23</div>
+                                    <div class="catalog-items__item2-date">10.05.23</div>
+                                    <div class="catalog-items__item2-date">13.05.23</div>
+                                    <div class="catalog-items__item2-date">16.05.23</div>
+                                    <div class="catalog-items__item2-date">20.05.23</div>
+                                    <div class="catalog-items__item2-date">12.05.23</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="catalog-items__item2-bottom">
+                              <a href="#" class="catalog-items__item2-more link">Подробнее</a>
+                              <div class="catalog-items__item2-type">Видеосеминар</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pagination-page">
+                     <button class="pagination-page__prev">
+                        <svg viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M15 29L1 15L15 1"
+                              stroke="#6D6D6D"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           />
+                        </svg>
+                     </button>
+                     <div class="pagination-page__numbers">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                     </div>
+                     <button class="pagination-page__next">
+                        <svg viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1 1L15 15L1 29"
+                              stroke="#6D6D6D"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                           />
+                        </svg>
+                     </button>
+                  </div>
                </div>
             </div>
          </section>

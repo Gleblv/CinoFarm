@@ -573,3 +573,26 @@ if (document.querySelector(".traditional-med") && window.screen.width <= 768) {
       document.querySelector("main").style.overflow = "auto";
    });
 }
+
+if (document.querySelector("#catalogDatepicer")) {
+   const calendar = new AirDatepicker("#catalogDatepicer", {
+      position: "bottom right",
+   });
+}
+
+if (document.querySelector(".catalog-items__tabs")) {
+   const tabsContainer = document.querySelector(".catalog-items__tabs"),
+      tabs = document.querySelectorAll(".catalog-items__tab");
+
+   tabsContainer.addEventListener("click", (e) => {
+      let target = e.target;
+
+      if (target.classList.contains("catalog-items__tab")) {
+         tabs.forEach((tab) => {
+            tab.classList.remove("active");
+         });
+
+         target.classList.add("active");
+      }
+   });
+}
