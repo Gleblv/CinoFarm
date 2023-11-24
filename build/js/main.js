@@ -265,6 +265,41 @@ if (document.querySelector("#orderModal")) {
    });
 }
 
+// Модалки на детальной странице обучения
+
+if (document.querySelector("#onlineModal")) {
+   console.log("1");
+   const onlineModal = document.querySelector("#onlineModal"),
+      openBtn = document.querySelector("#openonlineModal"),
+      closeBtn = onlineModal.querySelector(".modal-online__close");
+
+   openBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      onlineModal.classList.add("active");
+   });
+
+   closeBtn.addEventListener("click", () => {
+      onlineModal.classList.remove("active");
+   });
+}
+
+if (document.querySelector("#offlineModal")) {
+   const offlineModal = document.querySelector("#offlineModal"),
+      openBtn = document.querySelector("#openofflineModal"),
+      closeBtn = offlineModal.querySelector(".modal-offline__close");
+
+   openBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      offlineModal.classList.add("active");
+   });
+
+   closeBtn.addEventListener("click", () => {
+      offlineModal.classList.remove("active");
+   });
+}
+
 // Закреп блока "Ваш заказ" в корзине при скроле
 
 if (document.querySelector(".basket-aside") && window.screen.width >= 768) {

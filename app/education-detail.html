@@ -368,8 +368,8 @@
                   <div class="education-detail__head-classes">
                      <span>Форма проведения занятий:</span>
                      <ul>
-                        <li class="link">Онлайн</li>
-                        <li class="link">Очно</li>
+                        <li class="link" id="openonlineModal">Онлайн</li>
+                        <li class="link" id="openofflineModal">Очно</li>
                      </ul>
                   </div>
                   <div class="education-detail__head-bottom">
@@ -400,7 +400,7 @@
                </div>
             </div>
          </section>
-         <div class="education-detail__body">
+         <section class="education-detail__body">
             <div class="education-detail__body-container container">
                <div class="education-detail__body-left">
                   <div class="education-detail__body-title">Анонс семинара</div>
@@ -469,6 +469,81 @@
                   </div>
                   <div class="education-detail__body-card__phone">8 (499) 922 0617</div>
                   <div class="education-detail__body-card__email">edu@cinofarm.ru</div>
+               </div>
+            </div>
+         </section>
+         <div class="modal-online modal" id="onlineModal">
+            <div class="modal-online__content">
+               <div class="modal-online__close">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="21"
+                     height="21"
+                     viewBox="0 0 21 21"
+                     fill="none"
+                  >
+                     <path
+                        d="M1 1L10.5 10.5M10.5 10.5L1 20M10.5 10.5L20 1M10.5 10.5L20 20"
+                        stroke="#1A1A1A"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     />
+                  </svg>
+               </div>
+               <div class="modal-online__body">
+                  <div class="modal-online__title">Онлайн участие</div>
+                  <div class="modal-online__text">
+                     <p>
+                        Для этого вам необходимо зарегистрироваться не позднее 28 июня до 16.00 (при участии в
+                        полном семинаре) или зарегистрироваться не позднее дня выбранного вами учебного
+                        мероприятия (отдельного семинара) и оплатить его на сайте www.cinofarm.ru.
+                     </p>
+                     <p>
+                        После регистрации и оплаты вам необходимо сообщить об этом в Учебный центр Синофарм на
+                        почту <a href="#">edu@cinofarm.ru</a> или по телефону:
+                        <a href="#">+7 (499) 922-06-17</a> (в будние дни с 13:00 до 20:00).
+                     </p>
+                     <p>
+                        Ссылка на участие в онлайн трансляции придет на вашу электронную почту за 1 час до
+                        начала мероприятия от сервиса Boomstream.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal-offline modal" id="offlineModal">
+            <div class="modal-offline__content">
+               <div class="modal-offline__close">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="21"
+                     height="21"
+                     viewBox="0 0 21 21"
+                     fill="none"
+                  >
+                     <path
+                        d="M1 1L10.5 10.5M10.5 10.5L1 20M10.5 10.5L20 1M10.5 10.5L20 20"
+                        stroke="#1A1A1A"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                     />
+                  </svg>
+               </div>
+               <div class="modal-offline__body">
+                  <div class="modal-offline__title">Очное участие</div>
+                  <div class="modal-offline__text">
+                     <p>Очный семинар проводится в Учебном центре «СИНОФАРМ» по адресу:</p>
+                     <p>
+                        г. Москва, ул. Ленинская Слобода, д. 19, стр. 5 (деревянное коричневое здание, 1 этаж)
+                     </p>
+                     <p>(ст. метро Автозаводская, последний вагон из центра)</p>
+                     <p>
+                        Желающих посетить семинары просьба предварительно зарегистрироваться на сайте
+                        <a href="#">www.cinofarm.ru</a>
+                     </p>
+                  </div>
                </div>
             </div>
          </div>
