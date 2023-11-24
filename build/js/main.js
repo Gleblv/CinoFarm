@@ -604,9 +604,18 @@ if (document.querySelector("#mobileCatalogDatepicker") && window.screen.width <=
 
    const openCalendarPopupBtn = document.querySelector(".catalog-items__date-mobile"),
       calendarPopup = document.querySelector(".catalog-items__popup-date"),
+      openCalendarPopupBtn2 = document.querySelector(".catalog-items__popup-column.date"),
       closeCalendarPopupBtn = document.querySelector(".catalog-items__popup-date__close");
 
    openCalendarPopupBtn.addEventListener("click", () => {
+      calendarPopup.classList.add("active");
+      document.querySelector(".header").style.display = "none";
+      document.querySelector(".footer").style.display = "none";
+      document.querySelector("main").style.height = `${calendarPopup.scrollHeight}px`;
+      document.querySelector("main").style.overflow = "hidden";
+   });
+
+   openCalendarPopupBtn2.addEventListener("click", () => {
       calendarPopup.classList.add("active");
       document.querySelector(".header").style.display = "none";
       document.querySelector(".footer").style.display = "none";
