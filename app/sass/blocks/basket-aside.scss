@@ -22,7 +22,7 @@
     }
 
     &__title {
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -36,14 +36,14 @@
 
     &__title-m {
         color:  #6D6D6D;
-        font-size: 2.2rem;
+        font-size: $titleSmall;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
     }
 
     &__price {
-        font-size: 2.6rem;
+        font-size: $textBig;
         font-style: normal;
         font-weight: 400;
         line-height: 130%;
@@ -53,7 +53,7 @@
         &::before {
             position: absolute;
             content:'₽';
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 400;
             line-height: 130%;
             right: 0;
@@ -71,14 +71,14 @@
     }
 
     &__result-title {
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-style: normal;
         font-weight: 500;
         line-height: 130%; 
     }
 
     &__result-price {
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-style: normal;
         font-weight: 500;
         line-height: 130%; 
@@ -87,7 +87,7 @@
         &::before {
             position: absolute;
             content:'₽';
-            font-size: 2rem;
+            font-size: $button;
             right: 0;
             bottom: -0.2rem;
         }
@@ -115,7 +115,7 @@
         }
 
         &__title {
-            font-size: 4.4rem;
+            font-size: $titleMediumMob;
             font-weight: 500;
             line-height: 110%; /* 4.84rem */
             margin-bottom: 4rem;
@@ -123,19 +123,19 @@
 
         &__title-m {
             color: #6D6D6D;
-            font-size: 3.6rem;
+            font-size: $titleSmallMob;
             font-weight: 500;
             line-height: 130%; /* 4.68rem */
         }
 
         &__price {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             font-weight: 400;
             line-height: 130%; /* 4.68rem */
             padding-right: 2rem;
 
             &::before {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 font-weight: 400;
                 line-height: 130%;
             }
@@ -145,19 +145,19 @@
             padding: 4rem 0;
 
             &-title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 font-weight: 500;
                 line-height: 110%; /* 4.84rem */
             }
 
             &-price {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 font-weight: 500;
                 line-height: 110%; /* 4.84rem */
                 padding-right: 2rem;
 
                 &::before {
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     font-weight: 500;
                     line-height: 130%;
                 }
@@ -184,14 +184,14 @@
 
             &-price {
                 color: #840D06;
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 font-weight: 500;
                 line-height: 110%; /* 4.84rem */
                 margin-right: 0.8rem;
 
                 span {
                     color: #840D06;
-                    font-size: 3.2rem;
+                    font-size: $textSmallMob;
                     font-weight: 500;
                     line-height: 110%; /* 3.52rem */
                 }

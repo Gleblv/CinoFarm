@@ -36,7 +36,7 @@
         }
 
         &__name2 {
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             margin-bottom: 2.4rem;
@@ -44,13 +44,13 @@
 
         &__name3 {
             color: #6D6D6D;
-            font-size: 2.6rem;
+            font-size: $textBig;
             line-height: 130%; /* 3.38rem */
         }
 
         &__composition {
             margin-top: auto;
-            font-size: 2.6rem;
+            font-size: $textBig;
             line-height: 130%; /* 3.38rem */
         }
 
@@ -99,19 +99,19 @@
                 }
 
                 &__title {
-                    font-size: 3rem;
+                    font-size: $titleMedium;
                     font-weight: 500;
                     line-height: 130%; /* 3.9rem */
                     margin-bottom: 1rem;
                 }
 
                 &__text {
-                    font-size: 2.6rem;
+                    font-size: $textBig;
                     line-height: 130%;
 
                     span {
                         color: #840D06;
-                        font-size: 2.6rem;
+                        font-size: $textBig;
                         line-height: 130%;
                     }
 
@@ -124,7 +124,7 @@
                     list-style-type: none;
 
                     li {
-                        font-size: 2.6rem;
+                        font-size: $textBig;
                         line-height: 130%; /* 3.38rem */
                         padding-left: 2.8rem;
                         background-image: url(../../img/ingredient/list-icon.svg);
@@ -150,7 +150,7 @@
                     padding: 0.8rem 1.6rem;
                     border-radius: 6rem;
                     background: #DEDAD6;
-                    font-size: 2.2rem;
+                    font-size: $textSmall;
                     line-height: 130%; /* 2.86rem */
                 }
             }
@@ -185,19 +185,19 @@
             }
 
             &__name1 {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 1.6rem;
             }
 
             &__name2 {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
                 margin-bottom: 1.6rem;
             }
 
             &__name3 {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
             }
 
@@ -205,7 +205,7 @@
                 position: absolute;
                 top: 30.4rem;
                 left: 36.6rem;
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
             }
 
@@ -253,18 +253,18 @@
                     }
 
                     &__title {
-                        font-size: 4.4rem;
+                        font-size: $titleMediumMob;
                         line-height: 110%; /* 4.84rem */
                         margin-bottom: 1.6rem;
                     }
 
                     &__text {
-                        font-size: 3.6rem;
+                        font-size: $textBigMob;
                         line-height: 130%;
 
                         div {
                             span {
-                                font-size: 3.6rem;
+                                font-size: $textBigMob;
                                 line-height: 130%; /* 4.68rem */
                             }
                         }
@@ -272,7 +272,7 @@
 
                     &__list {
                         li {
-                            font-size: 3.6rem;
+                            font-size: $textBigMob;
                             line-height: 130%; /* 4.68rem */
                             padding-left: 5.6rem;
                             background-size: 2.4rem 2rem;
@@ -290,7 +290,7 @@
                     &__item {
                         padding: 1.6rem 3.2rem;
                         border-radius: 12rem;
-                        font-size: 3.2rem;
+                        font-size: $textSmallMob;
                         line-height: 130%; /* 4.16rem */
                     }
                 }

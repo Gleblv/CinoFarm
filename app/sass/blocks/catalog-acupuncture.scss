@@ -6,7 +6,7 @@
         margin-bottom: 20rem;
 
         &-title {
-            font-size: 6rem;
+            font-size: $titleBig;
             font-weight: 500;
             line-height: 110%; /* 6.6rem */
             margin-bottom: 6rem;
@@ -53,14 +53,14 @@
         }
 
         &-text {
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 500;
             line-height: 130%; /* 2.86rem */
             margin-bottom: 3.1rem;
         }
 
         &-subtext {
-            font-size: 2.2rem;
+            font-size: $textSmall;
             line-height: 130%; /* 2.86rem */
 
             .link {
@@ -100,7 +100,7 @@
             margin-bottom: 20rem;
 
             &-title {
-                font-size: 7.2rem;
+                font-size: $titleBigMob;
                 font-weight: 500;
                 line-height: 110%; /* 7.92rem */
                 margin-bottom: 8rem;
@@ -132,7 +132,7 @@
             }
 
             &-text {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 font-weight: 500;
                 line-height: 130%; /* 4.68rem */
             }
@@ -147,7 +147,7 @@
             }
 
             &-subtext {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
             }
 

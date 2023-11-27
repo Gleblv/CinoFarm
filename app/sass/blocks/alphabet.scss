@@ -1,7 +1,7 @@
 .alphabet {
     margin-bottom: 6rem;
     &__title {
-        font-size: 2.2rem;
+        font-size: $titleSmall;
         font-style: normal;
         font-weight: 500;
         line-height: 130%;
@@ -14,7 +14,7 @@
         justify-content: space-between;
         color: #000;
         text-align: justify;
-        font-size: 2.6rem;
+        font-size: $textBig;
         font-style: normal;
         font-weight: 400;
         line-height: 130%;

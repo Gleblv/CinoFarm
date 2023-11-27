@@ -12,14 +12,14 @@
     }
 
     &__name {
-        font-size: 6rem;
+        font-size: $titleBig;
         font-weight: 500;
         line-height: 110%; /* 6.6rem */
         margin-bottom: 6rem;
     }
 
     &__text {
-        font-size: 2.6rem;
+        font-size: $textBig;
         line-height: 130%; /* 3.38rem */
     }
 
@@ -67,7 +67,7 @@
             }
 
             &__title {
-                font-size: 3rem;
+                font-size: $titleMedium;
                 font-weight: 500;
                 line-height: 110%; /* 3.3rem */
                 margin-bottom: 1.6rem;
@@ -86,7 +86,7 @@
             &__position,
             &__date {
                 color: #6D6D6D;
-                font-size: 2.2rem;
+                font-size: $textSmall;
                 font-weight: 500;
                 line-height: 110%; /* 2.42rem */
                 margin-bottom: 0.8rem;
@@ -94,7 +94,7 @@
 
             &__name,
             &__time {
-                font-size: 2.2rem;
+                font-size: $textSmall;
                 font-weight: 400;
                 line-height: 110%; /* 2.42rem */
             }
@@ -114,14 +114,14 @@
                 align-items: center;
                 border-radius: 5rem;
                 background: #FFF;
-                font-size: 2rem;
+                font-size: $button;
                 font-weight: 500;
                 line-height: 110%; /* 2.2rem */
             }
 
             &__type {
                 color: #840D06;
-                font-size: 2.2rem;
+                font-size: $textSmall;
                 font-weight: 500;
                 line-height: 110%; /* 2.42rem */
             }
@@ -147,13 +147,13 @@
         }
 
         &__name {
-            font-size: 7.2rem;
+            font-size: $titleBigMob;
             line-height: 110%; /* 7.92rem */
             margin-bottom: 101.8rem;
         }
 
         &__text {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             line-height: 130%; /* 4.68rem */
         }
 
@@ -200,7 +200,7 @@
                 }
 
                 &__title {
-                    font-size: 4.4rem;
+                    font-size: $titleMediumMob;
                     line-height: 110%; /* 4.84rem */
                     margin-bottom: 4rem;
                 }
@@ -220,14 +220,14 @@
 
                 &__position,
                 &__date {
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                     margin-bottom: 1.6rem;
                 }
     
                 &__name,
                 &__time {
-                    font-size: 3.2rem;
+                    font-size: $textSmallMob;
                     line-height: 130%; /* 4.16rem */
                 }
 
@@ -238,12 +238,12 @@
                 &__more {
                     border-radius: 10rem;
                     padding: 1.6rem 7rem;
-                    font-size: 3.2rem;
+                    font-size: $textSmallMob;
                     line-height: 110%; /* 3.52rem */
                 }
 
                 &__type {
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                 }
             }

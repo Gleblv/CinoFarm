@@ -15,7 +15,7 @@
 
         &--title {
             color: #22262A;
-            font-size: 2.2rem;
+            font-size: $titleSmall;
             font-weight: 500;
             line-height: 130%; /* 2.86rem */
             padding: 0 10.2rem;
@@ -42,7 +42,7 @@
 
             &-name {
                 color: #1A1A1A;
-                font-size: 2.2rem;
+                font-size: $textSmall;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 130%; /* 2.86rem */
@@ -59,7 +59,7 @@
 
     &-cell {
         color: #6D6D6D;
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-weight: 400;
         line-height: 130%; /* 2.86rem */
         height: 4rem;
@@ -101,7 +101,7 @@
             &--title {
                 padding: 0;
                 color: #22262A;
-                font-size: 3.6rem;
+                font-size: $titleSmallMob;
                 font-weight: 500;
                 line-height: 130%; /* 4.68rem */
 
@@ -120,7 +120,7 @@
                 }
 
                 &-name {
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                 }
             }
@@ -133,7 +133,7 @@
         }
 
         &-cell {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             line-height: 130%; /* 4.68rem */
             height: 8rem;
         }

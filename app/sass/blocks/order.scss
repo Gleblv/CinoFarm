@@ -9,14 +9,14 @@
         padding: 0.8rem 3.5rem;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
+        font-size: $button;
         font-weight: 500;
         line-height: 110%; /* 2.2rem */
         margin-bottom: 6rem;
     }
 
     &__title {
-        font-size: 6rem;
+        font-size: $titleBig;
         font-weight: 500;
         line-height: 110%; /* 6.6rem */
         margin-bottom: 6rem;
@@ -47,7 +47,7 @@
         margin-bottom: 6rem;
 
         &-title {
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             margin-bottom: 4rem;
@@ -75,7 +75,7 @@
                 position: absolute;
                 top: -1.7rem;
                 left: 4rem;
-                font-size: 2.2rem;
+                font-size: $textSmall;
                 font-weight: 500;
                 line-height: 130%; /* 2.86rem */
             }
@@ -90,7 +90,7 @@
                 border-radius: 0rem 4rem;
                 padding: 1.8rem 4rem 0.8rem 4rem;
                 background-color: #F5F2EA;
-                font-size: 2.6rem;
+                font-size: $textBig;
                 font-weight: 400;
                 line-height: 130%; /* 3.38rem */
             }
@@ -101,7 +101,7 @@
             left: 4rem;
             bottom: -3.3rem;
             color: #840D06;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 400;
             line-height: 130%; /* 2.86rem */
             display: none;
@@ -112,7 +112,7 @@
         margin-bottom: 4rem;
 
         &-title {
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             margin-bottom: 4rem;
@@ -127,7 +127,7 @@
         &-method {
             label {
                 position: relative;
-                font-size: 2.2rem;
+                font-size: $textSmall;
                 font-weight: 400;
                 line-height: 130%; /* 2.86rem */
                 padding-left: 4.6rem;
@@ -155,7 +155,7 @@
     }
 
     &__text {
-        font-size: 2.6rem;
+        font-size: $textBig;
         font-weight: 400;
         line-height: 130%; /* 3.38rem */
         margin-bottom: 6rem;
@@ -165,7 +165,7 @@
         margin-bottom: 3.2rem;
 
         &-title {
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             margin-bottom: 4rem;
@@ -190,7 +190,7 @@
                 position: absolute;
                 top: -1.7rem;
                 left: 4rem;
-                font-size: 2.2rem;
+                font-size: $textSmall;
                 font-weight: 500;
                 line-height: 130%; /* 2.86rem */
             }
@@ -205,7 +205,7 @@
                 border-radius: 0rem 4rem;
                 padding: 1.8rem 4rem 0.8rem 4rem;
                 background-color: #F5F2EA;
-                font-size: 2.6rem;
+                font-size: $textBig;
                 font-weight: 400;
                 line-height: 130%; /* 3.38rem */
             }
@@ -230,7 +230,7 @@
 
     &__payment {
         &-title {
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             margin-bottom: 4rem;
@@ -245,7 +245,7 @@
         &-method {
             label {
                 position: relative;
-                font-size: 2.2rem;
+                font-size: $textSmall;
                 font-weight: 400;
                 line-height: 130%; /* 2.86rem */
                 padding-left: 4.6rem;
@@ -274,7 +274,7 @@
 
     &__items {
         &-title {
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             margin-bottom: 4rem;
@@ -313,20 +313,20 @@
         }
 
         &-name {
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 500;
             line-height: 130%; /* 2.86rem */
             margin-bottom: 1rem;
         }
 
         &-count {
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 500;
             line-height: 130%; /* 2.86rem */
         }
 
         &-price {
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 500;
             line-height: 130%; /* 2.86rem */
         }
@@ -350,13 +350,13 @@
 
         &__link {
             padding: 1.6rem 7rem;
-            font-size: 3.2rem;
+            font-size: $textSmallMob;
             line-height: 110%; /* 3.52rem */
             margin-bottom: 6.4rem;
         }
 
         &__title {
-            font-size: 7.2rem;
+            font-size: $titleBigMob;
             line-height: 110%; /* 7.92rem */
             margin-bottom: 8rem;
         }
@@ -374,7 +374,7 @@
             margin-bottom: 12rem;
 
             &-title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 10.2rem;
             }
@@ -385,7 +385,7 @@
                 }
 
                 label {
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                     left: 8rem;
                     top: -3.4rem
@@ -393,7 +393,7 @@
 
                 input {
                     padding: 3.6rem 8rem 3.8rem;
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                     background-image: url(../../img/order/input-background.png);
                 }
@@ -402,7 +402,7 @@
             &-invalid {
                 bottom: -5.4rem;
                 left: 8rem;
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
             }
         }
@@ -411,7 +411,7 @@
             margin-bottom: 8rem;
 
             &-title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 8rem;
             }
@@ -425,7 +425,7 @@
 
             &-method {
                 label {
-                    font-size: 4.4rem;
+                    font-size: $titleMediumMob;
                     line-height: 130%; /* 5.72rem */
                     padding-left: 6.8rem;
 
@@ -445,7 +445,7 @@
         }
 
         &__text {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             line-height: 130%; /* 4.68rem */
             margin-bottom: 12rem;
         }
@@ -454,7 +454,7 @@
             margin-bottom: 8rem;
 
             &-title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 10.2rem;
             }
@@ -466,7 +466,7 @@
                 }
 
                 label {
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                     left: 8rem;
                     top: -3.4rem
@@ -474,7 +474,7 @@
 
                 input {
                     padding: 3.6rem 8rem 3.8rem;
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                     height: 12rem;
                     background-image: url(../../img/order/input-background.png);
@@ -504,7 +504,7 @@
             margin-bottom: 8rem;
 
             &-title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 8rem;
             }
@@ -518,7 +518,7 @@
 
             &-method {
                 label {
-                    font-size: 4.4rem;
+                    font-size: $titleMediumMob;
                     line-height: 130%; /* 5.72rem */
                     padding-left: 6.8rem;
 
@@ -539,7 +539,7 @@
 
         &__items {
             &-title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 8rem;
             }
@@ -578,13 +578,13 @@
             }
 
             &-name {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
                 margin-bottom: 6rem;
             }
 
             &-count {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 110%; /* 3.52rem */
             }
 
@@ -592,7 +592,7 @@
                 position: absolute;
                 right: 0;
                 bottom: 8rem;
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 130%; /* 5.72rem */
             }
             &-delete {

@@ -47,7 +47,7 @@
 
         &__title {
             font-family: 'PP Neue Montreal';
-            font-size: 6rem;
+            font-size: $titleBig;
             font-weight: 500;
             line-height: 110%;
             margin-bottom: 3rem;
@@ -55,7 +55,7 @@
 
         &__subtitle {
             font-family: 'PP Neue Montreal';
-            font-size: 2.6rem;
+            font-size: $textBig;
             line-height: 130%; /* 3.38rem */
             margin-bottom: 4rem;
         }
@@ -95,7 +95,7 @@
 
         &__title {
             font-family: 'PP Neue Montreal';
-            font-size: 6rem;
+            font-size: $titleBig;
             font-weight: 500;
             line-height: 110%;
             margin-bottom: 3rem;
@@ -103,7 +103,7 @@
 
         &__subtitle {
             font-family: 'PP Neue Montreal';
-            font-size: 2.6rem;
+            font-size: $textBig;
             line-height: 130%; /* 3.38rem */
             margin-bottom: 4rem;
         }
@@ -129,7 +129,7 @@
         }
 
         &__title {
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             padding-left: 8rem;
@@ -141,7 +141,7 @@
         }
 
         &__text {
-            font-size: 2.6rem;
+            font-size: $textBig;
             line-height: 130%; /* 3.38rem */
 
             p {
@@ -176,7 +176,7 @@
         }
 
         &__title {
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             padding: 1.05rem 0 1.05rem 8rem;
@@ -188,7 +188,7 @@
         }
 
         &__text {
-            font-size: 2.6rem;
+            font-size: $textBig;
             line-height: 130%; /* 3.38rem */
 
             p {
@@ -223,13 +223,13 @@
             }
     
             &__title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 4rem;
             }
     
             &__subtitle {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
                 margin-bottom: 4.8rem;
             }
@@ -254,13 +254,13 @@
             }
     
             &__title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 4rem;
             }
     
             &__subtitle {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
                 margin-bottom: 4.8rem;
             }
@@ -281,7 +281,7 @@
             }
     
             &__title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 background-size: 10rem 10rem;
                 margin-bottom: 4.8rem;
@@ -289,7 +289,7 @@
             }
     
             &__text {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
     
                 p {
@@ -315,7 +315,7 @@
             }
     
             &__title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 background-size: 10rem 10rem;
                 margin-bottom: 4.8rem;
@@ -323,7 +323,7 @@
             }
     
             &__text {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
     
                 p {

@@ -138,8 +138,8 @@ ul li {
 
 
 .section {
-    scroll-snap-align: start;
-    // height: 100vh;
+    // scroll-snap-align: start;
+    height: 100vh;
     margin-bottom: 25rem;
    
     display: flex;
@@ -147,18 +147,14 @@ ul li {
     justify-content: center;
 }
 
-.full {
-    flex-basis: 50%;
-    height: 100vh;
-    scroll-snap-points-y: repeat(100vh);
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-	
-    
-}
-
-
+// .full {
+//     flex-basis: 50%;
+//     height: 100vh;
+//     scroll-snap-points-y: repeat(100vh);
+//     overflow-y: scroll;
+//     scroll-snap-type: y mandatory;
+//     scroll-behavior: smooth;
+// }
 
 .hidden {
     overflow: hidden;

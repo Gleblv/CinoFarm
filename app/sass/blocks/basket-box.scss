@@ -17,7 +17,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             width: 0.8rem;
@@ -97,7 +97,7 @@
     }
 
     &__title {
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-style: normal;
         font-weight: 500;
         line-height: 130%; 
@@ -107,7 +107,7 @@
     &__release {
         margin-top: auto;
         display: flex;
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-style: normal;
         margin-bottom: 1.2rem;
         line-height: 130%;
@@ -125,7 +125,7 @@
 
     &__manufacturer {
         display: flex;
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-style: normal;
         margin-bottom: 6rem;
         line-height: 130%;
@@ -150,7 +150,7 @@
     &__price {
         position: relative;
         color:  #840D06;
-        font-size: 5rem;
+        font-size: $price;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -163,7 +163,7 @@
         &::before {
             position: absolute;
             content:'₽';
-            font-size: 2rem;
+            font-size: $button;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -200,7 +200,7 @@
         }
 
         &__title {
-            font-size: 3.6rem;
+            font-size: $titleSmallMob;
             font-weight: 500;
             line-height: 130%; /* 4.68rem */
             margin-bottom: 3.2rem;
@@ -212,13 +212,13 @@
 
             strong {
                 color: #6D6D6D;
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 font-weight: 400;
                 line-height: 130%; /* 4.16rem */
             }
 
             span {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 font-weight: 400;
                 line-height: 130%; /* 4.16rem */
             }
@@ -253,7 +253,7 @@
                 }
     
                 .text {
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                     margin-right: 0;
                 }
@@ -267,7 +267,7 @@
 
                 &::before {
                     font-family: 'Inter';
-                    font-size: 3.2rem;
+                    font-size: $textSmallMob;
                     line-height: 130%;
                 }
             }
@@ -290,7 +290,7 @@
                 margin: 0;
                 padding: 1.6rem 7rem;
                 border-radius: 10rem;
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 font-weight: 500;
                 line-height: 110%; /* 3.52rem */
             }

@@ -118,7 +118,7 @@
         &::before {
             position: absolute;
             content:'₽';
-            font-size: 2rem;
+            font-size: $button;
             font-style: normal;
             font-weight: 400;
             line-height: normal;

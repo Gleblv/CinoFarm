@@ -35,7 +35,7 @@
     }
 
     &__name {
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-style: normal;
         font-weight: 500;
         line-height: 110%;
@@ -44,7 +44,7 @@
 
     &__text {
         max-width: 89.7rem;
-        font-size: 2.6rem;
+        font-size: $textBig;
         line-height: 130%;
         margin-bottom: 4rem;
     }
@@ -62,7 +62,7 @@
 
         strong {
             display: block;
-            font-size: 2.2rem;
+            font-size: $titleSmall;
             font-style: normal;
             font-weight: 500;
             line-height: 130%;
@@ -71,7 +71,7 @@
 
         span {
             display: block;
-            font-size: 2.2rem;
+            font-size: $titleSmall;
             font-style: normal;
             font-weight: 400;
             line-height: 130%;
@@ -92,7 +92,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-            font-size: 2.2rem;
+            font-size: $titleSmall;
             font-style: normal;
             font-weight: 500;
             width: 0.8rem;
@@ -140,7 +140,7 @@
     &__price {
         position: relative;
         color:  #840D06;
-        font-size: 5rem;
+        font-size: $price;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -152,7 +152,7 @@
         &::before {
             position: absolute;
             content:'₽';
-            font-size: 2rem;
+            font-size: $button;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -188,7 +188,7 @@
         align-items: center;
         border-radius: 6rem 0px;
         background:  #DEDAD6;
-        font-size: 2.2rem;
+        font-size: $titleSmall;
         font-style: normal;
         font-weight: 500;
         line-height: 130%; 
@@ -210,7 +210,7 @@
         padding-top: 6rem;
         strong {
             display: block;
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-style: normal;
             font-weight: 500;
             line-height: 130%; 
@@ -218,7 +218,7 @@
             margin-bottom: 4rem;
         }
         p {
-            font-size: 2.6rem;
+            font-size: $textBig;
             font-style: normal;
             font-weight: 400;
             line-height: 130%;
@@ -228,7 +228,7 @@
 
         li {
             color: #1A1A1A;
-            font-size: 2.6rem;
+            font-size: $textBig;
             font-style: normal;
             font-weight: 400;
             line-height: 130%;
@@ -290,19 +290,19 @@
         }
 
         &__title {
-            font-size: 4.4rem;
+            font-size: $titleMediumMob;
             line-height: 110%; /* 4.84rem */
             margin-bottom: 1.6rem;
         }
 
         &__name {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             line-height: 130%; /* 4.68rem */
             margin-bottom: 4rem;
         }
 
         &__text {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             line-height: 130%; /* 4.68rem */
             margin-bottom: 4rem;
         }
@@ -329,13 +329,13 @@
             }
 
             strong {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
                 margin: 0;
             }
 
             span {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
             }
         }
@@ -374,12 +374,12 @@
 
         &__price {
             margin: 0;
-            font-size: 4.4rem;
+            font-size: $titleMediumMob;
             line-height: 110%; /* 4.84rem */
             padding-right: 2.8rem;
 
             &::before {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 110%; /* 3.52rem */
                 right: 0;
                 bottom: 0.5rem;
@@ -409,14 +409,14 @@
                 input {
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                 }
             }
         }
 
         &__tab-item {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             line-height: 130%; /* 4.68rem */
             padding: 2rem 4rem;
             border-radius: 12rem 0rem;
@@ -424,11 +424,11 @@
 
         &__tab-block {
             padding-top: 8rem;
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             line-height: 130%; /* 4.68rem */
 
             p {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
 
                 &:not(:last-child) {
@@ -438,7 +438,7 @@
 
             ul {
                 li {
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                     padding-left: 4.4rem;
 

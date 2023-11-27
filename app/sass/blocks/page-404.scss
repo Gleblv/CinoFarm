@@ -20,14 +20,14 @@
     }
 
     &__subtitle {
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-weight: 500;
         line-height: 130%; /* 3.9rem */
         margin-bottom: 6rem;
     }
 
     &__text {
-        font-size: 2.6rem;
+        font-size: $textBig;
         line-height: 130%; /* 3.38rem */
         margin-bottom: 6rem;
     }
@@ -58,13 +58,13 @@
         }
 
         &__subtitle {
-            font-size: 4.4rem;
+            font-size: $titleMediumMob;
             line-height: 110%; /* 4.84rem */
             margin-bottom: 6.4rem;
         }
 
         &__text {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             line-height: 130%; /* 4.68rem */
             margin-bottom: 6.4rem;
         }

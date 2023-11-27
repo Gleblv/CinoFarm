@@ -42,7 +42,7 @@
         width: 23.6rem;
         padding: 2.2rem 2.4rem;
         color: #FFF;
-        font-size: 2rem;
+        font-size: $button;
         font-weight: 500;
         line-height: 110%; /* 2.2rem */
         background-image: url(../../img/calendar.svg);
@@ -53,7 +53,7 @@
 
         &::placeholder {
             color: #FFF;
-            font-size: 2rem;
+            font-size: $button;
             font-weight: 500;
             line-height: 110%; /* 2.2rem */
         }
@@ -76,7 +76,7 @@
             li {
                 color: #1A1A1A;
                 font-family: 'Inter';
-                font-size: 2.4rem;
+                font-size: $menuBig;
                 line-height: 3rem; /* 125% */
                 text-align: left;
 
@@ -97,7 +97,7 @@
     }
 
     &__title {
-        font-size: 6rem;
+        font-size: $titleBig;
         font-weight: 500;
         line-height: 110%; /* 6.6rem */
         margin-bottom: 6rem;
@@ -121,7 +121,7 @@
     }
 
     &__sort {
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-weight: 500;
         line-height: normal;
         display: flex;
@@ -199,7 +199,7 @@
             -webkit-line-clamp: 2;
             overflow: hidden;
             text-overflow: ellipsis;
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             margin-bottom: 1.6rem;
@@ -250,7 +250,7 @@
 
         &-title {
             color: #191919;
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 110%; /* 3.3rem */
             margin-bottom: 3.2rem;
@@ -264,7 +264,7 @@
         &-post,
         &-days {
             color: #6D6D6D;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 500;
             line-height: 110%; /* 2.42rem */
             margin-bottom: 0.8rem;
@@ -273,7 +273,7 @@
         &-name,
         &-date {
             color: #191919;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             line-height: 110%; /* 2.42rem */
         }
 
@@ -294,7 +294,7 @@
 
         &-type {
             color: #840D06;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 500;
             line-height: 110%; /* 2.42rem */
         }
@@ -327,7 +327,7 @@
                 margin-bottom: 4.4rem;
 
                 span {
-                    font-size: 4.4rem;
+                    font-size: $titleMediumMob;
                     font-weight: 500;
                     line-height: 110%; /* 4.84rem */
                 }
@@ -345,7 +345,7 @@
 
             &__sort {
                 &-title {
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     font-weight: 500;
                     line-height: 130%; /* 4.68rem */
                     margin-bottom: 3.2rem;
@@ -355,7 +355,7 @@
                     margin-bottom: 6.4rem;
 
                     li {
-                        font-size: 3.6rem;
+                        font-size: $textBigMob;
                         line-height: 130%; /* 4.68rem */
 
                         &:not(:last-child) {
@@ -367,7 +367,7 @@
 
             &__calendar {
                 color: #1A1A1A;
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 font-weight: 500;
                 line-height: 130%; /* 4.68rem */
                 background: none;
@@ -377,7 +377,7 @@
 
                 &::placeholder {
                     color: #1A1A1A;
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     font-weight: 500;
                     line-height: 130%; /* 4.68rem */
                 }
@@ -389,7 +389,7 @@
         }
 
         &__title {
-            font-size: 7.2rem;
+            font-size: $titleBigMob;
             font-weight: 500;
             line-height: 110%; /* 7.92rem */
         }
@@ -416,7 +416,7 @@
             }
 
             &-title {
-                font-size: 3.6rem;
+                font-size: $titleSmallMob;
                 line-height: 130%; /* 4.68rem */
                 max-width: 51.8rem;
                 margin-bottom: 3.2rem;
@@ -433,7 +433,7 @@
             }
 
             &-initial-price {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
 
                 &::before {
@@ -491,7 +491,7 @@
             }
 
             &-title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 4rem;
             }
@@ -504,7 +504,7 @@
 
             &-post,
             &-days {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
                 margin-bottom: 1.6rem;
             }
@@ -515,7 +515,7 @@
 
             &-name,
             &-date {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
             }
 
@@ -524,13 +524,13 @@
             }
 
             &-type {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
             }
         }
 
         &__sort {
-            font-size: 3.2rem;
+            font-size: $textSmallMob;
             font-weight: 500;
             line-height: 110%; /* 3.52rem */
 
@@ -544,7 +544,7 @@
         &__categories {
             display: flex;
             align-items: center;
-            font-size: 3.2rem;
+            font-size: $textSmallMob;
             font-weight: 500;
             line-height: 110%; /* 3.52rem */
             column-gap: 2rem;
@@ -578,7 +578,7 @@
             transition: 0.2s ease-in-out;
 
             &-column {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 font-weight: 500;
                 line-height: 110%; /* 3.52rem */
                 display: flex;

@@ -20,21 +20,21 @@
     }
 
     &__title {
-        font-size: 6rem;
+        font-size: $titleBig;
         font-weight: 500;
         line-height: 110%; /* 6.6rem */
         margin-bottom: 6rem;
     }
 
     &__subtitle {
-        font-size: 3rem;
+        font-size: $titleMedium;
         font-weight: 500;
         line-height: 130%; /* 3.9rem */
         margin-bottom: 6rem;
     }
 
     &__text {
-        font-size: 2.6rem;
+        font-size: $textBig;
         line-height: 130%; /* 3.38rem */
         margin-bottom: 6rem;
     }
@@ -70,19 +70,19 @@
         }
 
         &__title {
-            font-size: 7.2rem;
+            font-size: $titleBigMob;
             line-height: 110%; /* 7.92rem */
             margin-bottom: 4rem;
         }
 
         &__subtitle {
-            font-size: 4.4rem;
+            font-size: $titleMediumMob;
             line-height: 110%; /* 4.84rem */
             margin-bottom: 4rem;
         }
 
         &__text {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             line-height: 130%; /* 4.68rem */
             margin-bottom: 4rem;
         }

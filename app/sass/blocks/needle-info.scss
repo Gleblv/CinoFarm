@@ -49,25 +49,25 @@
     }
 
     &__manufacturer {
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-weight: 500;
         line-height: 130%; /* 2.86rem */
         margin-bottom: 0.8rem;
 
         &-name {
-            font-size: 2.2rem;
+            font-size: $textSmall;
             line-height: 130%; /* 2.86rem */
         }
     }
 
     &__article {
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-weight: 500;
         line-height: 130%; /* 2.86rem */
         margin-bottom: 0.8rem;
 
         &-number {
-            font-size: 2.2rem;
+            font-size: $textSmall;
             line-height: 130%; /* 2.86rem */
         }
     }
@@ -79,7 +79,7 @@
     }
 
     &__subtitle {
-        font-size: 2.2rem;
+        font-size: $textSmall;
         font-weight: 500;
         line-height: 130%; /* 2.86rem */
 
@@ -113,7 +113,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             width: 0.8rem;
@@ -161,7 +161,7 @@
     &__price {
         position: relative;
         color:  #840D06;
-        font-size: 5rem;
+        font-size: $price;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -173,7 +173,7 @@
         &::before {
             position: absolute;
             content:'₽';
-            font-size: 2rem;
+            font-size: $button;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -215,7 +215,7 @@
             position: absolute;
             top: 0;
             left: 2rem;
-            font-size: 4.4rem;
+            font-size: $titleMediumMob;
             font-weight: 500;
             line-height: 110%; /* 4.84rem */
         }
@@ -237,31 +237,31 @@
         }
 
         &__manufacturer {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             font-weight: 500;
             line-height: 130%; /* 4.68rem */
             margin-bottom: 1.6rem;
 
             &-name {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
             }
         }
 
         &__article {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             font-weight: 500;
             line-height: 130%; /* 4.68rem */
             margin-bottom: 1.6rem;
 
             &-number {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 130%; /* 4.16rem */
             }
         }
 
         &__subtitle {
-            font-size: 3.6rem;
+            font-size: $textBigMob;
             font-weight: 500;
             line-height: 130%; /* 4.68rem */
 
@@ -296,13 +296,13 @@
 
         &__price {
             margin: 0;
-            font-size: 4.4rem;
+            font-size: $titleMediumMob;
             line-height: 110%; /* 4.84rem */
             padding-right: 2.8rem;
             order: 1;
 
             &::before {
-                font-size: 3.2rem;
+                font-size: $textSmallMob;
                 line-height: 110%; /* 3.52rem */
                 right: 0;
                 bottom: 0.5rem;
@@ -334,7 +334,7 @@
                 input {
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    font-size: 3.6rem;
+                    font-size: $textBigMob;
                     line-height: 130%; /* 4.68rem */
                 }
             }

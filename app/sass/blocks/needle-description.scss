@@ -4,14 +4,14 @@
 
         &-title {
             display: inline-block;
-            font-size: 3rem;
+            font-size: $titleMedium;
             font-weight: 500;
             line-height: 130%; /* 3.9rem */
             margin-bottom: 2rem;
         }
 
         &-item {
-            font-size: 2.6rem;
+            font-size: $textBig;
             line-height: 130%; /* 3.38rem */
             padding-left: 2.8rem;
             background-image: url(../../img/one-list-icon.svg);
@@ -30,13 +30,13 @@
             width: 71rem;
 
             &-title {
-                font-size: 4.4rem;
+                font-size: $titleMediumMob;
                 line-height: 110%; /* 4.84rem */
                 margin-bottom: 1.6rem;
             }
 
             &-item {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%; /* 4.68rem */
                 padding-left: 5.6rem;
                 background-size: 2.4rem 2rem;

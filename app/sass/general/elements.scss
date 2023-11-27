@@ -128,6 +128,12 @@ $menuMob: 3.2rem;
     background-repeat: no-repeat;
 	background-position: top center;
 
+	section {
+		.container {
+			padding-top: 0;
+		}
+	}
+
 	& + .footer {
 		.footer__top {
 			border-top: 0.1rem solid #6D6D6D;

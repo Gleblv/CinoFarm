@@ -169,6 +169,12 @@ const teacherSlider = new Swiper(".teacher__swiper", {
    },
 });
 
+// Скролл на главной
+
+// if (document.querySelector(".main-home")) {
+//    new fullpage("#fullpage");
+// }
+
 // Поле поиска в хеадере
 
 if (document.querySelector(".header") && window.screen.width > 768) {
@@ -631,6 +637,8 @@ if (document.querySelector("#catalogDatepicer") && window.screen.width > 768) {
       position: "bottom right",
    });
 }
+
+// Календарь (моб)
 
 if (document.querySelector("#mobileCatalogDatepicker") && window.screen.width <= 768) {
    const mobileCalendar = new AirDatepicker("#mobileCatalogDatepicker", {

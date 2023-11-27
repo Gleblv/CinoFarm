@@ -76,14 +76,14 @@
             }
 
             &-name2 {
-                font-size: 3rem;
+                font-size: $titleMedium;
                 font-weight: 500;
                 line-height: 130%; /* 3.9rem */
             }
 
             &-name3 {
                 color: #6D6D6D;
-                font-size: 2.6rem;
+                font-size: $textBig;
                 line-height: 130%; /* 3.38rem */
             }
 
@@ -93,13 +93,13 @@
 
                 &__title {
                     width: 20rem;
-                    font-size: 2.2rem;
+                    font-size: $titleSmall;
                     font-weight: 500;
                     line-height: 130%; /* 2.86rem */
                 }
 
                 &__descr {
-                    font-size: 2.2rem;
+                    font-size: $textSmall;
                     line-height: 130%; /* 2.86rem */
                 }
             }
@@ -120,7 +120,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-style: normal;
             font-weight: 500;
             width: 0.8rem;
@@ -180,7 +180,7 @@
         &::before {
             position: absolute;
             content:'₽';
-            font-size: 2rem;
+            font-size: $button;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -258,14 +258,14 @@
                 }
 
                 &__title {
-                    font-size: 3rem;
+                    font-size: $titleMedium;
                     font-weight: 500;
                     line-height: 130%; /* 3.9rem */
                     margin-bottom: 1rem;
                 }
 
                 &__text {
-                    font-size: 2.6rem;
+                    font-size: $textBig;
                     line-height: 130%; /* 3.38rem */
                 }
 
@@ -273,7 +273,7 @@
                     padding: 0.8rem 3.5rem;
                     border-radius: 5rem;
                     background: #FFF;
-                    font-size: 2rem;
+                    font-size: $button;
                     font-weight: 500;
                     line-height: 110%; /* 2.2rem */
                     align-self: flex-start;
@@ -287,7 +287,7 @@
                 width: 89.7rem;
 
                 &__title {
-                    font-size: 3rem;
+                    font-size: $titleMedium;
                     font-weight: 500;
                     line-height: 130%; /* 3.9rem */
                     margin-bottom: 2rem;
@@ -306,7 +306,7 @@
                     padding: 0.8rem 1.6rem;
                     border-radius: 6rem;
                     background: #DEDAD6;
-                    font-size: 2.2rem;
+                    font-size: $textSmall;
                     line-height: 130%; /* 2.86rem */
                 }
             }
@@ -341,14 +341,14 @@
                 }
 
                 &__title {
-                    font-size: 3rem;
+                    font-size: $titleMedium;
                     font-weight: 500;
                     line-height: 130%; /* 3.9rem */
                     margin-bottom: 1rem;
                 }
 
                 &__text {
-                    font-size: 2.6rem;
+                    font-size: $textBig;
                     line-height: 130%; /* 3.38rem */
 
                     &:not(:last-child) {
@@ -357,7 +357,7 @@
                 }
 
                 &__subtitle {
-                    font-size: 2.2rem;
+                    font-size: $textSmall;
                     line-height: 130%; /* 2.86rem */
                     font-weight: 500;
                     margin-bottom: 2rem;
@@ -388,7 +388,7 @@
 
                 &__list {
                     li {
-                        font-size: 2.6rem;
+                        font-size: $textBig;
                         line-height: 130%; /* 3.38rem */
                         padding-left: 2.8rem;
                         background-image: url(../../img/one-list-icon.svg);
@@ -460,20 +460,20 @@
                     }
 
                     &__name1 {
-                        font-size: 4.4rem;
+                        font-size: $titleMediumMob;
                         font-weight: 500;
                         line-height: 110%; /* 4.84rem */
                     }
 
                     &__name2 {
-                        font-size: 3.6rem;
+                        font-size: $textBigMob;
                         font-weight: 500;
                         line-height: 130%; /* 4.68rem */
                     }
 
                     &__name3 {
                         color: #6D6D6D;
-                        font-size: 3.6rem;
+                        font-size: $textBigMob;
                         line-height: 130%; /* 4.68rem */
                     }
 
@@ -496,14 +496,14 @@
                         }
 
                         &-title {
-                            font-size: 3.6rem;
+                            font-size: $titleSmallMob;
                             font-weight: 500;
                             line-height: 130%; /* 4.68rem */
                             margin-bottom: 1.6rem;
                         }
 
                         &-descr {
-                            font-size: 3.2rem;
+                            font-size: $textSmallMob;
                             line-height: 130%; /* 4.16rem */
                         }
                     }
@@ -516,11 +516,11 @@
                             margin-bottom: 4rem;
 
                             .item__price {
-                                font-size: 4.4rem;
+                                font-size: $titleMediumMob;
                                 line-height: 110%; /* 4.84rem */
 
                                 &::before {
-                                    font-size: 3.2rem;
+                                    font-size: $textSmallMob;
                                     line-height: 110%; /* 3.52rem */
                                     right: -1rem;
                                     bottom: 0.5rem;
@@ -563,7 +563,7 @@
                                 }
 
                                 .text {
-                                    font-size: 3.6rem;
+                                    font-size: $textBigMob;
                                     line-height: 130%; /* 4.68rem */
                                     margin-right: 0;
                                 }
@@ -620,20 +620,20 @@
                     }
 
                     &__title {
-                        font-size: 4.4rem;
+                        font-size: $titleMediumMob;
                         line-height: 110%; /* 4.84rem */
                         margin-bottom: 1.6rem;
                     }
 
                     &__text {
-                        font-size: 3.6rem;
+                        font-size: $textBigMob;
                         line-height: 130%; /* 4.68rem */
                     }
 
                     &__link {
                         padding: 1.6rem 7rem;
                         border-radius: 10rem;
-                        font-size: 3.2rem;
+                        font-size: $textSmallMob;
                         line-height: 110%; /* 3.52rem */
                     }
                 }
@@ -644,7 +644,7 @@
                     width: 100%;
 
                     &__title {
-                        font-size: 4.4rem;
+                        font-size: $titleMediumMob;
                         line-height: 110%; /* 4.84rem */
                         margin-bottom: 4rem;
                     }
@@ -652,7 +652,7 @@
                     &__symptom {
                         padding: 1.6rem 3.2rem;
                         border-radius: 12rem;
-                        font-size: 3.2rem;
+                        font-size: $textSmallMob;
                         line-height: 130%; /* 4.16rem */
                     }
                 }
@@ -703,13 +703,13 @@
                     }
 
                     &__title {
-                        font-size: 4.4rem;
+                        font-size: $titleMediumMob;
                         line-height: 110%; /* 4.84rem */
                         margin-bottom: 1.6rem;
                     }
 
                     &__text {
-                        font-size: 3.6rem;
+                        font-size: $textBigMob;
                         line-height: 130%; /* 4.68rem */
 
                         &:not(:last-child) {
@@ -718,7 +718,7 @@
                     }
 
                     &__subtitle {
-                        font-size: 4.4rem;
+                        font-size: $titleMediumMob;
                         line-height: 130%; /* 5.72rem */
                         margin-bottom: 2rem;
                     }
@@ -752,7 +752,7 @@
     
                     &__list {
                         li {
-                            font-size: 3.6rem;
+                            font-size: $textBigMob;
                             line-height: 130%; /* 4.68rem */
                             padding-left: 5.6rem;
                             background-size: 2.4rem 2rem;

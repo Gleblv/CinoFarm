@@ -448,7 +448,7 @@ ul li {
   margin: 0 auto; }
 
 .section {
-  scroll-snap-align: start;
+  height: 100vh;
   margin-bottom: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,17 +460,6 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-
-.full {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  height: 100vh;
-  -ms-scroll-snap-points-y: repeat(100vh);
-      scroll-snap-points-y: repeat(100vh);
-  overflow-y: scroll;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  scroll-behavior: smooth; }
 
 .hidden {
   overflow: hidden; }
@@ -546,6 +535,8 @@ input[type="number"] {
   background-image: url(../img/focal/bg1.png);
   background-repeat: no-repeat;
   background-position: top center; }
+  .main-home section .container {
+    padding-top: 0; }
   .main-home + .footer .footer__top {
     border-top: 0.1rem solid #6D6D6D; }
 

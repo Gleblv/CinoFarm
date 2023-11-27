@@ -23,7 +23,7 @@
         width: 50rem;
 
         &-title {
-            font-size: 2.2rem;
+            font-size: $titleSmall;
             font-weight: 500;
             line-height: 130%; /* 2.86rem */
             margin-bottom: 3.2rem;
@@ -31,14 +31,14 @@
 
         &-subtitle {
             color: #6D6D6D;
-            font-size: 2.2rem;
+            font-size: $titleSmall;
             font-weight: 500;
             line-height: 130%; /* 2.86rem */
             margin-bottom: 0.8rem;
         }
 
         &-text {
-            font-size: 2.2rem;
+            font-size: $textSmall;
             font-weight: 400;
             line-height: 130%; /* 2.86rem */
             margin-bottom: 3.2rem;
@@ -97,14 +97,14 @@
             margin-bottom: 8rem;
 
             &-title {
-                font-size: 3.6rem;
+                font-size: $titleSmallMob;
                 font-weight: 500;
                 line-height: 130%; /* 4.68rem */
                 margin-bottom: 4.8rem;
             }
 
             &-subtitle {
-                font-size: 3.6rem;
+                font-size: $titleSmallMob;
                 font-weight: 500;
                 line-height: 130%; /* 4.68rem */
                 margin-bottom: 0;
@@ -112,7 +112,7 @@
             }
 
             &-text {
-                font-size: 3.6rem;
+                font-size: $textBigMob;
                 line-height: 130%;
                 margin-bottom: 3.2rem;
             }
