@@ -172,7 +172,7 @@ const teacherSlider = new Swiper(".teacher__swiper", {
 // Скролл на главной
 
 if (document.querySelector(".main-home")) {
-   new fullpage("#fullpage");
+   const mainPageScroll = new fullpage("#fullpage");
 }
 
 // Поле поиска в хеадере

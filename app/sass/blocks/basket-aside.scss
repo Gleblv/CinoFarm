@@ -94,7 +94,7 @@
     }
 
     &__popup {
-        display: none;
+        display: block;
     }
 
     @media (max-width: 48em) {
@@ -105,12 +105,8 @@
         row-gap: 4rem;
 
         &.popup {
-            position: fixed;
-            bottom: -54rem;
-            left: 2rem;
-
             .basket-aside__popup {
-                display: flex;
+                transform: translateY(0);
             }
         }
 
@@ -169,11 +165,11 @@
         }
 
         &__popup {
-            position: absolute;
-            top: -1rem;
-            left: -2rem;
+            position: fixed;
+            display: flex;
+            bottom: 0rem;
+            left: 0rem;
             background: #000;
-            display: none;
             width: 75rem;
             height: 17rem;
             justify-content: space-between;
@@ -181,6 +177,8 @@
             padding: 0 2rem;
             border-radius: 4rem 4rem 0rem 0rem;
             background: #DEDAD6;
+            transform: translateY(100%);
+            transition: 0.2s ease-in-out;
 
             &-price {
                 color: #840D06;
