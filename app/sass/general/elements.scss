@@ -128,10 +128,8 @@ $menuMob: 3.2rem;
     background-repeat: no-repeat;
 	background-position: top center;
 
-	section {
-		.container {
-			padding-top: 0;
-		}
+	.section {
+		height: 100vh;
 	}
 
 	& + .footer {

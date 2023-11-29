@@ -448,7 +448,6 @@ ul li {
   margin: 0 auto; }
 
 .section {
-  height: 100vh;
   margin-bottom: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,8 +534,8 @@ input[type="number"] {
   background-image: url(../img/focal/bg1.png);
   background-repeat: no-repeat;
   background-position: top center; }
-  .main-home section .container {
-    padding-top: 0; }
+  .main-home .section {
+    height: 100vh; }
   .main-home + .footer .footer__top {
     border-top: 0.1rem solid #6D6D6D; }
 
