@@ -523,7 +523,7 @@
         &-list {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            column-gap: 5.2rem;
         }
 
         &-item {
@@ -535,8 +535,9 @@
             padding-left: 2.4rem;
             background-image: url(../../img/header/header-list-item-icon.svg);
             background-repeat: no-repeat;
-            background-position: left center;
+            background-position: left 0.4rem;
             background-size: 1.4rem 1.4rem;
+            height: 4.4rem;
 
             &:hover {
                 color: #840D06;

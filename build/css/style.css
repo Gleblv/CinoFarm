@@ -491,6 +491,9 @@ input[type="number"] {
     padding: 0 2rem;
     width: 100%; } }
 
+section:first-child {
+  padding-top: 34.6rem; }
+
 .pagination {
   position: absolute;
   top: 50%;
@@ -1518,9 +1521,9 @@ input[type="number"] {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
+      -webkit-column-gap: 5.2rem;
+         -moz-column-gap: 5.2rem;
+              column-gap: 5.2rem; }
     .header__menu-item {
       cursor: pointer;
       position: relative;
@@ -1531,8 +1534,9 @@ input[type="number"] {
       padding-left: 2.4rem;
       background-image: url(../../img/header/header-list-item-icon.svg);
       background-repeat: no-repeat;
-      background-position: left center;
-      background-size: 1.4rem 1.4rem; }
+      background-position: left 0.4rem;
+      background-size: 1.4rem 1.4rem;
+      height: 4.4rem; }
       .header__menu-item:hover {
         color: #840D06; }
         .header__menu-item:hover .header__menu-item__menu-wrapper {

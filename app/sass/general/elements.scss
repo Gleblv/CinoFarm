@@ -56,6 +56,12 @@ $menuMob: 3.2rem;
 
 // ------------------------------------
 
+section {
+	&:first-child {
+		padding-top: 34.6rem;
+	}
+}
+
 .pagination {
 	position: absolute;
 	top: 50%;
