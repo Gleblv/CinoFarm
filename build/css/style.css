@@ -11439,14 +11439,20 @@ section:first-child {
     .footer__logo {
       width: 18.6rem;
       height: 23.4rem;
-      margin-bottom: 8rem; }
+      margin: 0 auto 8rem auto; }
     .footer__top-inner-mob {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; }
+              justify-content: space-between;
+      justify-content: space-between;
+      padding: 0 3.4rem 0 7.8rem; }
+      .footer__top-inner-mob ul:first-child {
+        width: 18.8rem; }
+      .footer__top-inner-mob ul:last-child {
+        width: 27.6rem; }
       .footer__top-inner-mob li {
         max-width: 34.2rem;
         font-size: 3.2rem;
