@@ -306,6 +306,24 @@ if (document.querySelector("#offlineModal")) {
    });
 }
 
+// Модалка на странице регистрации
+
+if (document.querySelector("#registrationModal")) {
+   const registrationModal = document.querySelector("#registrationModal"),
+      openBtn = document.querySelector("#openRegistrationModal"),
+      closeBtn = registrationModal.querySelector(".modal-registration__close");
+
+   openBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      registrationModal.classList.add("active");
+   });
+
+   closeBtn.addEventListener("click", () => {
+      registrationModal.classList.remove("active");
+   });
+}
+
 // Закреп блока "Ваш заказ" в корзине при скроле
 
 if (document.querySelector(".basket-aside") && window.screen.width >= 768) {
@@ -687,6 +705,168 @@ if (document.querySelector(".catalog-items__tabs")) {
             tab.classList.remove("active");
          });
 
+         target.classList.add("active");
+      }
+   });
+}
+
+// Переключение инпута с паролем
+
+if (document.querySelector(".input .unvisible")) {
+   const passwordInputContainer = document.querySelector("#passwordInput"),
+      visibleIcon = passwordInput.querySelector(".visible"),
+      unvisibleIcon = passwordInput.querySelector(".unvisible");
+
+   visibleIcon.addEventListener("click", () => {
+      passwordInputContainer.classList.add("visible");
+      passwordInputContainer.querySelector("input").setAttribute("type", "text");
+   });
+
+   unvisibleIcon.addEventListener("click", () => {
+      passwordInputContainer.classList.remove("visible");
+      passwordInputContainer.querySelector("input").setAttribute("type", "password");
+   });
+}
+
+// Раскрытие/закрытие товаров в лк/мои заказы
+
+if (document.querySelector(".orders__table-row__item-list")) {
+   const toggleListBtn = document.querySelector(".orders__table-row__item-list__toggle-list"),
+      list = document.querySelector(".orders__table-row__item-list"),
+      listContainers = document.querySelectorAll(".orders__table-row__item");
+
+   let initialHeight = 0;
+
+   window.screen.width > 768 ? (initialHeight = 20.6) : (initialHeight = 41.6);
+
+   listContainers.forEach((container) => {
+      container.addEventListener("click", (e) => {
+         let target = e.target;
+         let list = container.querySelector(".orders__table-row__item-list");
+
+         if (
+            target.classList.contains("orders__table-row__item-list__toggle-list") &&
+            list.classList.contains("active")
+         ) {
+            list.classList.remove("active");
+            list.style.maxHeight = `${initialHeight}rem`;
+            target.textContent = "Раскрыть";
+
+            return;
+         }
+
+         if (
+            target.classList.contains("orders__table-row__item-list__toggle-list") &&
+            !list.classList.contains("active")
+         ) {
+            list.classList.add("active");
+            list.style.maxHeight = `${list.scrollHeight}rem`;
+            target.textContent = "Свернуть";
+         }
+      });
+   });
+}
+
+// Раскрытие/закрытие товаров в лк/список
+
+if (document.querySelector(".payments__table")) {
+   const rows = document.querySelectorAll(".payments__table-row");
+
+   let initialHeight = 0;
+
+   window.screen.width > 768 ? (initialHeight = 8.6) : (initialHeight = 54);
+
+   rows.forEach((row) => {
+      row.addEventListener("click", (e) => {
+         let target = e.target;
+
+         if (
+            target.classList.contains("payments__table-row__item-toggle") &&
+            !row.classList.contains("active")
+         ) {
+            row.classList.add("active");
+            row.style.maxHeight = `${row.scrollHeight}rem`;
+            target.textContent = "Скрыть заказ";
+
+            return;
+         }
+
+         if (
+            target.classList.contains("payments__table-row__item-toggle") &&
+            row.classList.contains("active")
+         ) {
+            row.classList.remove("active");
+            row.style.maxHeight = `${initialHeight}rem`;
+            target.textContent = "Показать заказ";
+         }
+      });
+   });
+}
+
+// Переключение блоков в лк
+
+if (document.querySelector(".account-lk") && window.screen.width > 768) {
+   const tabsContainer = document.querySelector(".account-lk__menu"),
+      tabs = document.querySelectorAll(".account-lk__menu-item"),
+      blocks = document.querySelectorAll(".account-lk__block");
+
+   tabsContainer.addEventListener("click", (e) => {
+      let target = e.target;
+
+      if (target.classList.contains("account-lk__menu-item")) {
+         let activeBox = target.dataset.blockName;
+
+         tabs.forEach((tab) => {
+            tab.classList.remove("active");
+         });
+
+         target.classList.add("active");
+
+         blocks.forEach((block) => {
+            if (block.classList.contains(activeBox)) {
+               block.classList.add("active");
+               return;
+            }
+
+            block.classList.remove("active");
+         });
+      }
+   });
+}
+
+if (document.querySelector(".account-lk") && window.screen.width <= 768) {
+   const menu = document.querySelector(".account-lk__menu-mobile"),
+      menuItems = document.querySelectorAll(".account-lk__menu-mobile__item"),
+      blocks = document.querySelectorAll(".account-lk__block");
+
+   let initialHeight = 14.4;
+
+   menu.addEventListener("click", (e) => {
+      let target = e.target;
+
+      if (target.classList.contains("account-lk__menu-mobile__item") && target.classList.contains("active")) {
+         menu.style.maxHeight = `${menu.scrollHeight / 5}rem`;
+         return;
+      }
+
+      if (target.classList.contains("account-lk__menu-mobile__item")) {
+         let activeBlock = target.dataset.blockName;
+
+         menuItems.forEach((item) => {
+            item.classList.remove("active");
+         });
+
+         blocks.forEach((block) => {
+            if (block.classList.contains(activeBlock)) {
+               block.classList.add("active");
+               return;
+            }
+
+            block.classList.remove("active");
+         });
+
+         menu.prepend(target);
+         menu.style.maxHeight = `${initialHeight}rem`;
          target.classList.add("active");
       }
    });

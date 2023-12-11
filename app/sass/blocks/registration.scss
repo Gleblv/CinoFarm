@@ -1,0 +1,106 @@
+.registration {
+    padding-bottom: 16.4rem;
+    background-image: url(../../img/registration/background.png);
+    background-repeat: no-repeat;
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 500;
+        line-height: 110%; /* 13.2rem */
+        margin-bottom: 6rem;
+    }
+
+    &__form {
+        width: 103rem;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 7.1rem;
+        }
+
+        .registration__input {
+            flex: 0 0 50rem;
+
+            input {
+                width: 100%;
+                background-image: url(../../img/small-input.png);
+            }
+        }
+    }
+
+    &__top {
+        margin-bottom: 4rem;
+
+        & > .registration__input {
+            margin-bottom: 3.2rem;
+
+            input {
+                width: 100%;
+                background-image: url(../../img/big-input.png);
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .checkbox {
+            font-weight: 400;
+            width: 53.3rem;
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__title {
+            font-size: 7.2rem;
+            font-weight: 500;
+            line-height: 110%; /* 7.92rem */
+            margin-bottom: 4rem;
+        }
+
+        &__top {
+            margin-bottom: 6.4rem;
+            width: auto;
+
+            & > .registration__input {
+                flex: 0 0 auto;
+                height: 14.2rem;
+                width: 71rem;
+                margin-bottom: 6.4rem;
+            }
+        }
+
+        &__form {
+            width: auto;
+        }
+
+        &__row {
+            flex-direction: column;
+            row-gap: 6.4rem;
+
+            .registration__input {
+                flex: 0 0 auto;
+                height: 14.2rem;
+                width: 71rem;
+            }
+        }
+
+        &__bottom {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .checkbox {
+                width: auto;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}

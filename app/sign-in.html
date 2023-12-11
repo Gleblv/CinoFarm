@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+      <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Главная</title>
+   </head>
+
+   <body>
+      @@include('./template/header.html')
+      <main>
+         <section class="sign-in">
+            <div class="sign-in__container container">
+               <div class="sign-in__title">Войти</div>
+               <div class="sign-in__box">
+                  <form action="#" class="sign-in__form">
+                     <div class="sign-in__top">
+                        <div class="sign-in__input input">
+                           <label for="email">E-mail</label>
+                           <input type="text" id="email" />
+                        </div>
+                        <div class="sign-in__input input">
+                           <label for="password">Пароль</label>
+                           <input type="password" id="password" />
+                        </div>
+                     </div>
+                     <div class="sign-in__bottom">
+                        <button class="all-btn" id="opensign-inModal">
+                           <span>Войти</span>
+                           <div class="all-btn__arrow">
+                              <svg viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M1.27344 1.54517L12.728 12.9997L1.27344 24.4543"
+                                    stroke="#840D06"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                 />
+                              </svg>
+                           </div>
+                        </button>
+                        <a href="#" class="sign-in__forget-password">Забыли пароль?</a>
+                     </div>
+                  </form>
+                  <div class="sign-in__card">
+                     <div class="sign-in__card-title">Новый пользователь?</div>
+                     <div class="sign-in__card-link link">Создать учетную запись</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('./template/footer.html')
+   </body>
+</html>
