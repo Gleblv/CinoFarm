@@ -1,0 +1,334 @@
+.phytopreparations {
+    &-catalog {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &-head {
+        margin-bottom: 20rem;
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__img {
+            width: 70.5rem;
+            height: 52.1rem;
+            border-radius: 0rem 6rem;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 0rem 6rem;
+            }
+        }
+
+        &__descr {
+            width: 76.5rem;
+        }
+
+        &__title {
+            font-size: 6rem;
+            font-weight: 500;
+            line-height: 110%; /* 6.6rem */
+            margin-bottom: 6rem;
+        }
+
+        &__subtitle {
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 130%; /* 2.86rem */
+            margin-bottom: 3.2rem;
+        }
+
+        &__text {
+            font-size: 2.2rem;
+            font-weight: 400;
+            line-height: 130%; /* 2.86rem */
+
+            &-box {
+                display: flex;
+                column-gap: 3.1rem;
+            }
+        }
+    }
+
+    &-body {
+        margin-bottom: 20rem;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__descr {
+            width: 95.9rem;
+        }
+
+        &__title {
+            font-size: 6rem;
+            font-weight: 500;
+            line-height: 110%; /* 6.6rem */
+            margin-bottom: 6rem;
+        }
+
+        &__text {
+            font-size: 2.6rem;
+            font-weight: 400;
+            line-height: 130%; /* 3.38rem */
+            width: 88rem;
+            margin-bottom: 6rem;
+        }
+
+        &__tables {
+            width: 89.8rem;
+
+            &-item {
+                overflow-y: hidden;
+                transition: 0.2s ease-in-out;
+
+                &.active {
+                    .phytopreparations-body__tables-item__circle {
+                        &::before {
+                            transform: rotateZ(0deg);
+                        }
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 3.2rem;
+                }
+
+                &__head {
+                    display: flex;
+                    column-gap: 3.2rem;
+                    align-items: center;
+                    margin-bottom: 3.2rem;
+                }
+
+                &__title {
+                    font-size: 3rem;
+                    font-weight: 500;
+                    line-height: 130%; /* 3.9rem */
+                }
+
+                &__circle {
+                    width: 6.6rem;
+                    height: 6.6rem;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    position: relative;
+                    cursor: pointer;
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        margin: auto;
+                        background-color: #000;
+                        width: 2rem;
+                        height: 0.1rem;
+                        transition: 0.2s ease-in-out;
+                    }
+
+                    &::before {
+                        transform: rotateZ(-90deg);
+                    }
+                }
+            }
+        }
+
+        &__table {
+            width: 100%;
+
+            &-row {
+                display: flex;
+                column-gap: 8rem;
+                align-items: center;
+                padding: 2.4rem 5rem;
+                text-align: center;
+                font-size: 2.2rem;
+                line-height: 130%; /* 2.86rem */
+
+                &:nth-child(odd) {
+                    background: #E8E4E0;
+                }
+
+                &:nth-child(even) {
+                    background: #D7D2CD;
+                }
+
+                &:first-child {
+                    border-radius: 6rem 6rem 0rem 0rem;
+                    padding: 5rem 5rem 2.4rem 5rem;
+                    color: #840D06;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    line-height: 130%; /* 3.9rem */
+                }
+
+                &:last-child {
+                    border-radius: 0rem 0rem 6rem 6rem;
+                    padding: 2.4rem 5rem 5rem 5rem;
+                }
+
+                &__item {
+                    &:first-child {
+                        width: 9.5rem;
+                    }
+                }
+            }
+        }
+
+        &__img {
+            width: 55.5rem;
+            height: 83.4rem;
+            border-radius: 6rem 0rem;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        &-catalog {
+            &__container {
+                .global-search {
+                    display: none;
+                }
+            }
+        }
+
+        &-head {
+            &__box {
+                flex-direction: column-reverse;
+            }
+
+            &__img {
+                width: 71rem;
+                height: 54.4rem;
+                border-radius: 12rem 0rem;
+
+                img {
+                    border-radius: 12rem 0rem;
+                }
+            }
+
+            &__descr {
+                width: auto;
+                margin-bottom: 6.4rem;
+            }
+
+            &__title {
+                font-size: 7.2rem;
+                font-weight: 500;
+                line-height: 110%; /* 7.92rem */
+                margin-bottom: 4rem;
+            }
+
+            &__subtitle {
+                font-size: 3.6rem;
+                font-weight: 500;
+                line-height: 130%; /* 4.68rem */
+                margin-bottom: 4rem;
+            }
+
+            &__text {
+                font-size: 3.6rem;
+                line-height: 130%; /* 4.68rem */
+
+                &-box {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        &-body {
+            &__container {
+                flex-direction: column;
+                position: relative;
+            }
+
+            &__descr {
+                width: auto;
+            }
+
+            &__img {
+                position: absolute;
+                top: 140.2rem;
+                left: 2rem;
+                width: 71rem;
+                height: 100.8rem;
+            }
+
+            &__title {
+                font-size: 7.2rem;
+                font-weight: 500;
+                line-height: 110%; /* 7.92rem */
+                margin-bottom: 4rem;
+            }
+
+            &__text {
+                width: auto;
+                font-size: 3.6rem;
+                line-height: 130%; /* 4.68rem */
+                margin-bottom: 115.2rem;
+            }
+
+            &__tables {
+                width: auto;
+
+                &-item {
+                    &__head {
+                        column-gap: 6.4rem;
+                        margin-bottom: 6.4rem;
+                    }
+
+                    &__cirle {
+                        width: 8.8rem;
+                        height: 8.8rem;
+
+                        &::before,
+                        &::after {
+                            width: 4rem;
+                        }
+                    }
+
+                    &__title {
+                        font-size: 4.4rem;
+                        line-height: 110%; /* 4.84rem */
+                        max-width: 58rem;
+                    }
+                }
+            }
+
+            &__table {
+                &-row {
+                    font-size: 3.2rem;
+                    line-height: 130%; /* 4.16rem */
+
+                    &:first-child {
+                        padding: 4.8rem 4.8rem 3.2rem 4.8rem;
+                        border-radius: 8rem 8rem 0rem 0rem;
+                        font-size: 4.4rem;
+                        line-height: 110%; /* 4.84rem */
+                    }
+
+                    &__item {
+                        &:first-child {
+                            width: 19rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

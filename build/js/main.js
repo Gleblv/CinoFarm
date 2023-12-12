@@ -871,3 +871,26 @@ if (document.querySelector(".account-lk") && window.screen.width <= 768) {
       }
    });
 }
+
+// Аккордион на странице фитопрепаратов
+
+if (document.querySelector(".phytopreparations-body__tables")) {
+   const items = document.querySelectorAll(".phytopreparations-body__tables-item");
+
+   items.forEach((item) => {
+      let itemHead = item.querySelector(".phytopreparations-body__tables-item__head");
+      let itemHeadHeight = window.screen.width > 768 ? itemHead.scrollHeight / 10 : itemHead.scrollHeight / 5;
+
+      item.style.maxHeight = `${itemHeadHeight}rem`;
+
+      itemHead.addEventListener("click", () => {
+         let itemHeight = window.screen.width > 768 ? item.scrollHeight / 10 : item.scrollHeight / 5;
+
+         item.classList.toggle("active");
+
+         item.classList.contains("active")
+            ? (item.style.maxHeight = `${itemHeight}rem`)
+            : (item.style.maxHeight = `${itemHeadHeight}rem`);
+      });
+   });
+}

@@ -12115,6 +12115,267 @@ section:first-child {
       /* 4.68rem */
       margin-bottom: 6.4rem; } }
 
+.phytopreparations-catalog__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.phytopreparations-head {
+  margin-bottom: 20rem; }
+  .phytopreparations-head__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .phytopreparations-head__img {
+    width: 70.5rem;
+    height: 52.1rem;
+    border-radius: 0rem 6rem;
+    overflow: hidden; }
+    .phytopreparations-head__img img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0rem 6rem; }
+  .phytopreparations-head__descr {
+    width: 76.5rem; }
+  .phytopreparations-head__title {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 110%;
+    /* 6.6rem */
+    margin-bottom: 6rem; }
+  .phytopreparations-head__subtitle {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 130%;
+    /* 2.86rem */
+    margin-bottom: 3.2rem; }
+  .phytopreparations-head__text {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 130%;
+    /* 2.86rem */ }
+    .phytopreparations-head__text-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-column-gap: 3.1rem;
+         -moz-column-gap: 3.1rem;
+              column-gap: 3.1rem; }
+
+.phytopreparations-body {
+  margin-bottom: 20rem; }
+  .phytopreparations-body__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .phytopreparations-body__descr {
+    width: 95.9rem; }
+  .phytopreparations-body__title {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 110%;
+    /* 6.6rem */
+    margin-bottom: 6rem; }
+  .phytopreparations-body__text {
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 130%;
+    /* 3.38rem */
+    width: 88rem;
+    margin-bottom: 6rem; }
+  .phytopreparations-body__tables {
+    width: 89.8rem; }
+    .phytopreparations-body__tables-item {
+      overflow-y: hidden;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+      .phytopreparations-body__tables-item.active .phytopreparations-body__tables-item__circle::before {
+        -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg); }
+      .phytopreparations-body__tables-item:not(:last-child) {
+        margin-bottom: 3.2rem; }
+      .phytopreparations-body__tables-item__head {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-column-gap: 3.2rem;
+           -moz-column-gap: 3.2rem;
+                column-gap: 3.2rem;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 3.2rem; }
+      .phytopreparations-body__tables-item__title {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 130%;
+        /* 3.9rem */ }
+      .phytopreparations-body__tables-item__circle {
+        width: 6.6rem;
+        height: 6.6rem;
+        background-color: #fff;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer; }
+        .phytopreparations-body__tables-item__circle::before, .phytopreparations-body__tables-item__circle::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          margin: auto;
+          background-color: #000;
+          width: 2rem;
+          height: 0.1rem;
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out; }
+        .phytopreparations-body__tables-item__circle::before {
+          -webkit-transform: rotateZ(-90deg);
+                  transform: rotateZ(-90deg); }
+  .phytopreparations-body__table {
+    width: 100%; }
+    .phytopreparations-body__table-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-column-gap: 8rem;
+         -moz-column-gap: 8rem;
+              column-gap: 8rem;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 2.4rem 5rem;
+      text-align: center;
+      font-size: 2.2rem;
+      line-height: 130%;
+      /* 2.86rem */ }
+      .phytopreparations-body__table-row:nth-child(odd) {
+        background: #E8E4E0; }
+      .phytopreparations-body__table-row:nth-child(even) {
+        background: #D7D2CD; }
+      .phytopreparations-body__table-row:first-child {
+        border-radius: 6rem 6rem 0rem 0rem;
+        padding: 5rem 5rem 2.4rem 5rem;
+        color: #840D06;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 130%;
+        /* 3.9rem */ }
+      .phytopreparations-body__table-row:last-child {
+        border-radius: 0rem 0rem 6rem 6rem;
+        padding: 2.4rem 5rem 5rem 5rem; }
+      .phytopreparations-body__table-row__item:first-child {
+        width: 9.5rem; }
+  .phytopreparations-body__img {
+    width: 55.5rem;
+    height: 83.4rem;
+    border-radius: 6rem 0rem;
+    overflow: hidden; }
+    .phytopreparations-body__img img {
+      width: 100%;
+      height: 100%; }
+
+@media (max-width: 48em) {
+  .phytopreparations-catalog__container .global-search {
+    display: none; }
+  .phytopreparations-head__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .phytopreparations-head__img {
+    width: 71rem;
+    height: 54.4rem;
+    border-radius: 12rem 0rem; }
+    .phytopreparations-head__img img {
+      border-radius: 12rem 0rem; }
+  .phytopreparations-head__descr {
+    width: auto;
+    margin-bottom: 6.4rem; }
+  .phytopreparations-head__title {
+    font-size: 7.2rem;
+    font-weight: 500;
+    line-height: 110%;
+    /* 7.92rem */
+    margin-bottom: 4rem; }
+  .phytopreparations-head__subtitle {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 130%;
+    /* 4.68rem */
+    margin-bottom: 4rem; }
+  .phytopreparations-head__text {
+    font-size: 3.6rem;
+    line-height: 130%;
+    /* 4.68rem */ }
+    .phytopreparations-head__text-box {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  .phytopreparations-body__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative; }
+  .phytopreparations-body__descr {
+    width: auto; }
+  .phytopreparations-body__img {
+    position: absolute;
+    top: 140.2rem;
+    left: 2rem;
+    width: 71rem;
+    height: 100.8rem; }
+  .phytopreparations-body__title {
+    font-size: 7.2rem;
+    font-weight: 500;
+    line-height: 110%;
+    /* 7.92rem */
+    margin-bottom: 4rem; }
+  .phytopreparations-body__text {
+    width: auto;
+    font-size: 3.6rem;
+    line-height: 130%;
+    /* 4.68rem */
+    margin-bottom: 115.2rem; }
+  .phytopreparations-body__tables {
+    width: auto; }
+    .phytopreparations-body__tables-item__head {
+      -webkit-column-gap: 6.4rem;
+         -moz-column-gap: 6.4rem;
+              column-gap: 6.4rem;
+      margin-bottom: 6.4rem; }
+    .phytopreparations-body__tables-item__cirle {
+      width: 8.8rem;
+      height: 8.8rem; }
+      .phytopreparations-body__tables-item__cirle::before, .phytopreparations-body__tables-item__cirle::after {
+        width: 4rem; }
+    .phytopreparations-body__tables-item__title {
+      font-size: 4.4rem;
+      line-height: 110%;
+      /* 4.84rem */
+      max-width: 58rem; }
+  .phytopreparations-body__table-row {
+    font-size: 3.2rem;
+    line-height: 130%;
+    /* 4.16rem */ }
+    .phytopreparations-body__table-row:first-child {
+      padding: 4.8rem 4.8rem 3.2rem 4.8rem;
+      border-radius: 8rem 8rem 0rem 0rem;
+      font-size: 4.4rem;
+      line-height: 110%;
+      /* 4.84rem */ }
+    .phytopreparations-body__table-row__item:first-child {
+      width: 19rem; } }
+
 .footer__top {
   width: 156rem;
   padding-top: 4rem;
