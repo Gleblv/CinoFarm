@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+      <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.min.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Главная</title>
+   </head>
+
+   <body>
+      @@include('./template/header.html')
+      <main>
+         <section class="about-head">
+            <div class="about-head__container container">
+               <div class="about-head__img">
+                  <picture class="about-head__img-big">
+                     <source media="(min-width: 48em)" srcset="./img/about/head-big-img.png" />
+                     <source media="(max-width: 48em)" srcset="./img/about/head-big-img-mobile.png" />
+                     <img src="./img/about/head-big-img.png" alt="" />
+                  </picture>
+                  <div class="about-head__img-column">
+                     <div class="about-head__img-small">
+                        <img src="./img/about/head-small-img-1.png" alt="" />
+                     </div>
+                     <div class="about-head__img-small">
+                        <img src="./img/about/head-small-img-2.png" alt="" />
+                     </div>
+                  </div>
+               </div>
+               <div class="about-head__descr">
+                  <div class="about-head__title">О компании</div>
+                  <div class="about-head__text">
+                     Компания «СИНОФАРМ» на протяжении 9 лет успешно занимается развитием и продвижением
+                     Традиционной Китайской Медицины на российский рынок. Нашей уникальной разработкой
+                     является программный продукт «ТКМ Эксперт».
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="numbres">
+            <div class="numbres__container container">
+               <div class="numbres__title">Наша компания в цифрах</div>
+               <ul class="numbres__list">
+                  <li class="numbres__item">
+                     <div class="numbres__count">2000</div>
+                     <div class="numbres__text">различных товаров Вы можете найти в нашем магазине</div>
+                  </li>
+                  <li class="numbres__item">
+                     <div class="numbres__count">120</div>
+                     <div class="numbres__text">фитопрепаратов лучшего качества представлены в каталоге</div>
+                  </li>
+                  <li class="numbres__item">
+                     <div class="numbres__count">23</div>
+                     <div class="numbres__text">выпущенные книги по Традиционной Китайской медицине</div>
+                  </li>
+                  <li class="numbres__item">
+                     <div class="numbres__count">10 лет</div>
+                     <div class="numbres__text">опыт врачей в нашем медицинском центре</div>
+                  </li>
+                  <li class="numbres__item">
+                     <div class="numbres__count">14 лет</div>
+                     <div class="numbres__text">развиваем и продвигаем Традиционную Китайскую Медицину</div>
+                  </li>
+                  <li class="numbres__item">
+                     <div class="numbres__count">1000</div>
+                     <div class="numbres__text">слушателей посетили наши мероприятия</div>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <section class="about-slider">
+            <div class="about-slider__container container">
+               <div class="about-slider__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <div class="about-slider__swiper-slide swiper-slide">
+                        <div class="about-slider__swiper-slide_left">
+                           <div class="about-slider__swiper-slide_title">
+                              Основные направления деятельности
+                           </div>
+                           <div class="about-slider__swiper-slide_img-mobile">
+                              <img src="./img/about/slide-img-1.png" alt="" />
+                           </div>
+                           <ul class="about-slider__swiper-slide_list">
+                              <li class="about-slider__swiper-slide_item">
+                                 Импорт, сертификация и реализация фитопрепаратов ТКМ
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Импорт, сертификация и реализация инструментов для рефлексотерапевтов
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Учебная деятельность – учебно-методический центр «СИНОФАРМ» проводит обучение
+                                 по ТКМ и рефлексотерапии
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Издательская деятельность – издательство «СИНОФАРМ» переводит и издает
+                                 специализированную литературу по ТКМ
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Медицинская деятельность – Центр традиционной медицины «СИНОФАРМ» является
+                                 клинической базой компании «СИНОФАРМ»
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Координация работы Профессиональной ассоциации рефлексотерапевтов
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Международная деятельность – организация обучения и стажировки российских
+                                 рефлексотерапевтов в Китае, а также приглашение иностранных специалистов для
+                                 обмена опытом
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Информационная деятельность – участие в выставках и конгрессах для
+                                 популяризации методов ТКМ
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="about-slider__swiper-slide_right">
+                           <div class="about-slider__swiper-slide_img">
+                              <img src="./img/about/slide-img-1.png" alt="" />
+                           </div>
+                           <div class="about-slider__swiper-controlls">
+                              <div class="about-slider__swiper-prev">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="30"
+                                    viewBox="0 0 16 30"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M15 29L1 15L15 1"
+                                       stroke="#6D6D6D"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                              <div class="about-slider__swiper-next">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="30"
+                                    viewBox="0 0 16 30"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M1 1L15 15L1 29"
+                                       stroke="#6D6D6D"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="about-slider__swiper-slide swiper-slide">
+                        <div class="about-slider__swiper-slide_left">
+                           <div class="about-slider__swiper-slide_title">
+                              Основные направления деятельности
+                           </div>
+                           <div class="about-slider__swiper-slide_img-mobile">
+                              <img src="./img/about/slide-img-1.png" alt="" />
+                           </div>
+                           <ul class="about-slider__swiper-slide_list">
+                              <li class="about-slider__swiper-slide_item">
+                                 Импорт, сертификация и реализация фитопрепаратов ТКМ
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Импорт, сертификация и реализация инструментов для рефлексотерапевтов
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Учебная деятельность – учебно-методический центр «СИНОФАРМ» проводит обучение
+                                 по ТКМ и рефлексотерапии
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Издательская деятельность – издательство «СИНОФАРМ» переводит и издает
+                                 специализированную литературу по ТКМ
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Медицинская деятельность – Центр традиционной медицины «СИНОФАРМ» является
+                                 клинической базой компании «СИНОФАРМ»
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Координация работы Профессиональной ассоциации рефлексотерапевтов
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Международная деятельность – организация обучения и стажировки российских
+                                 рефлексотерапевтов в Китае, а также приглашение иностранных специалистов для
+                                 обмена опытом
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Информационная деятельность – участие в выставках и конгрессах для
+                                 популяризации методов ТКМ
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="about-slider__swiper-slide_right">
+                           <div class="about-slider__swiper-slide_img">
+                              <img src="./img/about/slide-img-1.png" alt="" />
+                           </div>
+                           <div class="about-slider__swiper-controlls">
+                              <div class="about-slider__swiper-prev">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="30"
+                                    viewBox="0 0 16 30"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M15 29L1 15L15 1"
+                                       stroke="#6D6D6D"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                              <div class="about-slider__swiper-next">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="30"
+                                    viewBox="0 0 16 30"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M1 1L15 15L1 29"
+                                       stroke="#6D6D6D"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="about-slider__swiper-slide swiper-slide">
+                        <div class="about-slider__swiper-slide_left">
+                           <div class="about-slider__swiper-slide_title">
+                              Основные направления деятельности
+                           </div>
+                           <div class="about-slider__swiper-slide_img-mobile">
+                              <img src="./img/about/slide-img-1.png" alt="" />
+                           </div>
+                           <ul class="about-slider__swiper-slide_list">
+                              <li class="about-slider__swiper-slide_item">
+                                 Импорт, сертификация и реализация фитопрепаратов ТКМ
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Импорт, сертификация и реализация инструментов для рефлексотерапевтов
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Учебная деятельность – учебно-методический центр «СИНОФАРМ» проводит обучение
+                                 по ТКМ и рефлексотерапии
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Издательская деятельность – издательство «СИНОФАРМ» переводит и издает
+                                 специализированную литературу по ТКМ
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Медицинская деятельность – Центр традиционной медицины «СИНОФАРМ» является
+                                 клинической базой компании «СИНОФАРМ»
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Координация работы Профессиональной ассоциации рефлексотерапевтов
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Международная деятельность – организация обучения и стажировки российских
+                                 рефлексотерапевтов в Китае, а также приглашение иностранных специалистов для
+                                 обмена опытом
+                              </li>
+                              <li class="about-slider__swiper-slide_item">
+                                 Информационная деятельность – участие в выставках и конгрессах для
+                                 популяризации методов ТКМ
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="about-slider__swiper-slide_right">
+                           <div class="about-slider__swiper-slide_img">
+                              <img src="./img/about/slide-img-1.png" alt="" />
+                           </div>
+                           <div class="about-slider__swiper-controlls">
+                              <div class="about-slider__swiper-prev">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="30"
+                                    viewBox="0 0 16 30"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M15 29L1 15L15 1"
+                                       stroke="#6D6D6D"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                              <div class="about-slider__swiper-next">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="30"
+                                    viewBox="0 0 16 30"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M1 1L15 15L1 29"
+                                       stroke="#6D6D6D"
+                                       stroke-width="2"
+                                       stroke-linecap="round"
+                                       stroke-linejoin="round"
+                                    />
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('./template/footer.html')
+   </body>
+</html>

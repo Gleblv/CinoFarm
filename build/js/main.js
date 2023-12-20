@@ -169,6 +169,16 @@ const teacherSlider = new Swiper(".teacher__swiper", {
    },
 });
 
+const aboutSwiper = new Swiper(".about-slider__swiper", {
+   slidesPerGroup: 1,
+   slidesPerView: 1,
+
+   navigation: {
+      prevEl: ".about-slider__swiper-prev",
+      nextEl: ".about-slider__swiper-next",
+   },
+});
+
 // Скролл на главной
 
 if (document.querySelector(".main-home")) {
